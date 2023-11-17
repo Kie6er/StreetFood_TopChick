@@ -48,3 +48,13 @@
 	font-style: normal;
 	font-display: swap;
 }
+@font-face {
+	font-family: "Literata";
+	src:
+		url("../assets/fonts/Literata-Regular.woff2") format("woff2"),
+		url("../assets/fonts/Literata-Regular.woff") format("woff"),
+		url("../assets/fonts/Literata-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
