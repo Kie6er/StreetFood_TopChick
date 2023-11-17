@@ -1,10 +1,5 @@
-header {
-  color: red;
-  font-family: "Helvetica Neue";
-  font-size: 4rem;
+.index-list {
+	padding: 5rem;
 }
-img,
-video {
-  width: 60%;
-  height: 60%;
+@media (max-width: 48em) {
 }

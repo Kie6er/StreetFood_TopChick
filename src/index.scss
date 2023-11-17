@@ -1,5 +1,21 @@
 @import "./scss/fonts";
+@import "./scss/libs/settings";
 @import "./scss/libs/set";
+
 @import "./scss/components/header";
+
 @import "./scss/pages/home";
 @import "./scss/style";
+
+.mobile {
+	display: none;
+}
+
+@media (max-width: 48em) {
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+}
