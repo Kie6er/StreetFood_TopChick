@@ -1,9 +1,9 @@
-# [TopChick](https://marvelous-narwhal-8ec941.netlify.app)
+# [TopChick](https://fastfood-topchik.netlify.app)
 
 ---
 
-[Ссылка на макет](https://www.figma.com/file/llCuJEWmdFrLUlUsIyyOPn/топчик?type=design&node-id=895-3623&mode=design&t=FZ1NYUovr0RlmQW8-0)
-[Деплой](https://marvelous-narwhal-8ec941.netlify.app)
+[Ссылка на макет](https://www.figma.com/file/llCuJEWmdFrLUlUsIyyOPn/топчик?type=design&node-id=895-3623&mode=design&t=FZ1NYUovr0RlmQW8-0) <br>
+[Деплой](https://fastfood-topchik.netlify.app)
 
 ---
 
