@@ -173,6 +173,7 @@
 		margin-left: auto;
 		&-back {
 			&.swiper {
+				height: 90.7rem;
 				overflow: hidden;
 				position: relative;
 				&::after {
@@ -248,7 +249,10 @@
 				height: 31.5rem;
 				border-radius: 50%;
 				flex-shrink: 0;
-				border: 1px solid $white;
+
+				svg {
+					overflow: visible;
+				}
 			}
 			&--fraction.swiper-pagination-fraction {
 				width: auto;
@@ -267,6 +271,23 @@
 			}
 		}
 	}
+}
+.main-banner__right-controls--progressbar.swiper-pagination-progressbar.swiper-pagination-vertical {
+	width: 31.5rem;
+	height: 31.5rem;
+	background: none;
+}
+.pagination-swiper-up__bg {
+	stroke: rgba(255, 244, 218, 0.2);
+}
+.pagination-swiper-up__progress {
+	stroke: $beige;
+	transition: stroke-dashoffset 0.8s ease-in-out;
+	stroke-dasharray: var(--stroke-dasharray);
+	stroke-dashoffset: var(--stroke-dashoffset);
+	stroke-linecap: round;
+	transform: rotate(-190deg);
+	transform-origin: center;
 }
 .top-title {
 	&.swiper {
