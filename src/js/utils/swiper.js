@@ -13,10 +13,16 @@ import {
 
 $(document).ready(function () {
 	const mainBannerOption = {
+		enabled: false,
 		direction: 'vertical',
 		speed: 1000,
 		slidesPerView: 1,
-		spaceBetween: `${remToPx(1)}rem`
+		spaceBetween: `${remToPx(1)}rem`,
+		breakpoints: {
+			768: {
+				enabled: true,
+			}
+		}
 	}
 	function remToPx(remValue) {
 		// Получаем текущий базовый размер шрифта (font-size) из элемента <html>
@@ -37,9 +43,15 @@ $(document).ready(function () {
 	const swiperBackgroundImage = new Swiper('.main-banner__right-back', {
 		modules: [Pagination,],
 		...mainBannerOption,
+		enabled: false,
 		pagination: {
 			el: '.main-banner__right-controls--progressbar',
 			type: 'progressbar'
+		},
+		breakpoints: {
+			768: {
+				enabled: true,
+			}
 		},
 		on: {
 			init: function () {
@@ -70,6 +82,12 @@ $(document).ready(function () {
 		modules: [Navigation, EffectFade, Pagination],
 		...mainBannerOption,
 		effect: 'fade',
+		enabled: false,
+		breakpoints: {
+			768: {
+				enabled: true,
+			}
+		},
 		fadeEffect: {
 			crossFade: true
 		},
