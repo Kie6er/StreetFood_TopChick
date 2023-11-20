@@ -4,5 +4,72 @@
 main {
 	padding-top: 9rem;
 }
+.h1 {
+	font-size: 25rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 90%; /* 225px */
+	letter-spacing: -1.5rem;
+}
+.h2 {
+	font-feature-settings: "dnom" on;
+	font-family: "Literata";
+	font-size: 19rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 90%; /* 171px */
+	letter-spacing: -0.76rem;
+}
+.h3 {
+	font-size: 9rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 90%; /* 81px */
+	letter-spacing: -0.27rem;
+}
+.h4 {
+	font-family: "Literata";
+	font-size: 8rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 110%; /* 88px */
+	letter-spacing: -0.16rem;
+}
+.text-45 {
+	font-size: 4.5rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 100%; /* 45px */
+	letter-spacing: -0.18rem;
+}
+.text-30 {
+	font-size: 3rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 2.8rem; /* 93.333% */
+	letter-spacing: -0.06rem;
+}
+.text-24 {
+	font-size: 2.4rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 2.8rem; /* 116.667% */
+	letter-spacing: 0.216rem;
+}
+.text-22 {
+	font-family: "Euclid Circular A";
+	font-size: 2.2rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 2.8rem; /* 127.273% */
+}
+.text-18 {
+	font-family: "Euclid Circular A";
+	font-size: 1.8rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 2.8rem; /* 155.556% */
+	letter-spacing: -0.036rem;
+}
 @media (max-width: 48em) {
 }
