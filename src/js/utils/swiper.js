@@ -123,7 +123,13 @@ $(document).ready(function () {
 		direction: 'horizontal',
 		loop: true,
 		speed: 1000,
-		slidesPerView: 4,
-		spaceBetween: `${remToPx(1)}rem`,
+		slidesPerView: 1.1,
+		spaceBetween: `${remToPx(1.6)}rem`,
+		breakpoints: {
+			768: {
+				slidesPerView: 4,
+				spaceBetween: `${remToPx(1)}rem`,
+			}
+		},
 	  });
 })
