@@ -42,6 +42,7 @@
 	// .footer__social
 	&__social {
 		color: $dark;
+		text-transform: uppercase;
 	}
 
 	// .footer__form
@@ -114,7 +115,7 @@
 	// .footer__link
 	&__link {
 		width: 100%;
-
+		text-transform: uppercase;
 		&--light {
 			color: $dark-secondary;
 		}
@@ -236,7 +237,7 @@
 
 		// .footer__menu
 		&__menu {
-			gap: 6.4rem;
+			gap: 3.4rem;
 			width: 100%;
 			max-width: 100%;
 			justify-content: space-between;
@@ -248,7 +249,7 @@
 		// .footer__menu-item
 		&__menu-item {
 			max-width: 28.8rem;
-			gap: 4.8rem;
+			gap: 3rem;
 		}
 
 		// .footer__copyright
