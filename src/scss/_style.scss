@@ -1,6 +1,12 @@
 .index-list {
 	padding: 5rem;
 }
+body {
+	&.lock {
+		overflow: hidden;
+		touch-action: none;
+	}
+}
 main {
 	padding-top: 9rem;
 }
@@ -84,7 +90,6 @@ main {
 		letter-spacing: -0.112rem;
 	}
 	
-
 	.text-30 {
 		font-size: 4rem;
 		font-style: normal;
