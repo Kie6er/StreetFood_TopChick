@@ -117,4 +117,12 @@ $(document).ready(function () {
 		swiperFooterRight.slidePrev();
 		swiperBackgroundImage.slidePrev();
 	})
+
+
+	const newsSwiper = new Swiper('.news-swiper', {
+		direction: 'horizontal',
+		speed: 1000,
+		slidesPerView: 4,
+		spaceBetween: `${remToPx(1)}rem`,
+	  });
 })
