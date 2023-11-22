@@ -136,7 +136,7 @@ $(document).ready(function () {
 			swiperFooterRight.slidePrev();
 			swiperBackgroundImage.slidePrev();
 		})
-
+	}
 
 		const newsSwiper = new Swiper('.news-swiper', {
 			direction: 'horizontal',
@@ -152,4 +152,4 @@ $(document).ready(function () {
 			},
 		});
 	}
-})
+)
