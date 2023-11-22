@@ -138,18 +138,18 @@ $(document).ready(function () {
 		})
 	}
 
-		const newsSwiper = new Swiper('.news-swiper', {
-			direction: 'horizontal',
-			loop: true,
-			speed: 1000,
-			slidesPerView: 1.1,
-			spaceBetween: `${remToPx(1.6)}rem`,
-			breakpoints: {
-				768: {
-					slidesPerView: 4,
-					spaceBetween: `${remToPx(1)}rem`,
-				}
-			},
-		});
-	}
+	const newsSwiper = new Swiper('.news-swiper', {
+		direction: 'horizontal',
+		speed: 1000,
+		slidesPerView: 'auto',
+		spaceBetween: `${remToPx(1.6)}rem`,
+		breakpoints: {
+			768: {
+				enabled: false,
+				slidesPerView: 'auto',
+				spaceBetween: `${remToPx(1)}rem`,
+			}
+		},
+	});
+}
 )
