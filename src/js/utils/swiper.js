@@ -151,5 +151,23 @@ $(document).ready(function () {
 			}
 		},
 	});
+
+	const menuSwiper = new Swiper('.main-menu__cards', {
+		modules: [Navigation],
+		direction: "horizontal",
+		slidesPerView: 1,
+		spaceBetween: `${remToPx(3.2)}rem`,
+		navigation: {
+			nextEl: '.main-menu__navigation--next',
+			prevEl: '.main-menu__navigation--prev',
+		},
+		breakpoints: {
+			768: {
+				enabled: false,
+				slidesPerView: 'auto',
+				spaceBetween: `0`,
+			}
+		},
+	})
 }
 )

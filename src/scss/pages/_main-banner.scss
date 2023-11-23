@@ -1,7 +1,8 @@
 .main-banner {
 	// .main-banner__ticker
 	&__ticker {
-		max-width: 100%;
+		max-width: 192rem;
+		margin: 0 auto;
 		height: 6rem;
 		display: flex;
 		align-items: center;
