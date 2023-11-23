@@ -29,7 +29,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: row;
-		gap: 0;
+		gap: 2.5rem;
 		justify-content: center;
 
 		svg {
@@ -42,6 +42,11 @@
 	&__title {
 		color: $dark;
 		font-weight: 500;
+	}
+
+	&__icon {
+		width: 11rem;
+		height: 8.9rem;
 	}
 
 	// .news__card-wrapeper
@@ -133,13 +138,12 @@
 			width: 100%;
 			display: flex;
 			flex-direction: row;
-			gap: 0;
+			gap: 1.6rem;
 			justify-content: center;
-
-			svg {
-				width: 15.4rem;
-				height: 8.4rem;
-			}
+		}
+		&__icon {
+			width: 9.4rem;
+			height: 7.4rem;
 		}
 
 		// .news__card-title
