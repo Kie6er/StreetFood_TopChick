@@ -4,6 +4,7 @@ $(document).ready(function () {
 		$('.burger-btn').on('click', function () {
 			$(this).toggleClass('active');
 			$('.burger-menu').toggleClass('show');
+			$('.burger-menu').css('display', 'flex');
 			$('body').toggleClass('lock');
 		})
 
