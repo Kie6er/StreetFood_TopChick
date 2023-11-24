@@ -13,4 +13,7 @@ $(document).ready(function () {
 			$('body').removeClass('lock');
 		})
 	}
+	setTimeout(function () {
+		$('.burger-menu').css('display', 'flex');
+	}, 0)
 })

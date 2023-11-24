@@ -13,10 +13,15 @@ import {
 
 $(document).ready(function () {
 	const mainBannerOption = {
+		modules: [Navigation, EffectFade, Pagination, Autoplay],
 		direction: 'vertical',
-		speed: 1000,
+		speed: 1200,
 		slidesPerView: 1,
 		spaceBetween: `${remToPx(1)}rem`,
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: true,
+		},
 	}
 
 	function remToPx(remValue) {
@@ -38,7 +43,6 @@ $(document).ready(function () {
 		const swiperFooterLeft = new Swiper('.banner-footer-left', mainBannerOption);
 		const swiperFooterRight = new Swiper('.banner-footer-right', mainBannerOption);
 		const swiperBackgroundImage = new Swiper('.main-banner__right-back', {
-			modules: [Pagination],
 			...mainBannerOption,
 			pagination: {
 				el: '.main-banner__right-controls--progressbar',
@@ -70,7 +74,6 @@ $(document).ready(function () {
 			}
 		});
 		const swiperIllustration = new Swiper('.banner-illustration', {
-			modules: [Navigation, EffectFade, Pagination],
 			...mainBannerOption,
 			effect: 'fade',
 			fadeEffect: {
@@ -140,7 +143,7 @@ $(document).ready(function () {
 
 	const newsSwiper = new Swiper('.news-swiper', {
 		direction: 'horizontal',
-		speed: 1000,
+		speed: 1200,
 		slidesPerView: 'auto',
 		spaceBetween: `${remToPx(1.6)}rem`,
 		breakpoints: {
@@ -153,8 +156,13 @@ $(document).ready(function () {
 	});
 
 	const menuSwiper = new Swiper('.main-menu__cards', {
-		modules: [Navigation],
+		modules: [Autoplay, Navigation],
 		direction: "horizontal",
+		speed: 1200,
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: true,
+		},
 		slidesPerView: 1,
 		spaceBetween: `${remToPx(3.2)}rem`,
 		navigation: {
@@ -168,6 +176,50 @@ $(document).ready(function () {
 				spaceBetween: `0`,
 			}
 		},
-	})
-}
-)
+	});
+
+	if (window.outerWidth > 768) {
+		const saleSlidersOptions = {
+			modules: [Autoplay, Navigation],
+			direction: "horizontal",
+			spaceBetween: `${remToPx(1)}rem`,
+			speed: 1000,
+			autoplay: {
+				delay: 4000,
+				disableOnInteraction: true,
+			},
+		}
+		const leftSaleSlider = new Swiper('.sale-slider-first', saleSlidersOptions);
+		const centerSaleSlider = new Swiper('.sale-slider-second', saleSlidersOptions);
+		const rightSaleSlider = new Swiper('.sale-slider-third', {
+			...saleSlidersOptions,
+			navigation: {
+				prevEl: '.main-sale__navigation--prev',
+				nextEl: '.main-sale__navigation--next'
+			}
+		});
+		$('.main-sale__navigation--next').on('click', e => {
+			e.preventDefault();
+			leftSaleSlider.slideNext();
+			centerSaleSlider.slideNext();
+		})
+		$('.main-sale__navigation--prev').on('click', e => {
+			e.preventDefault();
+			leftSaleSlider.slidePrev();
+			centerSaleSlider.slidePrev();
+		})
+	} else {
+		const mobileSaleSlider = new Swiper('.sale-slider-mobile', {
+			modules: [Autoplay, Navigation],
+			direction: "horizontal",
+			spaceBetween: `${remToPx(1.6)}rem`,
+			slidesPerView: 'auto',
+			speed: 1200,
+			navigation: {
+				prevEl: '.main-sale__navigation--prev',
+				nextEl: '.main-sale__navigation--next'
+			}
+		})
+	}
+
+});
