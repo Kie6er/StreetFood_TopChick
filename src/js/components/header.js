@@ -16,6 +16,8 @@ $(document).ready(function () {
 				setTimeout(function () {
 					$('.burger-menu').css('display', 'flex');
 				}, 0)
+			} else {
+				$('.burger-menu').css('display', 'none');
 			}
 		})
 	}
@@ -23,5 +25,7 @@ $(document).ready(function () {
 		setTimeout(function () {
 			$('.burger-menu').css('display', 'flex');
 		}, 0)
+	} else {
+		$('.burger-menu').css('display', 'none');
 	}
 })
