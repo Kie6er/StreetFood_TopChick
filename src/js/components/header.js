@@ -13,9 +13,7 @@ $(document).ready(function () {
 			$('body').removeClass('lock');
 
 			if (window.outerWidth <= 768) {
-				setTimeout(function () {
-					$('.burger-menu').css('display', 'flex');
-				}, 0)
+				$('.burger-menu').css('display', 'flex');
 			} else {
 				$('.burger-menu').css('display', 'none');
 			}
