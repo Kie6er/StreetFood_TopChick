@@ -11,9 +11,17 @@ $(document).ready(function () {
 			$('.burger-btn').removeClass('active');
 			$('.burger-menu').removeClass('show');
 			$('body').removeClass('lock');
+
+			if (window.outerWidth <= 768) {
+				setTimeout(function () {
+					$('.burger-menu').css('display', 'flex');
+				}, 0)
+			}
 		})
 	}
-	setTimeout(function () {
-		$('.burger-menu').css('display', 'flex');
-	}, 0)
+	if (window.outerWidth <= 768) {
+		setTimeout(function () {
+			$('.burger-menu').css('display', 'flex');
+		}, 0)
+	}
 })
