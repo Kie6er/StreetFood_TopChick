@@ -237,56 +237,6 @@
 			&.mobile {
 				display: flex;
 			}
-			gap: 0.8rem;
-			&-btn {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				position: relative;
-				overflow: hidden;
-
-				width: 8.8rem;
-				height: 8.8rem;
-				border-radius: 50%;
-				background-color: $dark;
-				transition: background 0.1s linear;
-
-				&::after {
-					content: "";
-					width: 8.8rem;
-					height: 8.8rem;
-					border-radius: 50%;
-					background-color: $green;
-					position: absolute;
-					transform: translateY(100%);
-					transition: transform 0.3s ease-in-out;
-				}
-				svg {
-					position: relative;
-					z-index: 2;
-					width: 3.2rem;
-					height: 3.2rem;
-				}
-				&.swiper-button-disabled {
-					background-color: $orange;
-					cursor: default;
-
-					&:hover {
-						background-color: $orange;
-						&::after {
-							transform: translateY(100%);
-						}
-					}
-				}
-				&:hover {
-					transition: background 0.3s linear 0.15s;
-					background-color: $green;
-					&::after {
-						transition: transform 0.3s ease-in-out;
-						transform: translateY(0);
-					}
-				}
-			}
 		}
 		// .main-menu__categories
 		&__categories {
