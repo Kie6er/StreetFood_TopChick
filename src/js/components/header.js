@@ -22,6 +22,17 @@ $(document).ready(function () {
 	$(window).resize(function () {
 		if (window.outerWidth <= 768) {
 			$('.burger-menu').css('display', 'flex');
+			$('.burger-btn').on('click', function () {
+				$(this).toggleClass('active');
+				$('.burger-menu').toggleClass('show');
+				$('body').toggleClass('lock');
+			})
+
+			$(window).resize(function () {
+				$('.burger-btn').removeClass('active');
+				$('.burger-menu').removeClass('show');
+				$('body').removeClass('lock');
+			})
 		} else {
 			$('.burger-menu').css('display', 'none');
 		}
