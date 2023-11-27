@@ -20,7 +20,7 @@ $(document).ready(function () {
 		spaceBetween: `${remToPx(1)}rem`,
 		autoplay: {
 			delay: 4000,
-			disableOnInteraction: true,
+			disableOnInteraction: false,
 		},
 	}
 
@@ -141,19 +141,19 @@ $(document).ready(function () {
 		})
 	}
 
-	const newsSwiper = new Swiper('.news-swiper', {
-		direction: 'horizontal',
-		speed: 1200,
-		slidesPerView: 'auto',
-		spaceBetween: `${remToPx(1.6)}rem`,
-		breakpoints: {
-			768: {
-				enabled: false,
-				slidesPerView: 'auto',
-				spaceBetween: `${remToPx(1)}rem`,
-			}
-		},
-	});
+	// const newsSwiper = new Swiper('.news-swiper', {
+	// 	direction: 'horizontal',
+	// 	speed: 1200,
+	// 	slidesPerView: 'auto',
+	// 	spaceBetween: `${remToPx(1.6)}rem`,
+	// 	breakpoints: {
+	// 		768: {
+	// 			enabled: false,
+	// 			slidesPerView: 'auto',
+	// 			spaceBetween: `${remToPx(1)}rem`,
+	// 		}
+	// 	},
+	// });
 
 	const menuSwiper = new Swiper('.main-menu__cards', {
 		modules: [Autoplay, Navigation],
@@ -161,7 +161,7 @@ $(document).ready(function () {
 		speed: 1200,
 		autoplay: {
 			delay: 4000,
-			disableOnInteraction: true,
+			disableOnInteraction: false,
 		},
 		slidesPerView: 1,
 		spaceBetween: `${remToPx(3.2)}rem`,
@@ -186,7 +186,7 @@ $(document).ready(function () {
 			speed: 1000,
 			autoplay: {
 				delay: 4000,
-				disableOnInteraction: true,
+				disableOnInteraction: false,
 			},
 		}
 		const leftSaleSlider = new Swiper('.sale-slider-first', saleSlidersOptions);
@@ -214,6 +214,10 @@ $(document).ready(function () {
 			direction: "horizontal",
 			spaceBetween: `${remToPx(1.6)}rem`,
 			slidesPerView: 'auto',
+			autoplay: {
+				delay: 4000,
+				disableOnInteraction: false,
+			},
 			speed: 1200,
 			navigation: {
 				prevEl: '.main-sale__navigation--prev',
@@ -222,4 +226,37 @@ $(document).ready(function () {
 		})
 	}
 
+	const reviewSwiper = new Swiper('.main-reviews__slider', {
+		modules: [EffectCreative, Navigation, Autoplay],
+		grabCursor: true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		direction: 'horizontal',
+		slidesPerView: 3.1,
+		centeredSlides: true,
+		speed: 1200,
+		loop: true,
+		initialSlide: 1,
+		effect: "creative",
+		navigation: {
+			prevEl: '.main-reviews__navigation--prev',
+			nextEl: '.main-reviews__navigation--next'
+		},
+		creativeEffect: {
+			perspective: true,
+			limitProgress: 3.2,
+			prev: {
+				translate: ["-55rem", "7rem", 0],
+				origin: "center 500%",
+				rotate: [0, 0, -15],
+			},
+			next: {
+				rotate: [0, 0, 15],
+				translate: ["55rem", "7rem", 0],
+				origin: "center 500%",
+			}
+		}
+	})
 });
