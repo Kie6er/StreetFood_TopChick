@@ -1,14 +1,15 @@
 .main-sale {
+	width: 100%;
+	max-width: 192rem;
 	position: relative;
+	margin: 0 auto 20rem;
+	padding: 0 1rem;
 	// .main-sale__inner
 	&__inner {
 		&.desktop {
 			position: relative;
 			display: flex;
 			gap: 1rem;
-			padding: 0 1rem;
-			max-width: 192rem;
-			margin: 0 auto;
 		}
 		&.mobile {
 			display: none;
@@ -55,12 +56,6 @@
 	// .main-sale__navigation
 	&__navigation.navigation {
 		flex-direction: row;
-		&-btn {
-		}
-		&--prev {
-		}
-		&--next {
-		}
 	}
 }
 .sale-slider-first {
