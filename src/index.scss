@@ -1,6 +1,7 @@
 @import "./scss/fonts";
 @import "./scss/libs/settings";
 @import "./scss/libs/set";
+@import "./scss/style";
 
 @import "./scss/components/header";
 @import "./scss/components/footer";
@@ -12,7 +13,6 @@
 @import "./scss/pages/main-sale";
 @import "./scss/pages/main-advantages";
 @import "./scss/pages/main-reviews";
-@import "./scss/style";
 
 .mobile {
 	display: none;
