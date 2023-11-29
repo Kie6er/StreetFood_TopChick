@@ -27,6 +27,7 @@ import {
 		menuSwiperInit();
 		saleSwiperInit();
 		newsSwiperInit();
+		mapSwipertInit();
 	});
 	$(window).resize(function () {
 		reviewSwiper && reviewSwiper.destroy();
@@ -296,6 +297,28 @@ import {
 					enabled: false,
 					slidesPerView: 'auto',
 					spaceBetween: `0`,
+				}
+			}
+		})
+	}
+	function mapSwipertInit() {
+		const mapSlider = new Swiper('.main-map__slider', {
+			modules: [Navigation, Pagination],
+			direction: 'horizontal',
+			spaceBetween: `${remToPx(1)}rem`,
+			enabled: false,
+			speed: 800,
+			navigation: {
+				nextEl: '.main-map__navigation--next',
+				prevEl: '.main-map__navigation--prev'
+			},
+			pagination: {
+				type: 'fraction',
+				el: '.main-map__slider-fraction'
+			},
+			breakpoints: {
+				768: {
+					enabled: true,
 				}
 			}
 		})

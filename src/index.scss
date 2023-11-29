@@ -6,13 +6,13 @@
 @import "./scss/components/header";
 @import "./scss/components/footer";
 
-@import "./scss/pages/home";
-@import "./scss/pages/main-banner";
-@import "./scss/pages/main-news";
-@import "./scss/pages/main-menu";
-@import "./scss/pages/main-sale";
-@import "./scss/pages/main-advantages";
-@import "./scss/pages/main-reviews";
+@import "./scss/pages/main-page/main-banner";
+@import "./scss/pages/main-page/main-news";
+@import "./scss/pages/main-page/main-menu";
+@import "./scss/pages/main-page/main-sale";
+@import "./scss/pages/main-page/main-advantages";
+@import "./scss/pages/main-page/main-reviews";
+@import "./scss/pages/main-page/main-map";
 
 .mobile {
 	display: none;
