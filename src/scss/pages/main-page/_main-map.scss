@@ -301,13 +301,46 @@
 	align-items: center;
 	justify-content: center;
 
+	&.fast-food svg path {
+		fill: $green;
+	}
+	&.culinary svg path {
+		fill: $beige;
+	}
+	&.shawerma svg path {
+		fill: $orange;
+	}
+	&.active {
+		&.fast-food {
+			background-color: $green;
+			svg path {
+				fill: $beige;
+			}
+		}
+		&.culinary {
+			background-color: $beige;
+			svg path {
+				fill: $dark-tertiary;
+			}
+		}
+		&.shawerma {
+			background-color: $orange;
+			svg path {
+				fill: $beige;
+			}
+		}
+	}
+
 	svg {
 		width: 2.6rem;
 		height: 3.755rem;
 	}
 }
-.ymaps3x0--map-copyrights {
+[class*="--map-copyrights"] {
 	display: none !important;
+}
+[class*="--main-engine-container"] {
+	filter: contrast(60%) grayscale(100%) invert(100%);
 }
 @media (max-width: 48em) {
 	.main-map {
@@ -377,6 +410,15 @@
 		span {
 			width: 1.6rem;
 			height: 1.6rem;
+		}
+	}
+	.marker {
+		width: 8.8rem;
+		height: 8.8rem;
+
+		svg {
+			width: 3.6rem;
+			height: 5.2rem;
 		}
 	}
 }

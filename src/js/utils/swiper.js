@@ -27,7 +27,6 @@ import {
 		menuSwiperInit();
 		saleSwiperInit();
 		newsSwiperInit();
-		mapSwipertInit();
 	});
 	$(window).resize(function () {
 		reviewSwiper && reviewSwiper.destroy();
@@ -107,6 +106,8 @@ import {
 				delay: 4000,
 				disableOnInteraction: false,
 			},
+			allowTouchMove: false,
+			onlyExternal: true
 		}
 		if (window.outerWidth > 768) {
 			const swiperTopTitle = new Swiper('.top-title', mainBannerOption);
@@ -214,13 +215,9 @@ import {
 	}
 	function menuSwiperInit() {
 		const menuSwiper = new Swiper('.main-menu__cards', {
-			modules: [Autoplay, Navigation],
+			modules: [Navigation],
 			direction: "horizontal",
 			speed: 1200,
-			autoplay: {
-				delay: 4000,
-				disableOnInteraction: false,
-			},
 			slidesPerView: 1,
 			spaceBetween: `${remToPx(3.2)}rem`,
 			navigation: {
@@ -269,14 +266,10 @@ import {
 			})
 		} else {
 			mobileSaleSlider = new Swiper('.sale-slider-mobile', {
-				modules: [Autoplay, Navigation],
+				modules: [Navigation],
 				direction: "horizontal",
 				spaceBetween: `${remToPx(1.6)}rem`,
 				slidesPerView: 'auto',
-				autoplay: {
-					delay: 4000,
-					disableOnInteraction: false,
-				},
 				speed: 1200,
 				navigation: {
 					prevEl: '.main-sale__navigation--prev',
@@ -297,28 +290,6 @@ import {
 					enabled: false,
 					slidesPerView: 'auto',
 					spaceBetween: `0`,
-				}
-			}
-		})
-	}
-	function mapSwipertInit() {
-		const mapSlider = new Swiper('.main-map__slider', {
-			modules: [Navigation, Pagination],
-			direction: 'horizontal',
-			spaceBetween: `${remToPx(1)}rem`,
-			enabled: false,
-			speed: 800,
-			navigation: {
-				nextEl: '.main-map__navigation--next',
-				prevEl: '.main-map__navigation--prev'
-			},
-			pagination: {
-				type: 'fraction',
-				el: '.main-map__slider-fraction'
-			},
-			breakpoints: {
-				768: {
-					enabled: true,
 				}
 			}
 		})

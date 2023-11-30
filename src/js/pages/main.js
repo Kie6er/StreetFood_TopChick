@@ -37,11 +37,12 @@ function advantagesMainPage() {
 		scale: 0.3,
 		y: '-69rem',
 		ease: 'power1.inOut',
+		duration: 1.5,
+		markerStart: true,
 		scrollTrigger: {
 			trigger: '.main-advantages',
 			start: '25% center',
 			end: '65% center',
-			scrub: 4,
 		}
 	})
 }

@@ -367,7 +367,7 @@
 		position: absolute;
 		z-index: 1;
 		transform: translateY(100%);
-		transition: transform 0.4s ease-in-out 0.3s;
+		transition: transform 0.3s ease-in-out 0.2s;
 	}
 	span {
 		color: $orange;
@@ -375,16 +375,16 @@
 		position: absolute;
 		z-index: 2;
 		transform: translateY(250%);
-		transition: transform 0.4s ease-in-out;
+		transition: transform 0.3s ease-in-out;
 	}
 
 	&:hover {
 		&::after {
-			transition: transform 0.4s ease-in-out;
+			transition: transform 0.3s ease-in-out;
 			transform: translateY(0);
 		}
 		span {
-			transition: transform 0.4s ease-in-out 0.3s;
+			transition: transform 0.3s ease-in-out 0.2s;
 			transform: translateY(0);
 		}
 	}
