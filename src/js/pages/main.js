@@ -43,7 +43,6 @@ function advantagesMainPage() {
 			trigger: '.main-advantages',
 			start: '40% center',
 			end: '65% center',
-			markers: true,
 		}
 	})
 }
