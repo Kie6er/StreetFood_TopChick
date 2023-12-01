@@ -35,13 +35,24 @@ $(document).ready(function () {
 function advantagesMainPage() {
 	gsap.from('.main-advantages__video', {
 		scale: 0.3,
+		opacity: 0,
 		y: '-69rem',
 		ease: 'power1.inOut',
 		duration: 1.5,
 		markerStart: true,
 		scrollTrigger: {
 			trigger: '.main-advantages',
-			start: '40% center',
+			start: '35% center',
+			end: '65% center',
+		}
+	})
+	gsap.from('.advantages-card', {
+		opacity: 0,
+		duration: 2,
+		stagger: 0.5,
+		scrollTrigger: {
+			trigger: '.main-advantages',
+			start: 'top 60%',
 			end: '65% center',
 		}
 	})

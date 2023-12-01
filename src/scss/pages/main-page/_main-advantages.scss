@@ -78,8 +78,19 @@
 .advantages-card {
 	border: 0.1rem solid $choco;
 	background: $beige;
+	&:hover {
+		.advantages-card__text {
+			color: $orange;
+			transition: color 0.3s linear;
+		}
+		.advantages-card__icon {
+			transition: transform 0.3s linear;
+			transform: scale(0.9);
+		}
+	}
 	// .advantages-card__icon
 	&__icon {
+		transition: transform 0.3s linear;
 		position: absolute;
 		left: 4rem;
 		top: -6.2rem;
@@ -117,6 +128,9 @@
 	}
 	// .advantages-card__text
 	&__text {
+		cursor: default;
+		transform-origin: center top;
+		transition: color 0.3s linear;
 		width: 22.9rem;
 		max-height: 9rem;
 		overflow: hidden;
