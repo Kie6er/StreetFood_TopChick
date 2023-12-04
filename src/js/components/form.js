@@ -12,30 +12,30 @@ $(document).ready(function () {
 
 	$('.form').on('submit', (evt) => {
 		evt.preventDefault();
-		if (validationForm($(evt.currentTarget)) === true) {
+		const currentForm = $(evt.currentTarget);
 
-			if ($('.modal').hasClass('active')) {
-				switchModalContent()
-			} else {
-				$('.modal').addClass('active');
-				$('body').addClass('lock');
+		if (validationForm(currentForm) === true) {
+			if (currentForm.hasClass('review-modal__form')) {
+				switchModalContent('.review-modal');
+			} else if (currentForm.hasClass('footer__form')) {
+				const modalSubscribe = $('.subscribe');
+
+				modalSubscribe.addClass('active');
+				$("body").addClass("lock");
 				setTimeout(() => {
-					$(".modal-wrapper").css("opacity", "1");
-					$(".modal-back").css("opacity", "1");
+					modalSubscribe.find(".modal-wrapper").css("opacity", "1");
+					modalSubscribe.find(".modal-back").css("opacity", "1");
 				}, 0);
-				switchModalContent()
 			}
-
-			$(evt.currentTarget).find('input').val('');
-			$(evt.currentTarget).find('textarea').val('');
+			currentForm.find('input').val('');
+			currentForm.find('textarea').val('');
 		};
 	})
-
 })
 
-function switchModalContent() {
-	$('.modal').find('.modal-content--first').removeClass('active');
-	$('.modal').find('.modal-content--second').addClass('active');
+function switchModalContent(modal) {
+	$(modal).find('.modal-content--first').removeClass('active');
+	$(modal).find('.modal-content--second').addClass('active');
 }
 
 function validationForm(form) {

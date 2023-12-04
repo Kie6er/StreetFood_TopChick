@@ -186,6 +186,44 @@
 		}
 	}
 }
+.subscribe {
+	// .subscribe__content
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 8rem;
+		width: 108.6rem;
+	}
+	// .subscribe__wrapper
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	// .subscribe__icon
+	&__icon {
+		width: 18.5rem;
+		margin-bottom: 6.4rem;
+	}
+	// .subscribe__title
+	&__title {
+		color: $beige;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 4.8rem;
+		width: 79.6rem;
+	}
+	// .subscribe__description
+	&__description {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+		overflow: hidden;
+		color: $beige;
+		text-overflow: ellipsis;
+	}
+}
 .modal {
 	display: none;
 	position: fixed;
