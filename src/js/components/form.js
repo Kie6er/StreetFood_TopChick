@@ -1,5 +1,7 @@
 import IMask from 'imask';
 import $ from 'jquery';
+import { openModal } from './modal';
+
 $(document).ready(function () {
 	const phone = document.querySelectorAll('[type="tel"]');
 	const maskOptions = {
@@ -18,14 +20,7 @@ $(document).ready(function () {
 			if (currentForm.hasClass('review-modal__form')) {
 				switchModalContent('.review-modal');
 			} else if (currentForm.hasClass('footer__form')) {
-				const modalSubscribe = $('.subscribe');
-
-				modalSubscribe.addClass('active');
-				$("body").addClass("lock");
-				setTimeout(() => {
-					modalSubscribe.find(".modal-wrapper").css("opacity", "1");
-					modalSubscribe.find(".modal-back").css("opacity", "1");
-				}, 0);
+				openModal('.subscribe')
 			}
 			currentForm.find('input').val('');
 			currentForm.find('textarea').val('');
