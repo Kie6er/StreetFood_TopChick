@@ -31,8 +31,6 @@ $(document).ready(function () {
 	reviewDetailSwiperInit();
 });
 $(window).resize(function () {
-	reviewSwiper && reviewSwiper.destroy();
-	reviewSwiperMobile && reviewSwiperMobile.destroy();
 	reviewSwiperInit();
 })
 function remToPx(remValue) {
@@ -83,6 +81,7 @@ function reviewSwiperInit() {
 			},
 		});
 	} else {
+		reviewSwiper && reviewSwiper.destroy();
 		reviewSwiperMobile = new Swiper('.main-reviews__slider', {
 			modules: [Navigation],
 			grabCursor: true,
