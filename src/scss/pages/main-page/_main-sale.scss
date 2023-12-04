@@ -362,16 +362,6 @@
 		z-index: 2;
 	}
 }
-.sale-slider-mobile {
-	&.swiper {
-	}
-	// .sale-slider-first__wrapper
-	&__wrapper.swiper-wrapper {
-	}
-	// .sale-slider-first__slide
-	&__slide.swiper-slide {
-	}
-}
 @media (max-width: 48em) {
 	.main-sale {
 		position: relative;
@@ -438,8 +428,8 @@
 
 			&::after {
 				top: unset;
-				bottom: -26.6rem;
-				right: -3rem;
+				bottom: -30rem;
+				right: -5rem;
 			}
 		}
 		// .sale-slide-first__subtitle
