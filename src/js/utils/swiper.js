@@ -109,7 +109,7 @@ function bannerSwiperInit() {
 			disableOnInteraction: false,
 		},
 		allowTouchMove: false,
-		onlyExternal: true
+		touchReleaseOnEdges: true
 	}
 	if (window.outerWidth > 768) {
 		const swiperTopTitle = new Swiper('.top-title', mainBannerOption);
