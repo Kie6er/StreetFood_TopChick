@@ -58,7 +58,7 @@ import {
 		}
 	})
 	$(document).ready(function () {
-		initMap();
+		$('.main-map').length > 0 ? initMap() : null;
 	})
 	function remToPx(remValue) {
 		// Получаем текущий базовый размер шрифта (font-size) из элемента <html>
