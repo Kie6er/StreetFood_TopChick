@@ -98,6 +98,8 @@
 	}
 }
 .menu-card {
+	height: 55rem;
+	display: flex;
 	&:hover {
 		.menu-card__img {
 			transition: transform 0.3s ease-in-out;
@@ -276,7 +278,7 @@
 				height: 9rem;
 
 				img {
-					width: 3.2rem;
+					width: 3.4rem;
 					height: 8.4rem;
 					transform: rotate(30deg);
 				}
