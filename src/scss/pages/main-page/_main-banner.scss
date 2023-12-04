@@ -1,48 +1,4 @@
 .main-banner {
-	// .main-banner__ticker
-	&__ticker {
-		max-width: 192rem;
-		margin: 0 auto;
-		height: 6rem;
-		display: flex;
-		align-items: center;
-		background-color: $green;
-		overflow: hidden;
-		&-content {
-			display: flex;
-			gap: 3rem;
-			width: 200%;
-			animation: ticker 20s linear infinite;
-		}
-		&-wrapper {
-			width: 100%;
-			display: flex;
-			align-items: center;
-			gap: 3rem;
-		}
-		&-element {
-			display: flex;
-			align-items: center;
-			gap: 3rem;
-			strong {
-				display: block;
-				width: max-content;
-				text-wrap: nowrap;
-
-				color: $dark;
-				font-size: 3rem;
-				font-weight: 600;
-				line-height: 2.8rem; /* 93.333% */
-				letter-spacing: -0.06rem;
-				text-transform: uppercase;
-			}
-			span {
-				display: block;
-				width: 0.4rem;
-				height: 0.4rem;
-			}
-		}
-	}
 	// .main-banner__inner
 	&__inner {
 		&.desktop {
@@ -400,29 +356,6 @@
 
 @media (max-width: 48em) {
 	.main-banner {
-		// .main-banner__ticker
-		&__ticker {
-			height: 7.2rem;
-			&-content {
-				gap: 4rem;
-				width: 350%;
-			}
-			&-wrapper {
-				gap: 4rem;
-			}
-			&-element {
-				gap: 4rem;
-				strong {
-					font-size: 3.6rem;
-					line-height: normal; /* 93.333% */
-					letter-spacing: -0.072rem;
-				}
-				span {
-					width: 0.8rem;
-					height: 0.8rem;
-				}
-			}
-		}
 		// .main-banner__inner
 		&__inner {
 			&.desktop {
