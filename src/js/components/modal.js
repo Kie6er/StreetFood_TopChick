@@ -6,21 +6,23 @@ $(document).ready(function () {
 
 	$('[data-modal="review"]').on("click", () => {
 		$(".review-modal").addClass("active");
+		openModal(".review-modal");
 	});
 	$('[data-modal="review-detail"]').on("click", () => {
 		$(".review-modal-detail").addClass("active");
-	});
-
-	$("[data-modal]").on("click", () => {
-		$("body").addClass("lock");
-		setTimeout(() => {
-			$(".modal-wrapper").css("opacity", "1");
-			$(".modal-back").css("opacity", "1");
-		}, 0);
+		openModal(".review-modal-detail");
 	});
 
 	$(".modal-back").on("click", closeModal);
 	$(".modal-exit").on("click", closeModal);
+
+	function openModal(modal) {
+		$("body").addClass("lock");
+		setTimeout(() => {
+			$(modal).find(".modal-wrapper").css("opacity", "1");
+			$(modal).find(".modal-back").css("opacity", "1");
+		}, 0);
+	}
 
 	function closeModal() {
 		$('body').removeClass('lock');
