@@ -292,59 +292,7 @@
 		letter-spacing: -0.036rem;
 	}
 }
-.btn {
-	color: $dark;
-	text-align: center;
 
-	font-size: 3rem;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 2.8rem; /* 93.333% */
-	letter-spacing: -0.06rem;
-	text-transform: uppercase;
-
-	display: inline-flex;
-	height: 7rem;
-	padding: 2.6rem 4rem;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	flex-shrink: 0;
-	background: $orange;
-
-	position: relative;
-	overflow: hidden;
-	&::after {
-		content: "";
-		width: 110%;
-		height: 300%;
-		background: $white;
-		border-radius: 50%;
-		position: absolute;
-		z-index: 1;
-		transform: translateY(100%);
-		transition: transform 0.3s ease-in-out 0.2s;
-	}
-	span {
-		color: $orange;
-		display: block;
-		position: absolute;
-		z-index: 2;
-		transform: translateY(250%);
-		transition: transform 0.3s ease-in-out;
-	}
-
-	&:hover {
-		&::after {
-			transition: transform 0.3s ease-in-out;
-			transform: translateY(0);
-		}
-		span {
-			transition: transform 0.3s ease-in-out 0.2s;
-			transform: translateY(0);
-		}
-	}
-}
 @keyframes ticker {
 	0% {
 		transform: translateX(0%);

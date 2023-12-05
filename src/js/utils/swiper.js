@@ -27,6 +27,7 @@ $(document).ready(function () {
 	saleSwiperInit();
 	newsSwiperInit();
 	reviewDetailSwiperInit();
+	vacancyBannerSwiperInit();
 });
 $(window).resize(function () {
 	reviewSwiperInit();
@@ -315,4 +316,22 @@ function reviewDetailSwiperInit() {
 			}
 		})
 	});
+}
+function vacancyBannerSwiperInit() {
+	if ($('.vacancy-banner').length > 0) {
+		const vacancyBannerSwiper = new Swiper('.vacancy-banner__slider', {
+			modules: [EffectFade, Navigation],
+			direction: "horizontal",
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true,
+			},
+			speed: 800,
+			slidesPerView: 1,
+			navigation: {
+				prevEl: '.vacancy-banner__navigation--prev',
+				nextEl: '.vacancy-banner__navigation--next'
+			}
+		})
+	}
 }
