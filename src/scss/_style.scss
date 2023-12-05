@@ -7,6 +7,10 @@ body {
 		touch-action: none;
 	}
 }
+input,
+textarea {
+	touch-action: manipulation;
+}
 main {
 	padding-top: 9rem;
 }
