@@ -131,7 +131,7 @@
 	&__main {
 		position: relative;
 		overflow: auto;
-		height: 17rem;
+		max-height: 17rem;
 		color: $beige;
 
 		font-family: "Euclid Circular A";
@@ -140,6 +140,19 @@
 		font-weight: 400;
 		line-height: 2.8rem; /* 155.556% */
 		letter-spacing: -0.036rem;
+		/* W3C standard
+		сейчас только для Firefox */
+		scrollbar-width: thin;
+		scrollbar-color: $dark $orange;
+
+		/* для Chrome/Edge/Safari */
+		&::-webkit-scrollbar {
+			width: 0.3rem;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: $dark;
+			border-radius: 10rem;
+		}
 	}
 	// .review-modal-detail__footer
 	&__footer {

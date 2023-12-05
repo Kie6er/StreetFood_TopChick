@@ -71,3 +71,68 @@
 		}
 	}
 }
+
+@media (max-width: 48em) {
+	.contacts-banner {
+		// .contacts-banner__inner
+		&__inner {
+			padding-top: 9.2rem;
+			flex-direction: column;
+			margin: 0;
+			min-height: auto;
+			gap: 8rem;
+		}
+		// .contacts-banner__left
+		&__left {
+			gap: 2rem;
+			max-width: 100%;
+			padding: 0 3.2rem;
+			border-bottom: none;
+
+			// .contacts-banner__left-title
+			&-title {
+				font-size: 24rem;
+				letter-spacing: -1.44rem;
+			}
+			// .contacts-banner__left-subtitle
+			&-subtitle {
+				font-size: 8rem;
+				letter-spacing: -0.24rem;
+			}
+		}
+		// .contacts-banner__right
+		&__right {
+			flex-direction: column;
+			flex-wrap: wrap;
+			padding: 0 3.2rem;
+			// .contacts-banner__right-element
+			&-element {
+				width: 100%;
+				padding: 4.8rem 0;
+				gap: 2rem;
+				border: none;
+				border-top: 0.2rem solid $dark;
+			}
+			// .contacts-banner__right-subtitle
+			&-subtitle {
+				font-size: 4.8rem;
+				letter-spacing: -0.192rem;
+			}
+			// .contacts-banner__right-wrapper
+			&-wrapper {
+				letter-spacing: -0.072rem;
+			}
+			// .contacts-banner__right-name
+			&-name {
+				color: $orange;
+			}
+			// .contacts-banner__right-mail
+			&-mail {
+				text-transform: uppercase;
+				a:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
