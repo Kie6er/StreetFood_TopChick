@@ -329,6 +329,7 @@
 		font-weight: 400;
 		line-height: 2.8rem; /* 155.556% */
 		letter-spacing: -0.036rem;
+		touch-action: none;
 
 		&::placeholder {
 			color: $dark-secondary;
@@ -339,6 +340,7 @@
 		height: 15.5rem;
 		resize: none;
 		background: #a5806d;
+		touch-action: none;
 
 		padding: 3.2rem;
 		color: $dark;
