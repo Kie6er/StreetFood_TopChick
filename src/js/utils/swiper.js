@@ -14,12 +14,10 @@ import {
 } from "swiper/modules";
 let reviewSwiper;
 let reviewSwiperMobile;
-
 let leftSaleSlider;
 let centerSaleSlider;
 let rightSaleSlider;
 let mobileSaleSlider;
-
 let newsSlider;
 
 $(document).ready(function () {
@@ -46,54 +44,57 @@ function remToPx(remValue) {
 	return Math.round(pxValue) + "px";
 }
 function reviewSwiperInit() {
-	if (window.outerWidth > 768) {
-		reviewSwiper = new Swiper('.main-reviews__slider', {
-			modules: [EffectCreative, Navigation, Autoplay],
-			grabCursor: true,
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
-			direction: 'horizontal',
-			centeredSlides: true,
-			speed: 1200,
-			loop: true,
-			initialSlide: 1,
-			navigation: {
-				prevEl: '.main-reviews__navigation--prev',
-				nextEl: '.main-reviews__navigation--next'
-			},
-			slidesPerView: 3.1,
-			effect: "creative",
-			creativeEffect: {
-				perspective: true,
-				limitProgress: 3.2,
-				prev: {
-					translate: ["-55rem", "7rem", 0],
-					origin: "center 500%",
-					rotate: [0, 0, -15],
+	if ($('.main-reviews').length > 0) {
+		if (window.outerWidth > 768) {
+			reviewSwiperMobile && reviewSwiperMobile.destroy();
+			reviewSwiper = new Swiper('.main-reviews__slider', {
+				modules: [EffectCreative, Navigation, Autoplay],
+				grabCursor: true,
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
 				},
-				next: {
-					rotate: [0, 0, 15],
-					translate: ["55rem", "7rem", 0],
-					origin: "center 500%",
-				}
-			},
-		});
-	} else {
-		reviewSwiper && reviewSwiper.destroy();
-		reviewSwiperMobile = new Swiper('.main-reviews__slider', {
-			modules: [Navigation],
-			grabCursor: true,
-			spaceBetween: `${remToPx(3.2)}rem`,
-			direction: 'horizontal',
-			speed: 1200,
-			navigation: {
-				prevEl: '.main-reviews__navigation--prev',
-				nextEl: '.main-reviews__navigation--next'
-			},
-			slidesPerView: 1,
-		});
+				direction: 'horizontal',
+				centeredSlides: true,
+				speed: 1200,
+				loop: true,
+				initialSlide: 1,
+				navigation: {
+					prevEl: '.main-reviews__navigation--prev',
+					nextEl: '.main-reviews__navigation--next'
+				},
+				slidesPerView: 3.1,
+				effect: "creative",
+				creativeEffect: {
+					perspective: true,
+					limitProgress: 3.2,
+					prev: {
+						translate: ["-55rem", "7rem", 0],
+						origin: "center 500%",
+						rotate: [0, 0, -15],
+					},
+					next: {
+						rotate: [0, 0, 15],
+						translate: ["55rem", "7rem", 0],
+						origin: "center 500%",
+					}
+				},
+			});
+		} else {
+			reviewSwiper && reviewSwiper.destroy();
+			reviewSwiperMobile = new Swiper('.main-reviews__slider', {
+				modules: [Navigation],
+				grabCursor: true,
+				spaceBetween: `${remToPx(3.2)}rem`,
+				direction: 'horizontal',
+				speed: 1200,
+				navigation: {
+					prevEl: '.main-reviews__navigation--prev',
+					nextEl: '.main-reviews__navigation--next'
+				},
+				slidesPerView: 1,
+			});
+		}
 	}
 }
 function bannerSwiperInit() {
@@ -245,6 +246,8 @@ function saleSwiperInit() {
 				delay: 4000,
 				disableOnInteraction: false,
 			},
+			allowTouchMove: false,
+			touchReleaseOnEdges: true
 		}
 		leftSaleSlider = new Swiper('.sale-slider-first', saleSlidersOptions);
 		centerSaleSlider = new Swiper('.sale-slider-second', saleSlidersOptions);
