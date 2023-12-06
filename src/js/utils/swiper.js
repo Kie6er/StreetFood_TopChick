@@ -29,9 +29,6 @@ $(document).ready(function () {
 	reviewDetailSwiperInit();
 	vacancyBannerSwiperInit();
 });
-$(window).resize(function () {
-	reviewSwiperInit();
-})
 function remToPx(remValue) {
 	// Получаем текущий базовый размер шрифта (font-size) из элемента <html>
 	var htmlFontSize = parseFloat(
