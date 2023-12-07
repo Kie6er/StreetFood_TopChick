@@ -10,6 +10,9 @@ $(document).ready(function () {
 	$('[data-modal="review-detail"]').on("click", () => {
 		openModal(".review-modal-detail");
 	});
+	$('[data-modal="vacancy"]').on("click", () => {
+		openModal(".vacancy-modal");
+	});
 
 	$(".modal-back").on("click", closeModal);
 	$(".modal-exit").on("click", closeModal);

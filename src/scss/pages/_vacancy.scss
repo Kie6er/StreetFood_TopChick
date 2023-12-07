@@ -165,7 +165,8 @@
 	}
 	// .vacancy-list__item
 	&__item {
-		width: 46.3rem;
+		max-width: 46.3rem;
+		width: 100%;
 	}
 }
 .vacancy-list-item {
