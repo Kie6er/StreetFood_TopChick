@@ -68,9 +68,9 @@ import {
 	})
 	$(document).ready(function () {
 		$('.main-map').length > 0 ? initMap() : null;
-		// $('[data-modal="map"]').on('click', () => {
-		$('.map-modal').length > 0 ? initModalMap() : null;
-		// });
+		$('[data-modal="map"]').on('click', () => {
+			$('.map-modal').length > 0 ? initModalMap() : null;
+		});
 	})
 	function remToPx(remValue) {
 		// Получаем текущий базовый размер шрифта (font-size) из элемента <html>
@@ -121,7 +121,7 @@ import {
 			},
 		});
 		mapModal.addChild(new YMapDefaultSchemeLayer());
-		mapModal.addChild(new YMapDefaultFeaturesLayer({ zIndex: 1800 }));
+		mapModal.addChild(new YMapDefaultFeaturesLayer({ zIndex: 2050 }));
 
 		mapModalMarkers.forEach((el) => {
 			let content = document.createElement('div');
