@@ -35,16 +35,15 @@ import {
 			type: 'culinary',
 			sliderIndex: 3,
 		},
-	]
+	];
 	const mapModalMarkers = [
 		{
 			address: 'Можайский вал, 10',
 			coordinate: [37.528583852499565, 55.73236309372132],
 			active: true,
 			type: 'fast-food',
-			sliderIndex: 0,
 		}
-	]
+	];
 	const mapSlider = new Swiper('.main-map__slider', {
 		modules: [Navigation, Pagination],
 		direction: 'horizontal',
@@ -65,13 +64,13 @@ import {
 				enabled: true,
 			}
 		}
-	})
+	});
 	$(document).ready(function () {
 		$('.main-map').length > 0 ? initMap() : null;
 		$('[data-modal="map"]').on('click', () => {
 			$('.map-modal').length > 0 ? initModalMap() : null;
 		});
-	})
+	});
 	function remToPx(remValue) {
 		// Получаем текущий базовый размер шрифта (font-size) из элемента <html>
 		var htmlFontSize = parseFloat(
@@ -83,7 +82,7 @@ import {
 
 		// Округляем значение до целых пикселей (по желанию)
 		return Math.round(pxValue) + "px";
-	}
+	};
 	async function initMap() {
 		await ymaps3.ready;
 		const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
@@ -110,7 +109,7 @@ import {
 			const marker = new YMapMarker({ coordinates: el.coordinate, draggable: false }, content);
 			map.addChild(marker);
 		})
-	}
+	};
 	async function initModalMap() {
 		await ymaps3.ready;
 		const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
@@ -121,7 +120,7 @@ import {
 			},
 		});
 		mapModal.addChild(new YMapDefaultSchemeLayer());
-		mapModal.addChild(new YMapDefaultFeaturesLayer({ zIndex: 2050 }));
+		mapModal.addChild(new YMapDefaultFeaturesLayer());
 
 		mapModalMarkers.forEach((el) => {
 			let content = document.createElement('div');
@@ -138,23 +137,23 @@ import {
 		})
 		$('.map-modal').find(".modal-back").on("click", () => setTimeout(() => mapModal.destroy(), 500));
 		$('.map-modal').find(".modal-exit").on("click", () => setTimeout(() => mapModal.destroy(), 500));
-	}
+	};
 	function clickMarker(content, marker) {
 		$(content).on('click', function () {
-			changeMarkers(marker, content);
+			changeMarkers(content, marker);
 			mapSlider.slideTo(marker.sliderIndex, 800);
 		});
 
 		$('.main-map__navigation-btn').on('click', function () {
 			if (mapSlider.activeIndex === marker.sliderIndex) {
-				changeMarkers(marker, content);
+				changeMarkers(content, marker);
 			};
 		});
 	};
-	function changeMarkers(marker, content) {
+	function changeMarkers(content, marker) {
 		$('.marker').removeClass('active');
 		markers.forEach(el => el.active = false);
 		marker.active = true;
 		$(content).addClass('active')
-	}
+	};
 }())
