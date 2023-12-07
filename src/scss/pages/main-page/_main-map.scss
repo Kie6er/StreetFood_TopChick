@@ -276,10 +276,12 @@
 			font-weight: 400;
 			line-height: 2.8rem; /* 155.556% */
 			letter-spacing: -0.036rem;
+
+			span {
+				width: 2.3rem;
+				height: 1.9rem;
+			}
 		}
-	}
-	// .map-slide__btn
-	&__btn {
 	}
 
 	&--fastfood .map-slide__type span {
