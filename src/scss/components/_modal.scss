@@ -940,13 +940,27 @@
 			background-color: $beige;
 		}
 		.modal-exit {
-			top: 5rem;
-			right: 4.2rem;
+			width: 8.8rem;
+			height: 8.8rem;
+			right: unset;
+			top: 4rem;
+			left: 3.2rem;
+
+			.btn-circle {
+				width: 100%;
+				height: 100%;
+				padding: 2.8rem;
+			}
+
+			svg {
+				width: 3.2rem;
+				height: 3.2rem;
+			}
 		}
 		// .map-modal__content
 		&__content {
 			height: 100vh;
-			padding: 15.2rem 3.2rem 4rem;
+			padding: 19.2rem 3.2rem 4rem;
 			&.active {
 				flex-direction: column;
 				gap: 4.8rem;

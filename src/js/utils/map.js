@@ -133,8 +133,8 @@ import {
 				</svg>
 			`);
 			el.active ? $(content).addClass('active') : null;
-			const marker = new YMapMarker({ coordinates: el.coordinate, draggable: false }, content);
-			mapModal.addChild(marker);
+			const markerModal = new YMapMarker({ coordinates: el.coordinate, draggable: false }, content);
+			mapModal.addChild(markerModal);
 		})
 		$('.map-modal').find(".modal-back").on("click", () => setTimeout(() => mapModal.destroy(), 500));
 		$('.map-modal').find(".modal-exit").on("click", () => setTimeout(() => mapModal.destroy(), 500));
