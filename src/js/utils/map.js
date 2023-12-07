@@ -120,10 +120,8 @@ import {
 				zoom: 10
 			},
 		});
-		let mainModalLayout = new YMapDefaultSchemeLayer();
-		let markersModalLayout = new YMapDefaultFeaturesLayer({ zIndex: 1800 });
-		mapModal.addChild(mainModalLayout);
-		mapModal.addChild(markersModalLayout);
+		mapModal.addChild(new YMapDefaultSchemeLayer());
+		mapModal.addChild(new YMapDefaultFeaturesLayer({ zIndex: 1800 }));
 
 		mapModalMarkers.forEach((el) => {
 			let content = document.createElement('div');
