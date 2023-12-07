@@ -68,9 +68,9 @@ import {
 	})
 	$(document).ready(function () {
 		$('.main-map').length > 0 ? initMap() : null;
-		$('[data-modal="map"]').on('click', () => {
-			$('.map-modal').length > 0 ? initModalMap() : null;
-		});
+		// $('[data-modal="map"]').on('click', () => {
+		$('.map-modal').length > 0 ? initModalMap() : null;
+		// });
 	})
 	function remToPx(remValue) {
 		// Получаем текущий базовый размер шрифта (font-size) из элемента <html>
