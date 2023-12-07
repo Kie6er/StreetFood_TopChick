@@ -295,6 +295,8 @@
 	}
 }
 .marker {
+	position: relative;
+	z-index: 5000;
 	cursor: pointer;
 	width: 6.4rem;
 	height: 6.4rem;
@@ -346,6 +348,12 @@
 }
 [class*="--marker-layer"] {
 	z-index: 3000 !important;
+}
+[class*="--graphics-layer"] {
+	z-index: 2080 !important;
+}
+[class*="--marker"] {
+	z-index: 6080 !important;
 }
 @media (max-width: 48em) {
 	.main-map {
