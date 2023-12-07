@@ -344,6 +344,9 @@
 [class*="--main-engine-container"] {
 	filter: contrast(60%) grayscale(100%) invert(100%);
 }
+[class*="--marker-layer"] {
+	z-index: 3000 !important;
+}
 @media (max-width: 48em) {
 	.main-map {
 		// .main-map__inner
