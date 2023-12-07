@@ -23,7 +23,7 @@
 	// .vacancy-banner__top
 	&__top {
 		display: flex;
-		gap: 15rem;
+		gap: 4.5rem;
 	}
 	// .vacancy-banner__slider
 	&__slider {
@@ -157,16 +157,12 @@
 	}
 	// .vacancy-list__content
 	&__content {
+		width: 100%;
 		margin-bottom: 5.6rem;
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
 		gap: 5.6rem 1rem;
 		padding: 0 1rem;
-	}
-	// .vacancy-list__item
-	&__item {
-		max-width: 46.3rem;
-		width: 100%;
 	}
 }
 .vacancy-list-item {
@@ -483,10 +479,7 @@
 			margin-bottom: 6.4rem;
 			gap: 6.4rem;
 			padding: 0 3.2rem;
-		}
-		// .vacancy-list__item
-		&__item {
-			width: 100%;
+			grid-template-columns: 1fr;
 		}
 	}
 	.vacancy-list-item {
