@@ -23,6 +23,7 @@ $(document).ready(function () {
 				$('.custom-preview__close').on('click', () => {
 					$(el).siblings('.custom-file').css('display', 'flex');
 					$(el).siblings('.custom-preview').css('display', 'none');
+					$(el).val('');
 				})
 			}
 		})

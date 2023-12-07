@@ -13,6 +13,9 @@ $(document).ready(function () {
 	$('[data-modal="vacancy"]').on("click", () => {
 		openModal(".vacancy-modal");
 	});
+	$('[data-modal="map"]').on("click", () => {
+		openModal(".map-modal");
+	});
 
 	$(".modal-back").on("click", closeModal);
 	$(".modal-exit").on("click", closeModal);
