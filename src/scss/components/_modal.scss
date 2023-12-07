@@ -934,35 +934,37 @@
 		}
 	}
 	.map-modal {
+		.modal-wrapper {
+			overflow: auto;
+			width: 100vw;
+			background-color: $beige;
+		}
 		.modal-exit {
-			svg path {
-				fill: $dark;
-			}
+			top: 5rem;
+			right: 4.2rem;
 		}
 		// .map-modal__content
 		&__content {
-			padding: 6.5rem 6rem;
-			background-color: $beige;
+			height: 100vh;
+			padding: 15.2rem 3.2rem 4rem;
 			&.active {
-				display: flex;
+				flex-direction: column;
+				gap: 4.8rem;
 			}
-			gap: 1rem;
 		}
 		// .map-modal__left
 		&__left {
-			width: 79rem;
-			height: 61.4rem;
-		}
-		// .map-modal__map
-		&__map {
 			width: 100%;
-			height: 100%;
+			min-height: 80rem;
+		}
+		&__right {
+			padding-bottom: 4rem;
 		}
 		// .map-modal__card
 		&__card {
 			height: 100%;
-			width: 50.1rem;
-			border: 0.1rem solid $dark;
+			width: 100%;
+			border: 0.2rem solid $dark;
 		}
 	}
 }
