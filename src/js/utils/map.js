@@ -120,7 +120,7 @@ import {
 				zoom: 10
 			},
 		});
-		mapModal.addChild(new YMapDefaultSchemeLayer({ zIndex: 2040 }));
+		mapModal.addChild(new YMapDefaultSchemeLayer());
 		mapModal.addChild(new YMapDefaultFeaturesLayer({ zIndex: 2050 }));
 
 		mapModalMarkers.forEach((el) => {
