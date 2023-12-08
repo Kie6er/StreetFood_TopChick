@@ -118,10 +118,8 @@ async function initModalMap() {
 			zoom: 10
 		},
 	});
-	const defaultFeaturesLayer = new YMapDefaultFeaturesLayer({ zIndex: 1800 })
 	mapModal.addChild(new YMapDefaultSchemeLayer());
-	mapModal.addChild(defaultFeaturesLayer);
-	defaultFeaturesLayer.update({ zIndex: 2000 });
+	mapModal.addChild(new YMapDefaultFeaturesLayer({ zIndex: 1800 }));
 
 	mapModalMarkers.forEach((el) => {
 		let content = document.createElement('div');
@@ -135,7 +133,6 @@ async function initModalMap() {
 		el.active ? $(content).addClass('active') : null;
 		const markerModal = new YMapMarker({ coordinates: el.coordinate, draggable: false, zIndex: 5000 }, content);
 		mapModal.addChild(markerModal);
-		markerModal.update({ coordinates: el.coordinate });
 	})
 	$('.map-modal').find(".modal-back").on("click", () => setTimeout(() => mapModal.destroy(), 500));
 	$('.map-modal').find(".modal-exit").on("click", () => setTimeout(() => mapModal.destroy(), 500));
