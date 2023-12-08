@@ -119,8 +119,8 @@ import {
 				zoom: 10
 			},
 		});
-		mapModal.addChild(new YMapDefaultFeaturesLayer());
 		mapModal.addChild(new YMapDefaultSchemeLayer());
+		mapModal.addChild(new YMapDefaultFeaturesLayer());
 
 		mapModalMarkers.forEach((el) => {
 			let content = document.createElement('div');
