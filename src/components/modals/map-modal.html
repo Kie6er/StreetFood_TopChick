@@ -73,9 +73,18 @@
 	</div>
 </div>
 <script>
-	document.addEventListener('DOMContentedLoaded', () => {
+	document.addEventListener('DOMContentLoaded', () => {
+		// console.log(1)
+		const mapModalMarkers = [
+			{
+				address: 'Можайский вал, 10',
+				coordinate: [37.528583852499565, 55.73236309372132],
+				active: true,
+				type: 'fast-food',
+			}
+		];
 		document.querySelector('[data-modal="map"]').addEventListener('click', () => {
-			document.querySelector('.map-modal').length > 0 ? initModalMap() : null;
+			initModalMap();
 		});
 		async function initModalMap() {
 			await ymaps3.ready;
