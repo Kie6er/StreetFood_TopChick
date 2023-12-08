@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://api-maps.yandex.ru/v3/?apikey=24d298f1-151c-4481-9e4a-235c4db16ee9&lang=ru_RU"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+</head>
+
+<body>
+    <include src="./components/header.html"></include>
+    <main>
+        <include src="./components/ticker.html"></include>
+        <section class="stock">
+            <div class="container">
+                <div class="stock__wrapper">
+                    <div class="stock__title">
+                        акции в <div class="stock__title-icon">
+                            <img src="./assets/images/stock/stock-food.svg" alt="">
+                        </div>ресторанах
+                    </div>
+                    <div class="stock__inner">
+                        <article class="delivery-box delivery-box--first">
+                            <div class="delivery-box__par">
+                                <div class="delivery-box__par-icon">
+                                    <img src="./assets/images/service-delivery/socials.svg" alt="">
+                                </div>
+                                <div class="delivery-box__par-text">delivery club</div>
+                            </div>
+                            <div class="delivery-box__title">бизнес-ланчи<br> до -30%</div>
+                            <div class="delivery-box__price-block">
+                                <div class="delivery-box__price"><b>от</b>350</div>
+                                <div class="delivery-box__sale">400</div>
+                            </div>
+                            <div class="delivery-box__image">
+                                <img src="./assets/images/main-page/main-img-1.webp" alt="">
+                            </div>
+                            <div class="delivery-box__triangle">
+                                <svg class="delivery-box__triangle-right" viewBox="0 0 408 610" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="450.285" y="-112.05" width="628.478" height="636.574"
+                                        transform="rotate(45 450.285 -112.05)" fill="#FF6D2F" />
+                                </svg>
+                                <svg class="delivery-box__triangle-top" viewBox="0 0 632 253" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="353.721" y="-481.864" width="538.267" height="500.237"
+                                        transform="rotate(45 353.721 -481.864)" fill="#4C0D00" />
+                                </svg>
+                            </div>
+                            <div class="delivery-box__dop-image">
+                                <img src="./assets/images/main-page/main-img-3.png" alt="">
+                            </div>
+                            <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+                        </article>
+                        <article class="delivery-box delivery-box--second">
+                            <div class="delivery-box__par">
+                                <div class="delivery-box__par-icon">
+                                    <img src="./assets/images/service-delivery/socials.svg" alt="">
+                                </div>
+                                <div class="delivery-box__par-text">delivery club</div>
+                            </div>
+                            <div class="delivery-box__date">
+                                01.11 — 13.11
+                            </div>
+                            <div class="delivery-box__title">выгодный<br> ужин</div>
+                            <div class="delivery-box__image">
+                                <img src="./assets/images/main-page/main-img-2.webp" alt="">
+
+                            </div>
+                            <div class="delivery-box__triangle">
+                                <svg class="delivery-box__triangle-right" viewBox="0 0 408 610" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="450.285" y="-112.05" width="628.478" height="636.574"
+                                        transform="rotate(45 450.285 -112.05)" fill="#FF6D2F" />
+                                </svg>
+                                <svg class="delivery-box__triangle-top" width="632" height="253" viewBox="0 0 632 253"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="353.721" y="-481.864" width="538.267" height="500.237"
+                                        transform="rotate(45 353.721 -481.864)" fill="#4C0D00" />
+                                </svg>
+                            </div>
+                            <div class="delivery-box__dop-text">
+                                скидка 30% на кулинарию
+                            </div>
+                            <div class="delivery-box__dop-image">
+                                <img src="./assets/images/main-page/main-img-3.png" alt="">
+                            </div>
+                            <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+                        </article>
+                        <article class="delivery-box delivery-box--first">
+                            <div class="delivery-box__par">
+                                <div class="delivery-box__par-icon">
+                                    <img src="./assets/images/service-delivery/socials.svg" alt="">
+                                </div>
+                                <div class="delivery-box__par-text">delivery club</div>
+                            </div>
+                            <div class="delivery-box__title">бизнес-ланчи<br> до -30%</div>
+                            <div class="delivery-box__price-block">
+                                <div class="delivery-box__price"><b>от</b>350</div>
+                                <div class="delivery-box__sale">400</div>
+                            </div>
+                            <div class="delivery-box__image">
+                                <img src="./assets/images/main-page/main-img-1.webp" alt="">
+                            </div>
+                            <div class="delivery-box__triangle">
+                                <svg class="delivery-box__triangle-right" viewBox="0 0 408 610" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="450.285" y="-112.05" width="628.478" height="636.574"
+                                        transform="rotate(45 450.285 -112.05)" fill="#FF6D2F" />
+                                </svg>
+                                <svg class="delivery-box__triangle-top" viewBox="0 0 632 253" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="353.721" y="-481.864" width="538.267" height="500.237"
+                                        transform="rotate(45 353.721 -481.864)" fill="#4C0D00" />
+                                </svg>
+                            </div>
+                            <div class="delivery-box__dop-image">
+                                <img src="./assets/images/main-page/main-img-3.png" alt="">
+                            </div>
+                            <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+                        </article>
+                        <article class="delivery-box delivery-box--second">
+                            <div class="delivery-box__par">
+                                <div class="delivery-box__par-icon">
+                                    <img src="./assets/images/service-delivery/socials.svg" alt="">
+                                </div>
+                                <div class="delivery-box__par-text">delivery club</div>
+                            </div>
+                            <div class="delivery-box__date">
+                                01.11 — 13.11
+                            </div>
+                            <div class="delivery-box__title">выгодный<br> ужин</div>
+                            <div class="delivery-box__image">
+                                <img src="./assets/images/main-page/main-img-2.webp" alt="">
+
+                            </div>
+                            <div class="delivery-box__triangle">
+                                <svg class="delivery-box__triangle-right" viewBox="0 0 408 610" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="450.285" y="-112.05" width="628.478" height="636.574"
+                                        transform="rotate(45 450.285 -112.05)" fill="#FF6D2F" />
+                                </svg>
+                                <svg class="delivery-box__triangle-top" width="632" height="253" viewBox="0 0 632 253"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="353.721" y="-481.864" width="538.267" height="500.237"
+                                        transform="rotate(45 353.721 -481.864)" fill="#4C0D00" />
+                                </svg>
+                            </div>
+                            <div class="delivery-box__dop-text">
+                                скидка 30% на кулинарию
+                            </div>
+                            <div class="delivery-box__dop-image">
+                                <img src="./assets/images/main-page/main-img-3.png" alt="">
+                            </div>
+                            <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+                        </article>
+
+
+                    </div>
+                    <button class="stock__btn">
+                        показать еще
+                    </button>
+                    <div class="stock__title">
+                        акции на <div class="stock__title-icon">
+                            <img src="./assets/images/stock/stock-food.svg" alt="">
+                        </div>доставку
+                    </div>
+                    <div class="stock__inner">
+                        <article class="delivery-box delivery-box--first">
+                            <div class="delivery-box__par">
+                                <div class="delivery-box__par-icon">
+                                    <img src="./assets/images/service-delivery/socials.svg" alt="">
+                                </div>
+                                <div class="delivery-box__par-text">delivery club</div>
+                            </div>
+                            <div class="delivery-box__title">бизнес-ланчи<br> до -30%</div>
+                            <div class="delivery-box__price-block">
+                                <div class="delivery-box__price"><b>от</b>350</div>
+                                <div class="delivery-box__sale">400</div>
+                            </div>
+                            <div class="delivery-box__image">
+                                <img src="./assets/images/main-page/main-img-1.webp" alt="">
+                            </div>
+                            <div class="delivery-box__triangle">
+                                <svg class="delivery-box__triangle-right" viewBox="0 0 408 610" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="450.285" y="-112.05" width="628.478" height="636.574"
+                                        transform="rotate(45 450.285 -112.05)" fill="#FF6D2F" />
+                                </svg>
+                                <svg class="delivery-box__triangle-top" viewBox="0 0 632 253" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="353.721" y="-481.864" width="538.267" height="500.237"
+                                        transform="rotate(45 353.721 -481.864)" fill="#4C0D00" />
+                                </svg>
+                            </div>
+                            <div class="delivery-box__dop-image">
+                                <img src="./assets/images/main-page/main-img-3.png" alt="">
+                            </div>
+                            <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+                        </article>
+                        <article class="delivery-box delivery-box--second">
+                            <div class="delivery-box__par">
+                                <div class="delivery-box__par-icon">
+                                    <img src="./assets/images/service-delivery/socials.svg" alt="">
+                                </div>
+                                <div class="delivery-box__par-text">delivery club</div>
+                            </div>
+                            <div class="delivery-box__date">
+                                01.11 — 13.11
+                            </div>
+                            <div class="delivery-box__title">выгодный<br> ужин</div>
+                            <div class="delivery-box__image">
+                                <img src="./assets/images/main-page/main-img-2.webp" alt="">
+
+                            </div>
+                            <div class="delivery-box__triangle">
+                                <svg class="delivery-box__triangle-right" viewBox="0 0 408 610" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="450.285" y="-112.05" width="628.478" height="636.574"
+                                        transform="rotate(45 450.285 -112.05)" fill="#FF6D2F" />
+                                </svg>
+                                <svg class="delivery-box__triangle-top" width="632" height="253" viewBox="0 0 632 253"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="353.721" y="-481.864" width="538.267" height="500.237"
+                                        transform="rotate(45 353.721 -481.864)" fill="#4C0D00" />
+                                </svg>
+                            </div>
+                            <div class="delivery-box__dop-text">
+                                скидка 30% на кулинарию
+                            </div>
+                            <div class="delivery-box__dop-image">
+                                <img src="./assets/images/main-page/main-img-3.png" alt="">
+                            </div>
+                            <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+                        </article>
+                        <article class="delivery-box delivery-box--first">
+                            <div class="delivery-box__par">
+                                <div class="delivery-box__par-icon">
+                                    <img src="./assets/images/service-delivery/socials.svg" alt="">
+                                </div>
+                                <div class="delivery-box__par-text">delivery club</div>
+                            </div>
+                            <div class="delivery-box__title">бизнес-ланчи<br> до -30%</div>
+                            <div class="delivery-box__price-block">
+                                <div class="delivery-box__price"><b>от</b>350</div>
+                                <div class="delivery-box__sale">400</div>
+                            </div>
+                            <div class="delivery-box__image">
+                                <img src="./assets/images/main-page/main-img-1.webp" alt="">
+                            </div>
+                            <div class="delivery-box__triangle">
+                                <svg class="delivery-box__triangle-right" viewBox="0 0 408 610" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="450.285" y="-112.05" width="628.478" height="636.574"
+                                        transform="rotate(45 450.285 -112.05)" fill="#FF6D2F" />
+                                </svg>
+                                <svg class="delivery-box__triangle-top" viewBox="0 0 632 253" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="353.721" y="-481.864" width="538.267" height="500.237"
+                                        transform="rotate(45 353.721 -481.864)" fill="#4C0D00" />
+                                </svg>
+                            </div>
+                            <div class="delivery-box__dop-image">
+                                <img src="./assets/images/main-page/main-img-3.png" alt="">
+                            </div>
+                            <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+                        </article>
+                        <article class="delivery-box delivery-box--second">
+                            <div class="delivery-box__par">
+                                <div class="delivery-box__par-icon">
+                                    <img src="./assets/images/service-delivery/socials.svg" alt="">
+                                </div>
+                                <div class="delivery-box__par-text">delivery club</div>
+                            </div>
+                            <div class="delivery-box__date">
+                                01.11 — 13.11
+                            </div>
+                            <div class="delivery-box__title">выгодный<br> ужин</div>
+                            <div class="delivery-box__image">
+                                <img src="./assets/images/main-page/main-img-2.webp" alt="">
+
+                            </div>
+                            <div class="delivery-box__triangle">
+                                <svg class="delivery-box__triangle-right" viewBox="0 0 408 610" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="450.285" y="-112.05" width="628.478" height="636.574"
+                                        transform="rotate(45 450.285 -112.05)" fill="#FF6D2F" />
+                                </svg>
+                                <svg class="delivery-box__triangle-top" width="632" height="253" viewBox="0 0 632 253"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="353.721" y="-481.864" width="538.267" height="500.237"
+                                        transform="rotate(45 353.721 -481.864)" fill="#4C0D00" />
+                                </svg>
+                            </div>
+                            <div class="delivery-box__dop-text">
+                                скидка 30% на кулинарию
+                            </div>
+                            <div class="delivery-box__dop-image">
+                                <img src="./assets/images/main-page/main-img-3.png" alt="">
+                            </div>
+                            <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+                        </article>
+
+
+                    </div>
+                    <button class="stock__btn">
+                        показать еще
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="review-modal-detail modal">
+        <div class="modal-back"></div>
+        <div class="modal-wrapper">
+            <div class="modal-exit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.28933 1.2963C1.68182 0.907753 2.31818 0.907753 2.71067 1.2963L22.6094 20.995C23.0019 21.3836 23.0019 22.0136 22.6094 22.4021C22.2169 22.7906 21.5806 22.7906 21.1881 22.4021L1.28933 2.70335C0.896839 2.31481 0.896839 1.68485 1.28933 1.2963Z"
+                        fill="#FFF4DA" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.28977 22.7033C0.897279 22.3147 0.897279 21.6848 1.28977 21.2962L21.1885 1.59748C21.581 1.20894 22.2173 1.20894 22.6098 1.59748C23.0023 1.98603 23.0023 2.61599 22.6098 3.00454L2.71111 22.7033C2.31862 23.0918 1.68226 23.0918 1.28977 22.7033Z"
+                        fill="#FFF4DA" />
+                </svg>
+            </div>
+            <div class="review-modal-detail__content modal-content modal-content--first active">
+                <div class="review-modal-detail__slider swiper">
+                    <div class="review-modal-detail__wrapper swiper-wrapper">
+                        <div class="review-modal-detail__slide swiper-slide">
+                            <div class="review-modal-detail__header">
+                                <div class="review-modal-detail__icon">
+                                    <img src="./assets/images/icons/2gis.png" alt="">
+                                </div>
+                                <div class="review-modal-detail__rating">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.0946 4.92704C11.4547 4.16058 12.545 4.16073 12.9049 4.92729L14.555 8.44186C14.6965 8.74319 14.9786 8.95436 15.3076 9.00516L19.0794 9.5875C19.8833 9.71161 20.2106 10.6925 19.6423 11.2744L16.8531 14.1309C16.6311 14.3583 16.5304 14.6777 16.5818 14.9913L17.2333 18.9653C17.3684 19.7895 16.4934 20.4064 15.7625 20.0022L12.4888 18.1918C12.1879 18.0254 11.8227 18.0253 11.5216 18.1914L8.24074 20.0025C7.50985 20.4059 6.63559 19.789 6.77066 18.9652L7.42247 14.9894C7.4739 14.6756 7.37311 14.3562 7.15096 14.1288L4.3584 11.2702C3.78992 10.6883 4.11715 9.70727 4.92113 9.58314L8.69259 9.00086C9.02148 8.95008 9.30357 8.73902 9.44509 8.43782L11.0946 4.92704Z"
+                                                fill="#330D03" />
+                                        </svg>
+                                    </span>
+                                    4.5
+                                </div>
+                            </div>
+                            <div class="review-modal-detail__info">
+                                <div class="review-modal-detail__name">Евгений м. 1</div>
+                                <div class="review-modal-detail__date">11.08.23</div>
+                            </div>
+                            <div class="review-modal-detail__main">
+                                “Отличное место для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил
+                                столовую на Большом Саввинском 11 и остался приятно удивлен. Сотрудники были
+                                внимательны к моим пожеланиям и ответили на все мои вопросы по меню.”Отличное
+                                место
+                                для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил столовую на
+                                Большом
+                                Саввинском 11 и остался приятно удивлен. Сотрудники были внимательны к моим
+                                пожеланиям и ответили на все мои“
+                            </div>
+                            <div class="review-modal-detail__footer">
+                                <div class="review-modal-detail__address">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 13.4299C13.7231 13.4299 15.12 12.0331 15.12 10.3099C15.12 8.58681 13.7231 7.18994 12 7.18994C10.2769 7.18994 8.88 8.58681 8.88 10.3099C8.88 12.0331 10.2769 13.4299 12 13.4299Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                            <path
+                                                d="M3.61995 8.49C5.58995 -0.169998 18.42 -0.159997 20.38 8.5C21.53 13.58 18.37 17.88 15.6 20.54C13.59 22.48 10.41 22.48 8.38995 20.54C5.62995 17.88 2.46995 13.57 3.61995 8.49Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                    Красная пресня, 29
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-modal-detail__slide swiper-slide">
+                            <div class="review-modal-detail__header">
+                                <div class="review-modal-detail__icon">
+                                    <img src="./assets/images/icons/google-map.png" alt="">
+                                </div>
+                                <div class="review-modal-detail__rating">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.0946 4.92704C11.4547 4.16058 12.545 4.16073 12.9049 4.92729L14.555 8.44186C14.6965 8.74319 14.9786 8.95436 15.3076 9.00516L19.0794 9.5875C19.8833 9.71161 20.2106 10.6925 19.6423 11.2744L16.8531 14.1309C16.6311 14.3583 16.5304 14.6777 16.5818 14.9913L17.2333 18.9653C17.3684 19.7895 16.4934 20.4064 15.7625 20.0022L12.4888 18.1918C12.1879 18.0254 11.8227 18.0253 11.5216 18.1914L8.24074 20.0025C7.50985 20.4059 6.63559 19.789 6.77066 18.9652L7.42247 14.9894C7.4739 14.6756 7.37311 14.3562 7.15096 14.1288L4.3584 11.2702C3.78992 10.6883 4.11715 9.70727 4.92113 9.58314L8.69259 9.00086C9.02148 8.95008 9.30357 8.73902 9.44509 8.43782L11.0946 4.92704Z"
+                                                fill="#330D03" />
+                                        </svg>
+                                    </span>
+                                    4.5
+                                </div>
+                            </div>
+                            <div class="review-modal-detail__info">
+                                <div class="review-modal-detail__name">Евгений м. 2</div>
+                                <div class="review-modal-detail__date">11.08.23</div>
+                            </div>
+                            <div class="review-modal-detail__main">
+                                <p>
+                                    “Отличное место для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил
+                                    столовую на Большом Саввинском 11 и остался приятно удивлен. Сотрудники были
+                                    внимательны к моим пожеланиям и ответили на все мои вопросы по меню.”Отличное
+                                    место
+                                    для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил столовую на
+                                    Большом
+                                    Саввинском 11 и остался приятно удивлен. Сотрудники были внимательны к моим
+                                    пожеланиям и ответили на все мои“
+                                </p>
+                                <p>
+                                    “Отличное место для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил
+                                    столовую на Большом Саввинском 11 и остался приятно удивлен. Сотрудники были
+                                    внимательны к моим пожеланиям и ответили на все мои вопросы по меню.”Отличное
+                                    место
+                                    для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил столовую на
+                                    Большом
+                                    Саввинском 11 и остался приятно удивлен. Сотрудники были внимательны к моим
+                                    пожеланиям и ответили на все мои“
+                                </p>
+                            </div>
+                            <div class="review-modal-detail__footer">
+                                <div class="review-modal-detail__address">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 13.4299C13.7231 13.4299 15.12 12.0331 15.12 10.3099C15.12 8.58681 13.7231 7.18994 12 7.18994C10.2769 7.18994 8.88 8.58681 8.88 10.3099C8.88 12.0331 10.2769 13.4299 12 13.4299Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                            <path
+                                                d="M3.61995 8.49C5.58995 -0.169998 18.42 -0.159997 20.38 8.5C21.53 13.58 18.37 17.88 15.6 20.54C13.59 22.48 10.41 22.48 8.38995 20.54C5.62995 17.88 2.46995 13.57 3.61995 8.49Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                    Красная пресня, 29
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-modal-detail__slide swiper-slide">
+                            <div class="review-modal-detail__header">
+                                <div class="review-modal-detail__icon">
+                                    <img src="./assets/images/icons/2gis.png" alt="">
+                                </div>
+                                <div class="review-modal-detail__rating">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.0946 4.92704C11.4547 4.16058 12.545 4.16073 12.9049 4.92729L14.555 8.44186C14.6965 8.74319 14.9786 8.95436 15.3076 9.00516L19.0794 9.5875C19.8833 9.71161 20.2106 10.6925 19.6423 11.2744L16.8531 14.1309C16.6311 14.3583 16.5304 14.6777 16.5818 14.9913L17.2333 18.9653C17.3684 19.7895 16.4934 20.4064 15.7625 20.0022L12.4888 18.1918C12.1879 18.0254 11.8227 18.0253 11.5216 18.1914L8.24074 20.0025C7.50985 20.4059 6.63559 19.789 6.77066 18.9652L7.42247 14.9894C7.4739 14.6756 7.37311 14.3562 7.15096 14.1288L4.3584 11.2702C3.78992 10.6883 4.11715 9.70727 4.92113 9.58314L8.69259 9.00086C9.02148 8.95008 9.30357 8.73902 9.44509 8.43782L11.0946 4.92704Z"
+                                                fill="#330D03" />
+                                        </svg>
+                                    </span>
+                                    4.5
+                                </div>
+                            </div>
+                            <div class="review-modal-detail__info">
+                                <div class="review-modal-detail__name">Евгений м. 3</div>
+                                <div class="review-modal-detail__date">11.08.23</div>
+                            </div>
+                            <div class="review-modal-detail__main">
+                                <p>
+                                    “Отличное место для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил
+                                    столовую на Большом Саввинском 11 и остался приятно удивлен. Сотрудники были
+                                    внимательны к моим пожеланиям и ответили на все мои вопросы по меню.”Отличное
+                                    место
+                                    для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил столовую на
+                                    Большом
+                                    Саввинском 11 и остался приятно удивлен. Сотрудники были внимательны к моим
+                                    пожеланиям и ответили на все мои“
+                                </p>
+                            </div>
+                            <div class="review-modal-detail__footer">
+                                <div class="review-modal-detail__address">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 13.4299C13.7231 13.4299 15.12 12.0331 15.12 10.3099C15.12 8.58681 13.7231 7.18994 12 7.18994C10.2769 7.18994 8.88 8.58681 8.88 10.3099C8.88 12.0331 10.2769 13.4299 12 13.4299Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                            <path
+                                                d="M3.61995 8.49C5.58995 -0.169998 18.42 -0.159997 20.38 8.5C21.53 13.58 18.37 17.88 15.6 20.54C13.59 22.48 10.41 22.48 8.38995 20.54C5.62995 17.88 2.46995 13.57 3.61995 8.49Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                    Красная пресня, 29
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-modal-detail__slide swiper-slide">
+                            <div class="review-modal-detail__header">
+                                <div class="review-modal-detail__icon">
+                                    <img src="./assets/images/icons/2gis.png" alt="">
+                                </div>
+                                <div class="review-modal-detail__rating">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.0946 4.92704C11.4547 4.16058 12.545 4.16073 12.9049 4.92729L14.555 8.44186C14.6965 8.74319 14.9786 8.95436 15.3076 9.00516L19.0794 9.5875C19.8833 9.71161 20.2106 10.6925 19.6423 11.2744L16.8531 14.1309C16.6311 14.3583 16.5304 14.6777 16.5818 14.9913L17.2333 18.9653C17.3684 19.7895 16.4934 20.4064 15.7625 20.0022L12.4888 18.1918C12.1879 18.0254 11.8227 18.0253 11.5216 18.1914L8.24074 20.0025C7.50985 20.4059 6.63559 19.789 6.77066 18.9652L7.42247 14.9894C7.4739 14.6756 7.37311 14.3562 7.15096 14.1288L4.3584 11.2702C3.78992 10.6883 4.11715 9.70727 4.92113 9.58314L8.69259 9.00086C9.02148 8.95008 9.30357 8.73902 9.44509 8.43782L11.0946 4.92704Z"
+                                                fill="#330D03" />
+                                        </svg>
+                                    </span>
+                                    4.5
+                                </div>
+                            </div>
+                            <div class="review-modal-detail__info">
+                                <div class="review-modal-detail__name">Евгений м. 4</div>
+                                <div class="review-modal-detail__date">11.08.23</div>
+                            </div>
+                            <div class="review-modal-detail__main">
+                                <p>
+                                    “Отличное место для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил
+                                    столовую на Большом Саввинском 11 и остался приятно удивлен. Сотрудники были
+                                    внимательны к моим пожеланиям и ответили на все мои вопросы по меню.”Отличное
+                                    место
+                                    для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил столовую на
+                                    Большом
+                                    Саввинском 11 и остался приятно удивлен. Сотрудники были внимательны к моим
+                                    пожеланиям и ответили на все мои“
+                                </p>
+                            </div>
+                            <div class="review-modal-detail__footer">
+                                <div class="review-modal-detail__address">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 13.4299C13.7231 13.4299 15.12 12.0331 15.12 10.3099C15.12 8.58681 13.7231 7.18994 12 7.18994C10.2769 7.18994 8.88 8.58681 8.88 10.3099C8.88 12.0331 10.2769 13.4299 12 13.4299Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                            <path
+                                                d="M3.61995 8.49C5.58995 -0.169998 18.42 -0.159997 20.38 8.5C21.53 13.58 18.37 17.88 15.6 20.54C13.59 22.48 10.41 22.48 8.38995 20.54C5.62995 17.88 2.46995 13.57 3.61995 8.49Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                    Красная пресня, 29
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-modal-detail__slide swiper-slide">
+                            <div class="review-modal-detail__header">
+                                <div class="review-modal-detail__icon">
+                                    <img src="./assets/images/icons/2gis.png" alt="">
+                                </div>
+                                <div class="review-modal-detail__rating">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.0946 4.92704C11.4547 4.16058 12.545 4.16073 12.9049 4.92729L14.555 8.44186C14.6965 8.74319 14.9786 8.95436 15.3076 9.00516L19.0794 9.5875C19.8833 9.71161 20.2106 10.6925 19.6423 11.2744L16.8531 14.1309C16.6311 14.3583 16.5304 14.6777 16.5818 14.9913L17.2333 18.9653C17.3684 19.7895 16.4934 20.4064 15.7625 20.0022L12.4888 18.1918C12.1879 18.0254 11.8227 18.0253 11.5216 18.1914L8.24074 20.0025C7.50985 20.4059 6.63559 19.789 6.77066 18.9652L7.42247 14.9894C7.4739 14.6756 7.37311 14.3562 7.15096 14.1288L4.3584 11.2702C3.78992 10.6883 4.11715 9.70727 4.92113 9.58314L8.69259 9.00086C9.02148 8.95008 9.30357 8.73902 9.44509 8.43782L11.0946 4.92704Z"
+                                                fill="#330D03" />
+                                        </svg>
+                                    </span>
+                                    4.5
+                                </div>
+                            </div>
+                            <div class="review-modal-detail__info">
+                                <div class="review-modal-detail__name">Евгений м. 5</div>
+                                <div class="review-modal-detail__date">11.08.23</div>
+                            </div>
+                            <div class="review-modal-detail__main">
+                                <p>
+                                    “Отличное место для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил
+                                    столовую на Большом Саввинском 11 и остался приятно удивлен. Сотрудники были
+                                    внимательны к моим пожеланиям и ответили на все мои вопросы по меню.”Отличное
+                                    место
+                                    для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил столовую на
+                                    Большом
+                                    Саввинском 11 и остался приятно удивлен. Сотрудники были внимательны к моим
+                                    пожеланиям и ответили на все мои“
+                                </p>
+                            </div>
+                            <div class="review-modal-detail__footer">
+                                <div class="review-modal-detail__address">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 13.4299C13.7231 13.4299 15.12 12.0331 15.12 10.3099C15.12 8.58681 13.7231 7.18994 12 7.18994C10.2769 7.18994 8.88 8.58681 8.88 10.3099C8.88 12.0331 10.2769 13.4299 12 13.4299Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                            <path
+                                                d="M3.61995 8.49C5.58995 -0.169998 18.42 -0.159997 20.38 8.5C21.53 13.58 18.37 17.88 15.6 20.54C13.59 22.48 10.41 22.48 8.38995 20.54C5.62995 17.88 2.46995 13.57 3.61995 8.49Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                    Красная пресня, 29
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-modal-detail__slide swiper-slide">
+                            <div class="review-modal-detail__header">
+                                <div class="review-modal-detail__icon">
+                                    <img src="./assets/images/icons/2gis.png" alt="">
+                                </div>
+                                <div class="review-modal-detail__rating">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.0946 4.92704C11.4547 4.16058 12.545 4.16073 12.9049 4.92729L14.555 8.44186C14.6965 8.74319 14.9786 8.95436 15.3076 9.00516L19.0794 9.5875C19.8833 9.71161 20.2106 10.6925 19.6423 11.2744L16.8531 14.1309C16.6311 14.3583 16.5304 14.6777 16.5818 14.9913L17.2333 18.9653C17.3684 19.7895 16.4934 20.4064 15.7625 20.0022L12.4888 18.1918C12.1879 18.0254 11.8227 18.0253 11.5216 18.1914L8.24074 20.0025C7.50985 20.4059 6.63559 19.789 6.77066 18.9652L7.42247 14.9894C7.4739 14.6756 7.37311 14.3562 7.15096 14.1288L4.3584 11.2702C3.78992 10.6883 4.11715 9.70727 4.92113 9.58314L8.69259 9.00086C9.02148 8.95008 9.30357 8.73902 9.44509 8.43782L11.0946 4.92704Z"
+                                                fill="#330D03" />
+                                        </svg>
+                                    </span>
+                                    4.5
+                                </div>
+                            </div>
+                            <div class="review-modal-detail__info">
+                                <div class="review-modal-detail__name">Евгений м. 6</div>
+                                <div class="review-modal-detail__date">11.08.23</div>
+                            </div>
+                            <div class="review-modal-detail__main">
+                                <p>
+                                    “Отличное место для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил
+                                    столовую на Большом Саввинском 11 и остался приятно удивлен. Сотрудники были
+                                    внимательны к моим пожеланиям и ответили на все мои вопросы по меню.”Отличное
+                                    место
+                                    для тех, кто ищет быстрый и вкусный перекус! Я недавно посетил столовую на
+                                    Большом
+                                    Саввинском 11 и остался приятно удивлен. Сотрудники были внимательны к моим
+                                    пожеланиям и ответили на все мои“
+                                </p>
+                            </div>
+                            <div class="review-modal-detail__footer">
+                                <div class="review-modal-detail__address">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 13.4299C13.7231 13.4299 15.12 12.0331 15.12 10.3099C15.12 8.58681 13.7231 7.18994 12 7.18994C10.2769 7.18994 8.88 8.58681 8.88 10.3099C8.88 12.0331 10.2769 13.4299 12 13.4299Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                            <path
+                                                d="M3.61995 8.49C5.58995 -0.169998 18.42 -0.159997 20.38 8.5C21.53 13.58 18.37 17.88 15.6 20.54C13.59 22.48 10.41 22.48 8.38995 20.54C5.62995 17.88 2.46995 13.57 3.61995 8.49Z"
+                                                stroke="#FFF4DA" stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                    Красная пресня, 29
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-modal-detail__navigation navigation">
+                        <button
+                            class="review-modal-detail__navigation-btn navigation-btn review-modal-detail__navigation--prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M21.9999 11.25C22.4142 11.25 22.7499 11.5858 22.7499 12C22.7499 12.4142 22.4142 12.75 21.9999 12.75V11.25ZM2.46961 12.5303C2.17672 12.2374 2.17672 11.7626 2.46961 11.4697L7.24258 6.6967C7.53547 6.40381 8.01035 6.40381 8.30324 6.6967C8.59613 6.98959 8.59613 7.46447 8.30324 7.75736L4.0606 12L8.30324 16.2426C8.59613 16.5355 8.59613 17.0104 8.30324 17.3033C8.01035 17.5962 7.53547 17.5962 7.24258 17.3033L2.46961 12.5303ZM21.9999 12.75L2.99994 12.75V11.25L21.9999 11.25V12.75Z"
+                                    fill="#FFF4DA" />
+                            </svg>
+                        </button>
+                        <button
+                            class="review-modal-detail__navigation-btn navigation-btn review-modal-detail__navigation--next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M2.99994 11.25C2.58573 11.25 2.24994 11.5858 2.24994 12C2.24994 12.4142 2.58573 12.75 2.99994 12.75V11.25ZM22.5303 12.5303C22.8232 12.2374 22.8232 11.7626 22.5303 11.4697L17.7573 6.6967C17.4644 6.40381 16.9895 6.40381 16.6966 6.6967C16.4037 6.98959 16.4037 7.46447 16.6966 7.75736L20.9393 12L16.6966 16.2426C16.4037 16.5355 16.4037 17.0104 16.6966 17.3033C16.9895 17.5962 17.4644 17.5962 17.7573 17.3033L22.5303 12.5303ZM2.99994 12.75L21.9999 12.75V11.25L2.99994 11.25V12.75Z"
+                                    fill="#FFF4DA" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <include src="./components/modals/review-modal.html"></include>
+    <include src="./components/footer.html"></include>
+</body>
+
+</html>
