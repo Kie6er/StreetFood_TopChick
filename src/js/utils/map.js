@@ -120,7 +120,7 @@ import {
 			},
 		});
 		mapModal.addChild(new YMapDefaultSchemeLayer());
-		mapModal.addChild(new YMapDefaultFeaturesLayer());
+		mapModal.addChild(new YMapDefaultFeaturesLayer({ zIndex: 1800 }));
 
 		mapModalMarkers.forEach((el) => {
 			let content = document.createElement('div');
@@ -132,7 +132,7 @@ import {
 				</svg>
 			`);
 			el.active ? $(content).addClass('active') : null;
-			const markerModal = new YMapMarker({ coordinates: el.coordinate, draggable: false }, content);
+			const markerModal = new YMapMarker({ coordinates: el.coordinate, draggable: false, zIndex: 5000 }, content);
 			mapModal.addChild(markerModal);
 		})
 		$('.map-modal').find(".modal-back").on("click", () => setTimeout(() => mapModal.destroy(), 500));
