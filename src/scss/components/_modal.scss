@@ -602,11 +602,15 @@
 	&__left {
 		width: 79rem;
 		height: 61.4rem;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	// .map-modal__map
 	&__map {
-		width: 100%;
-		height: 100%;
+		width: 192rem;
+		height: 108rem;
 		position: relative;
 	}
 
@@ -976,7 +980,12 @@
 		// .map-modal__left
 		&__left {
 			width: 100%;
-			min-height: 80rem;
+			height: 80rem;
+		}
+		// .map-modal__map
+		&__map {
+			width: 384rem;
+			height: 216rem;
 		}
 		&__right {
 			padding-bottom: 4rem;
