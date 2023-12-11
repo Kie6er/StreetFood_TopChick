@@ -1,14 +1,7 @@
 <div class="map-modal modal">
 	<div class="modal-back"></div>
 	<div class="modal-wrapper">
-		<div class="modal-exit">
-			<button class="btn-circle mobile">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-					<path
-						d="M14 8.5C14.2761 8.5 14.5 8.27614 14.5 8C14.5 7.72386 14.2761 7.5 14 7.5V8.5ZM1.64645 7.64645C1.45118 7.84171 1.45118 8.15829 1.64645 8.35355L4.82843 11.5355C5.02369 11.7308 5.34027 11.7308 5.53553 11.5355C5.7308 11.3403 5.7308 11.0237 5.53553 10.8284L2.70711 8L5.53553 5.17157C5.7308 4.97631 5.7308 4.65973 5.53553 4.46447C5.34027 4.2692 5.02369 4.2692 4.82843 4.46447L1.64645 7.64645ZM14 7.5H2V8.5H14V7.5Z"
-						fill="#330D03" />
-				</svg>
-			</button>
+		<div class="modal-exit desktop">
 			<button class="desktop">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 					<path fill-rule="evenodd" clip-rule="evenodd"
@@ -21,6 +14,15 @@
 			</button>
 		</div>
 		<div class="map-modal__content modal-content modal-content--first active">
+			<div class="modal-exit mobile">
+				<button class="btn-circle mobile">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+						<path
+							d="M14 8.5C14.2761 8.5 14.5 8.27614 14.5 8C14.5 7.72386 14.2761 7.5 14 7.5V8.5ZM1.64645 7.64645C1.45118 7.84171 1.45118 8.15829 1.64645 8.35355L4.82843 11.5355C5.02369 11.7308 5.34027 11.7308 5.53553 11.5355C5.7308 11.3403 5.7308 11.0237 5.53553 10.8284L2.70711 8L5.53553 5.17157C5.7308 4.97631 5.7308 4.65973 5.53553 4.46447C5.34027 4.2692 5.02369 4.2692 4.82843 4.46447L1.64645 7.64645ZM14 7.5H2V8.5H14V7.5Z"
+							fill="#330D03" />
+					</svg>
+				</button>
+			</div>
 			<div class="map-modal__left">
 				<div class="map-modal__left-wrapper">
 					<div class="map-modal__map" id="map-modal"></div>
