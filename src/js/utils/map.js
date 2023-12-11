@@ -49,6 +49,8 @@ const mapSlider = new Swiper('.main-map__slider', {
 	spaceBetween: `${remToPx(1)}rem`,
 	enabled: false,
 	initialSlide: 1,
+	allowTouchMove: false,
+	touchReleaseOnEdges: true,
 	speed: 800,
 	navigation: {
 		nextEl: '.main-map__navigation--next',
