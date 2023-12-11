@@ -944,7 +944,6 @@
 	}
 	.map-modal {
 		.modal-wrapper {
-			overflow: auto;
 			width: 100vw;
 			background-color: $beige;
 		}
@@ -971,6 +970,7 @@
 			height: 100vh;
 			padding: 19.2rem 3.2rem 4rem;
 			&.active {
+				overflow: auto;
 				flex-direction: column;
 				gap: 4.8rem;
 			}
