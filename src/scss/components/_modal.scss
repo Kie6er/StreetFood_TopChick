@@ -981,6 +981,8 @@
 		&__left {
 			width: 100%;
 			min-height: 80rem;
+			max-height: 80rem;
+			height: 100%;
 		}
 		// .map-modal__map
 		&__map {
