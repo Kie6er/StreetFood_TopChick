@@ -583,6 +583,11 @@
 		svg path {
 			fill: $dark;
 		}
+		&:hover {
+			svg path {
+				fill: $orange;
+			}
+		}
 	}
 	// .map-modal__content
 	&__content {
