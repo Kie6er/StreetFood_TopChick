@@ -953,6 +953,10 @@
 			right: unset;
 			top: 4rem;
 			left: 3.2rem;
+			&.mobile {
+				position: static;
+				margin-bottom: 1.6rem;
+			}
 
 			.btn-circle {
 				width: 100%;
@@ -968,7 +972,7 @@
 		// .map-modal__content
 		&__content {
 			height: 100vh;
-			padding: 19.2rem 3.2rem 4rem;
+			padding: 4rem 3.2rem;
 			&.active {
 				overflow: auto;
 				flex-direction: column;
