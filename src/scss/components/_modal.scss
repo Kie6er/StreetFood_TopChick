@@ -976,12 +976,12 @@
 			}
 		}
 		&__left {
-			order: 2;
+			flex: none;
 			width: 100%;
 			height: 80rem;
 		}
 		&__right {
-			order: 1;
+			flex: none;
 			padding-bottom: 4rem;
 		}
 		// .map-modal__card
