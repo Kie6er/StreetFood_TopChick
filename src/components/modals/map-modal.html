@@ -99,9 +99,10 @@
 			mapModal.addChild(new YMapDefaultFeaturesLayer({ zIndex: 1800 }));
 
 			mapModalMarkers.forEach((el) => {
-				let content = document.createElement('div');
+				let content = document.createElement('img');
 				content.classList.add('marker', el.type);
-				content.insertAdjacentHTML('beforeend', `<img src="./assets/images/icons/marker-map.svg" alt="">`);
+				content.src = './assets/images/icons/marker-map.svg';
+				content.alt = '';
 				el.active ? content.classList.add('active') : null;
 				const markerModal = new YMapMarker({ coordinates: el.coordinate, draggable: false, zIndex: 5000, hideOutsideViewport: false }, content);
 				mapModal.addChild(markerModal);
