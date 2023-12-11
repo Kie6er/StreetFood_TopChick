@@ -607,13 +607,6 @@
 		align-items: center;
 		justify-content: center;
 	}
-	// .map-modal__map
-	&__map {
-		width: 192rem;
-		height: 108rem;
-		position: relative;
-	}
-
 	// .map-modal__card
 	&__card {
 		height: 100%;
@@ -980,14 +973,7 @@
 		// .map-modal__left
 		&__left {
 			width: 100%;
-			min-height: 80rem;
-			max-height: 80rem;
-			height: 100%;
-		}
-		// .map-modal__map
-		&__map {
-			width: 384rem;
-			height: 216rem;
+			height: auto;
 		}
 		&__right {
 			padding-bottom: 4rem;
