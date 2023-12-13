@@ -11,7 +11,6 @@ import {
 	Thumbs,
 	EffectCreative,
 	Mousewheel,
-	Grid
 } from "swiper/modules";
 let reviewSwiper;
 let reviewSwiperMobile;
@@ -28,9 +27,10 @@ $(document).ready(function () {
 	saleSwiperInit();
 	newsSwiperInit();
 	reviewDetailSwiperInit();
-	vacancyBannerSwiperInit();
-	vacancyDetailSwiperInit();
 });
+$(window).resize(function () {
+	reviewSwiperInit();
+})
 function remToPx(remValue) {
 	// Получаем текущий базовый размер шрифта (font-size) из элемента <html>
 	var htmlFontSize = parseFloat(
@@ -46,6 +46,7 @@ function remToPx(remValue) {
 function reviewSwiperInit() {
 	if ($('.main-reviews').length > 0) {
 		if (window.outerWidth > 768) {
+			reviewSwiperMobile && reviewSwiperMobile.destroy();
 			reviewSwiper = new Swiper('.main-reviews__slider', {
 				modules: [EffectCreative, Navigation, Autoplay],
 				grabCursor: true,
@@ -80,6 +81,7 @@ function reviewSwiperInit() {
 				},
 			});
 		} else {
+			reviewSwiper && reviewSwiper.destroy();
 			reviewSwiperMobile = new Swiper('.main-reviews__slider', {
 				modules: [Navigation],
 				grabCursor: true,
@@ -225,7 +227,7 @@ function menuSwiperInit() {
 			prevEl: '.main-menu__navigation--prev',
 		},
 		breakpoints: {
-			769: {
+			768: {
 				enabled: false,
 				slidesPerView: 'auto',
 				spaceBetween: `0`,
@@ -288,7 +290,7 @@ function newsSwiperInit() {
 		slidesPerView: 'auto',
 		spaceBetween: `${remToPx(1.6)}rem`,
 		breakpoints: {
-			769: {
+			768: {
 				enabled: false,
 				slidesPerView: 'auto',
 				spaceBetween: `0`,
@@ -314,45 +316,5 @@ function reviewDetailSwiperInit() {
 		})
 	});
 }
-function vacancyBannerSwiperInit() {
-	if ($('.vacancy-banner').length > 0) {
-		const vacancyBannerSwiper = new Swiper('.vacancy-banner__slider', {
-			modules: [EffectFade, Navigation],
-			direction: "horizontal",
-			effect: 'fade',
-			fadeEffect: {
-				crossFade: true,
-			},
-			speed: 800,
-			slidesPerView: 1,
-			navigation: {
-				prevEl: '.vacancy-banner__navigation--prev',
-				nextEl: '.vacancy-banner__navigation--next'
-			}
-		})
-	}
-}
-function vacancyDetailSwiperInit() {
-	if ($('.vacancy-detail').length > 0) {
-		const vacancyDetailSwiper = new Swiper('.vacancy-detail__slider', {
-			modules: [Navigation, Grid],
-			slidesPerView: 'auto',
-			speed: 800,
-			spaceBetween: `${remToPx(3.2)}rem`,
-			breakpoints: {
-				769: {
-					slidesPerView: 1,
-					spaceBetween: `${remToPx(1)}rem`,
-					grid: {
-						rows: 2,
-						fill: 'column',
-					},
-				}
-			},
-			navigation: {
-				prevEl: '.vacancy-detail__slider-navigation--prev',
-				nextEl: '.vacancy-detail__slider-navigation--next'
-			}
-		})
-	}
-}
+
+

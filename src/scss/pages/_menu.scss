@@ -1,0 +1,140 @@
+.menu {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin-bottom: 8.6rem;
+        color: var(--dark, #330D03);
+            text-align: center;
+            font-family: 'Literata';
+            font-size: 8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: -1.6px;
+        &-icon {
+            width: 21rem;
+            height: 16rem;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .link {
+        color: var(--dark, #330D03);
+
+        text-align: center;
+        font-family: "Alumni Sans";
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2.8rem;
+        letter-spacing: -0.6px;
+        text-transform: uppercase;
+        padding-bottom: 0.8rem;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        height: fit-content;
+        width: fit-content;
+        margin-bottom: 20rem;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            background: var(--dark, #330D03);
+            height: 0.2rem;
+            bottom: 0;
+        }
+    }
+
+    &__popular {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 7.4rem;
+
+        .menu-card {
+
+            &:hover {
+                .menu-card {
+                    &__name {
+                        color: var(--dark, #330D03);
+    
+                    }
+        
+                    &__price {
+                        color: var(--dark, #330D03);
+    
+                    }
+        
+                    &__description {
+                        color: var(--dark, #330D03);
+    
+                    }
+                }
+              
+            }
+            &__bg {
+                background: var(--choco, #4C0D00);
+            }
+
+           
+
+            &__name {
+                color: var(--beige, #FFF4DA);
+            }
+
+            &__price {
+                color: var(--beige, #FFF4DA);
+            }
+
+            &__description {
+                color: var(--beige, #FFF4DA);
+            }
+
+            .btn {
+                background: var(--orange, #FF6D2F);
+            }
+        }
+    }
+
+    .main-menu__inner {
+        margin-bottom: 7.4rem;
+    }
+
+    &__chapter-title {
+        color: var(--dark, #330D03);
+        text-align: center;
+        margin-bottom: 4.8rem;
+        font-family: 'Alumni Sans';
+        font-size: 4.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: -1.8px;
+        text-transform: uppercase;
+    }
+
+    &__chapter {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 7.4rem;
+        .menu-card {
+            margin-right: 0.5rem;
+        }
+
+        .menu-card:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+
+   
+}

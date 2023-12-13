@@ -619,7 +619,6 @@
 		border: 0.1rem solid $dark;
 	}
 }
-
 @media (max-width: 48em) {
 	.footer__input-container.error {
 		.error-text {
@@ -867,6 +866,7 @@
 			}
 		}
 	}
+
 	.vacancy-modal {
 		// .vacancy-modal__content
 		&__content {

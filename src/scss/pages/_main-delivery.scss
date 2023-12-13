@@ -1,0 +1,129 @@
+.main-delivery {
+    margin-bottom: 18.5rem;
+    padding-top: 20.1rem;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        
+    }
+
+    &__left-text {
+        width: 19.3rem;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.8rem;
+        letter-spacing: -0.36px;
+        color: $dark;
+        font-family: 'Euclid Circular A',sans-serif;
+
+    }
+
+    &__left {
+        margin-right: 23.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right {
+        display: flex;
+       
+    }
+
+    &__image {
+        width: 70.6rem;
+        height: 61.6rem;
+        margin-right: 6rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        width: 83rem;
+        right: 14rem;
+        top: 8rem;
+        margin-bottom: 12.1rem;
+        
+        strong {
+            display: block;
+            color: $orange;
+            font-family: 'Alumni Sans';
+            font-size: 25rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 90%;
+            letter-spacing: -15px;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        span {
+            color: $dark;
+            font-family: 'Literata';
+            font-size: 19rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 90%;
+            letter-spacing: -7.6px;
+            position: absolute;
+            z-index: 3;
+            text-align: right;
+            right: 0;
+            top: 7.8rem;
+        }
+    }
+
+    &__inner {
+        padding-top: 24.2rem;
+    }
+
+    &__text {
+        color:  rgba(51, 13, 3, 0.60);
+        font-family: 'Euclid Circular A',sans-serif;
+        font-size: 2.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.8rem;
+        width: 37.4rem;
+        margin-bottom: 5.6rem;
+    }
+
+    &__icon {
+        width: 11.6rem;
+        height: 8.4rem;
+        position: absolute;
+        right: 6rem;
+        bottom: 0;
+    }
+
+    .btn {
+       width: 19rem;
+    }
+
+    &__scroll {
+        border-radius: 50%;
+        border: 0.1rem solid $dark;
+        width: 7rem;
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        background: none;
+        svg {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        
+
+    }
+
+   
+}

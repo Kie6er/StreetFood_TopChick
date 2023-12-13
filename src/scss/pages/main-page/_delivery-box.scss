@@ -1,0 +1,225 @@
+.delivery-box {
+    padding: 8rem 6rem;
+    width: 89.6rem;
+    height: 61rem;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    &__par {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4.8rem;
+        &-icon {
+            width: 3.7rem;
+            height: 3.7rem;
+            margin-right: 0.8rem;
+        }
+
+        &-text {
+            color: $beige;
+            font-family: "Alumni Sans", sans-serif;
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 2.8rem;
+
+            text-transform: uppercase;
+        }
+    }
+
+    &__date {
+        color: #fff4da;
+        margin-bottom: 4.8rem;
+        font-family: "Alumni Sans";
+        font-size: 4.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: -1.8px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-family: "Alumni Sans";
+        font-size: 9rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 90%;
+        margin-bottom: 5.2rem;
+        text-transform: uppercase;
+    }
+
+    &__price-block {
+        display: flex;
+        margin-bottom: 6.2rem;
+    }
+
+    &__price {
+        position: relative;
+        color: var(--beige, #fff4da);
+        font-family: "Alumni Sans";
+        font-size: 4.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: -0.18rem;
+        text-transform: uppercase;
+        padding-right: 1.5rem;
+        margin-right: 1.2rem;
+        &::before {
+            position: absolute;
+            content: "₽";
+            color: var(--beige, #fff4da);
+            font-family: "Alumni Sans";
+            font-size: 3rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            letter-spacing: -0.18rem;
+            text-transform: uppercase;
+            right: 0;
+        }
+        b {
+            color: var(--white, #fff);
+            font-family: "Euclid Circular A";
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.8rem;
+            letter-spacing: -0.36px;
+            margin-right: 0.4rem;
+        }
+    }
+
+    &__sale {
+        margin-top: 0.6rem;
+        position: relative;
+        color: rgba(255, 244, 218, 0.6);
+
+        font-family: "Alumni Sans";
+        font-size: 4.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: -0.18rem;
+        text-transform: uppercase;
+        padding-right: 1.5rem;
+        margin-right: 1.2rem;
+        text-decoration: line-through;
+
+        &::before {
+            position: absolute;
+            content: "₽";
+            color: rgba(255, 244, 218, 0.6);
+
+            font-family: "Alumni Sans";
+            font-size: 3rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            letter-spacing: -0.18rem;
+            text-transform: uppercase;
+            right: 0;
+        }
+    }
+    &--first {
+        background: #4c0d00;
+        .delivery-box {
+            &__title {
+                color: var(--orange, #ff6d2f);
+            }
+
+            &__image {
+                position: absolute;
+                width: 39.4rem;
+                height: 39.4rem;
+                top: 11.3rem;
+                right: 6.8rem;
+                z-index: 2;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__dop-image {
+                display: none;
+            }
+
+            &__triangle-right {
+                position: absolute;
+                width: 94.6rem;
+                height: 61rem;
+                right: -35%;
+                top: 0;
+                z-index: 1;
+            }
+
+            &__triangle-top {
+                display: none;
+            }
+        }
+    }
+
+    &--second {
+        background: var(--green, #b5bf3d);
+
+        .delivery-box {
+            &__title {
+                color: var(--beige, #fff4da);
+            }
+
+            &__price-block {
+                display: none;
+            }
+
+            &__triangle-right {
+                display: none;
+            }
+
+            &__triangle-top {
+                position: absolute;
+                top: -10rem;
+                right: 10rem;
+                height: 50rem;
+                width: 50rem;
+            }
+
+            &__image {
+                width: 64.3rem;
+                height: 34.2rem;
+                position: absolute;
+                bottom: 0;
+                right: -20rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+            }
+
+            &__dop-image {
+                width: 34rem;
+                height: 25.3rem;
+                top: 0;
+                right: 18.3rem;
+                position: absolute;
+            }
+
+            &__dop-text {
+                color: var(--beige, #FFF4DA);
+                font-family: 'Alumni Sans';
+                font-size: 4.5rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 100%;
+                letter-spacing: -1.8px;
+                text-transform: uppercase;
+                position: absolute;
+                top: 36rem;
+                left: 26.3rem;
+            }
+        }
+    }
+}
