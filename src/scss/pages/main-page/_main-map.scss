@@ -70,6 +70,8 @@
 
 			background: rgba(51, 13, 3, 0.1);
 			backdrop-filter: blur(0.4rem);
+			will-change: backdrop-filter;
+			will-change: filter;
 		}
 		&-nav {
 			display: flex;
@@ -95,9 +97,6 @@
 		overflow: hidden;
 		width: 50.2rem;
 		height: 61.4rem;
-	}
-	// .main-map__slider-wrapper
-	&__slider-wrapper.swiper-wrapper {
 	}
 	// .main-map__slider-slide
 	&__slider-slide.swiper-slide {
