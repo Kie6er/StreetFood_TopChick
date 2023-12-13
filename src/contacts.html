@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<script src="https://api-maps.yandex.ru/v3/?apikey=24d298f1-151c-4481-9e4a-235c4db16ee9&lang=ru_RU"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<title>Контакты</title>
 </head>
 
@@ -16,7 +16,7 @@
 			<div class="contacts-banner__inner">
 				<div class="contacts-banner__left">
 					<div class="contacts-banner__left-title h1">наши контакты</div>
-					<div class="contacts-banner__left-subtitle h3">и адреса рестаранов</div>
+					<div class="contacts-banner__left-subtitle h3">и адреса ресторанов</div>
 				</div>
 				<div class="contacts-banner__right">
 					<div class="contacts-banner__right-element">
@@ -32,7 +32,8 @@
 						<div class="contacts-banner__right-subtitle text-45">адрес офиса</div>
 						<div class="contacts-banner__right-wrapper text-24">7-й проезд Марьиной Рощи, дом 35, офис 6
 						</div>
-						<div><a class="btn" href="#">смотреть на карте<span>смотреть на карте</span></a></div>
+						<div><button class="btn" data-modal="map">смотреть на карте<span>смотреть на
+									карте</span></button></div>
 					</div>
 					<div class="contacts-banner__right-element">
 						<div class="contacts-banner__right-subtitle text-45">сотрудничество</div>
@@ -69,10 +70,8 @@
 							<div class="main-map__map-nav">
 								<button class="main-map__map-btn map-btn map-btn--all active">все</button>
 								<button class="main-map__map-btn map-btn map-btn--shawerma"><span></span>шаурма</button>
-								<button
-									class="main-map__map-btn map-btn map-btn--fastfood"><span></span>фаст-фуд</button>
-								<button
-									class="main-map__map-btn map-btn map-btn--culinary"><span></span>кулинария</button>
+								<button class="main-map__map-btn map-btn map-btn--fastfood"><span></span>фаст-фуд</button>
+								<button class="main-map__map-btn map-btn map-btn--culinary"><span></span>кулинария</button>
 							</div>
 						</div>
 						<div class="main-map__map-content" id="map-main"></div>
@@ -90,8 +89,7 @@
 									<div class="map-slide__underground">
 										<p>
 											<span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19"
-													viewBox="0 0 24 19" fill="none">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19" fill="none">
 													<path
 														d="M12.097 0C5.74571 0 0.596741 5.69056 0.596741 12.7103C0.596741 16.5166 2.09714 18.9989 2.09714 18.9989L22.092 19C22.092 19 23.5967 16.287 23.5967 12.71C23.5967 5.69056 18.4478 0 12.097 0ZM21.2485 17.4516L2.98181 17.4429C2.98181 17.4429 2.00845 15.4248 2.00845 12.6702C2.00845 6.51766 6.54242 1.52969 12.1355 1.52969C17.7284 1.52969 22.2626 6.5174 22.2626 12.6702C22.2629 15.456 21.2485 17.4516 21.2485 17.4516Z"
 														fill="#330D03" />
@@ -104,8 +102,7 @@
 										</p>
 										<p>
 											<span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19"
-													viewBox="0 0 24 19" fill="none">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19" fill="none">
 													<path
 														d="M12.097 0C5.74571 0 0.596741 5.69056 0.596741 12.7103C0.596741 16.5166 2.09714 18.9989 2.09714 18.9989L22.092 19C22.092 19 23.5967 16.287 23.5967 12.71C23.5967 5.69056 18.4478 0 12.097 0ZM21.2485 17.4516L2.98181 17.4429C2.98181 17.4429 2.00845 15.4248 2.00845 12.6702C2.00845 6.51766 6.54242 1.52969 12.1355 1.52969C17.7284 1.52969 22.2626 6.5174 22.2626 12.6702C22.2629 15.456 21.2485 17.4516 21.2485 17.4516Z"
 														fill="#330D03" />
@@ -133,8 +130,7 @@
 									<div class="map-slide__underground">
 										<p>
 											<span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19"
-													viewBox="0 0 24 19" fill="none">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19" fill="none">
 													<path
 														d="M12.097 0C5.74571 0 0.596741 5.69056 0.596741 12.7103C0.596741 16.5166 2.09714 18.9989 2.09714 18.9989L22.092 19C22.092 19 23.5967 16.287 23.5967 12.71C23.5967 5.69056 18.4478 0 12.097 0ZM21.2485 17.4516L2.98181 17.4429C2.98181 17.4429 2.00845 15.4248 2.00845 12.6702C2.00845 6.51766 6.54242 1.52969 12.1355 1.52969C17.7284 1.52969 22.2626 6.5174 22.2626 12.6702C22.2629 15.456 21.2485 17.4516 21.2485 17.4516Z"
 														fill="#330D03" />
@@ -147,8 +143,7 @@
 										</p>
 										<p>
 											<span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19"
-													viewBox="0 0 24 19" fill="none">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19" fill="none">
 													<path
 														d="M12.097 0C5.74571 0 0.596741 5.69056 0.596741 12.7103C0.596741 16.5166 2.09714 18.9989 2.09714 18.9989L22.092 19C22.092 19 23.5967 16.287 23.5967 12.71C23.5967 5.69056 18.4478 0 12.097 0ZM21.2485 17.4516L2.98181 17.4429C2.98181 17.4429 2.00845 15.4248 2.00845 12.6702C2.00845 6.51766 6.54242 1.52969 12.1355 1.52969C17.7284 1.52969 22.2626 6.5174 22.2626 12.6702C22.2629 15.456 21.2485 17.4516 21.2485 17.4516Z"
 														fill="#330D03" />
@@ -176,8 +171,7 @@
 									<div class="map-slide__underground">
 										<p>
 											<span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19"
-													viewBox="0 0 24 19" fill="none">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19" fill="none">
 													<path
 														d="M12.097 0C5.74571 0 0.596741 5.69056 0.596741 12.7103C0.596741 16.5166 2.09714 18.9989 2.09714 18.9989L22.092 19C22.092 19 23.5967 16.287 23.5967 12.71C23.5967 5.69056 18.4478 0 12.097 0ZM21.2485 17.4516L2.98181 17.4429C2.98181 17.4429 2.00845 15.4248 2.00845 12.6702C2.00845 6.51766 6.54242 1.52969 12.1355 1.52969C17.7284 1.52969 22.2626 6.5174 22.2626 12.6702C22.2629 15.456 21.2485 17.4516 21.2485 17.4516Z"
 														fill="#330D03" />
@@ -190,8 +184,7 @@
 										</p>
 										<p>
 											<span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19"
-													viewBox="0 0 24 19" fill="none">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19" fill="none">
 													<path
 														d="M12.097 0C5.74571 0 0.596741 5.69056 0.596741 12.7103C0.596741 16.5166 2.09714 18.9989 2.09714 18.9989L22.092 19C22.092 19 23.5967 16.287 23.5967 12.71C23.5967 5.69056 18.4478 0 12.097 0ZM21.2485 17.4516L2.98181 17.4429C2.98181 17.4429 2.00845 15.4248 2.00845 12.6702C2.00845 6.51766 6.54242 1.52969 12.1355 1.52969C17.7284 1.52969 22.2626 6.5174 22.2626 12.6702C22.2629 15.456 21.2485 17.4516 21.2485 17.4516Z"
 														fill="#330D03" />
@@ -219,8 +212,7 @@
 									<div class="map-slide__underground">
 										<p>
 											<span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19"
-													viewBox="0 0 24 19" fill="none">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19" fill="none">
 													<path
 														d="M12.097 0C5.74571 0 0.596741 5.69056 0.596741 12.7103C0.596741 16.5166 2.09714 18.9989 2.09714 18.9989L22.092 19C22.092 19 23.5967 16.287 23.5967 12.71C23.5967 5.69056 18.4478 0 12.097 0ZM21.2485 17.4516L2.98181 17.4429C2.98181 17.4429 2.00845 15.4248 2.00845 12.6702C2.00845 6.51766 6.54242 1.52969 12.1355 1.52969C17.7284 1.52969 22.2626 6.5174 22.2626 12.6702C22.2629 15.456 21.2485 17.4516 21.2485 17.4516Z"
 														fill="#330D03" />
@@ -233,8 +225,7 @@
 										</p>
 										<p>
 											<span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19"
-													viewBox="0 0 24 19" fill="none">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19" fill="none">
 													<path
 														d="M12.097 0C5.74571 0 0.596741 5.69056 0.596741 12.7103C0.596741 16.5166 2.09714 18.9989 2.09714 18.9989L22.092 19C22.092 19 23.5967 16.287 23.5967 12.71C23.5967 5.69056 18.4478 0 12.097 0ZM21.2485 17.4516L2.98181 17.4429C2.98181 17.4429 2.00845 15.4248 2.00845 12.6702C2.00845 6.51766 6.54242 1.52969 12.1355 1.52969C17.7284 1.52969 22.2626 6.5174 22.2626 12.6702C22.2629 15.456 21.2485 17.4516 21.2485 17.4516Z"
 														fill="#330D03" />
@@ -254,16 +245,14 @@
 						</div>
 						<div class="main-map__slider-navigation navigation">
 							<button class="main-map__navigation-btn navigation-btn main-map__navigation--next">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									fill="none">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 									<path
 										d="M2.99994 11.25C2.58573 11.25 2.24994 11.5858 2.24994 12C2.24994 12.4142 2.58573 12.75 2.99994 12.75V11.25ZM22.5303 12.5303C22.8232 12.2374 22.8232 11.7626 22.5303 11.4697L17.7573 6.6967C17.4644 6.40381 16.9895 6.40381 16.6966 6.6967C16.4037 6.98959 16.4037 7.46447 16.6966 7.75736L20.9393 12L16.6966 16.2426C16.4037 16.5355 16.4037 17.0104 16.6966 17.3033C16.9895 17.5962 17.4644 17.5962 17.7573 17.3033L22.5303 12.5303ZM2.99994 12.75L21.9999 12.75V11.25L2.99994 11.25V12.75Z"
 										fill="#FFF4DA" />
 								</svg>
 							</button>
 							<button class="main-map__navigation-btn navigation-btn main-map__navigation--prev">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									fill="none">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 									<path
 										d="M21.9999 11.25C22.4142 11.25 22.7499 11.5858 22.7499 12C22.7499 12.4142 22.4142 12.75 21.9999 12.75V11.25ZM2.46961 12.5303C2.17672 12.2374 2.17672 11.7626 2.46961 11.4697L7.24258 6.6967C7.53547 6.40381 8.01035 6.40381 8.30324 6.6967C8.59613 6.98959 8.59613 7.46447 8.30324 7.75736L4.0606 12L8.30324 16.2426C8.59613 16.5355 8.59613 17.0104 8.30324 17.3033C8.01035 17.5962 7.53547 17.5962 7.24258 17.3033L2.46961 12.5303ZM21.9999 12.75L2.99994 12.75V11.25L21.9999 11.25V12.75Z"
 										fill="#FFF4DA" />
@@ -276,6 +265,7 @@
 			</div>
 		</section>
 	</main>
+	<include src="./components/modals/map-modal.html"></include>
 	<include src="./components/footer.html"></include>
 </body>
 
