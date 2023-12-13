@@ -70,8 +70,6 @@
 
 			background: rgba(51, 13, 3, 0.1);
 			backdrop-filter: blur(0.4rem);
-			will-change: backdrop-filter;
-			will-change: filter;
 		}
 		&-nav {
 			display: flex;
