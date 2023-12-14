@@ -1,10 +1,15 @@
 .sliders-delivery {
+    overflow: hidden;
+    .container {
+        width: 190rem;
+        padding: 0 1rem;
+    }
     &__block {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 8.3rem;
-
+        padding: 0 5rem;
         .btn {
             width: 16.7rem;
         }
@@ -18,6 +23,7 @@
         line-height: 110%;
         letter-spacing: -1.6px;
         display: flex;
+        
         &-icon {
             width: 10rem;
             height: 10rem;
@@ -36,7 +42,7 @@
     }
 
     &__swiper {
-        margin-bottom: 21.9rem;
+        margin-bottom: 19rem;
     }
 
     &__swiper:last-child {

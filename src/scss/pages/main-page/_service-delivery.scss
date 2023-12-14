@@ -1,4 +1,10 @@
 .service-delivery {
+    
+    .container {
+        width: 189rem;
+        padding: 0 1rem;
+       
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -19,10 +25,13 @@
         line-height: 90%;
         letter-spacing: -2.7px;
         text-transform: uppercase;
+        padding: 0 4rem;
     }
 
     &__block-w {
         display: flex;
+        padding-right: 6rem;
+        padding-top: 1rem;
     }
 
     &__partner {
