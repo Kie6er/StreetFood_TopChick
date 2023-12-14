@@ -38,8 +38,7 @@ function advantagesMainPage() {
 		opacity: 0,
 		y: '-69rem',
 		ease: 'power1.inOut',
-		duration: 1.5,
-		markerStart: true,
+		duration: 1.2,
 		scrollTrigger: {
 			trigger: '.main-advantages',
 			start: '35% center',
@@ -48,7 +47,7 @@ function advantagesMainPage() {
 	})
 	gsap.from('.advantages-card', {
 		opacity: 0,
-		duration: 2,
+		duration: 1.5,
 		stagger: 0.5,
 		scrollTrigger: {
 			trigger: '.main-advantages',

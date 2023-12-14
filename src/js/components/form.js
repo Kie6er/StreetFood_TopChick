@@ -19,6 +19,8 @@ $(document).ready(function () {
 		if (validationForm(currentForm) === true) {
 			if (currentForm.hasClass('review-modal__form')) {
 				switchModalContent('.review-modal');
+			} else if (currentForm.hasClass('vacancy-modal__form')) {
+				switchModalContent('.vacancy-modal');
 			} else if (currentForm.hasClass('footer__form')) {
 				openModal('.subscribe')
 			}

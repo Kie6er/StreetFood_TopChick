@@ -20,6 +20,7 @@ import "./js/pages/main-d";
 import "./js/components/header";
 import "./js/components/modal";
 import "./js/components/form";
+import "./js/components/file";
 
 import { example } from "./js/utils/constants";
 import "./js/utils/swiper";
