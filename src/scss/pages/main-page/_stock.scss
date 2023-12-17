@@ -11,6 +11,10 @@
         display: flex;
         justify-content: center;
         margin-bottom: 7rem;
+        
+        br {
+            display: none;
+        }
         &-icon {
             width: 18.9rem;
             height: 9rem;
@@ -67,4 +71,57 @@
             bottom: 0;
         }
     }
+
+    &__btn-all {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20rem;
+    }
 }
+
+
+@media (max-width: 48em) {
+
+    .stock {
+        &__title {
+            color: var(--dark, #330D03);
+            font-family: 'Literata';
+            font-size: 5.6rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: -0.56px;
+            position: relative;
+            text-align: left;
+            flex-direction: column;
+            display: flex;
+            br {
+                display: block;
+            }
+            &-icon {
+                position: absolute;
+                width: 16.8rem;
+                height: 8rem;
+                right: 0;
+            }
+
+
+
+        }
+
+
+        .delivery-box {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 4rem;
+        }
+
+        .delivery-box:nth-last-child(2n) {
+            margin-bottom: 4rem;
+        }
+    }
+
+
+ }
+

@@ -25,6 +25,8 @@
             letter-spacing: -1.8px;
             text-transform: uppercase;
             z-index: 3;
+
+            
         }
 
         &-swiper {
@@ -71,6 +73,10 @@
         line-height: 90%;
         letter-spacing: -2.7px;
         text-transform: uppercase;
+        span {
+            font-family: "Alumni", sans-serif;
+            font-size: 7rem;
+        }
     }
 
 
@@ -120,31 +126,7 @@
             width: 27.3rem;
         }
 
-        .link {
-            color: var(--dark, #330D03);
-            text-align: center;
-            font-family: 'Alumni Sans';
-            font-size: 3rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 2.8rem;
-            letter-spacing: -0.6px;
-            text-transform: uppercase;
-            position: relative;
-            padding-bottom: 0.8rem;
-            display: block;
-            height: fit-content;
-           width: fit-content;
-           margin-top: auto;
-            &::before {
-                position: absolute;
-                content:'';
-                width: 100%;
-                background: var(--dark, #330D03);
-                height: 0.2rem;
-                bottom: 0;
-            }
-        }
+        
 
        
     }
@@ -166,5 +148,117 @@
         right: 6rem;
     }
 
+
+    &__right-text-slide-inner-link {
+        height: fit-content;
+    }
+    
+
     
 }
+
+
+@media (max-width: 48em) { 
+    .stock-main {
+        overflow: hidden;
+        .container {
+            width: 100%;
+            padding: 0;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__left {
+            width: 100%;
+
+            &-swiper {
+                height: 72rem;
+            }
+        }
+
+        &__right {
+            width: 100%;
+            padding-top: 0;
+            height: 60rem;
+            padding: 0 3.2rem;
+            padding-top: 9rem;
+            &-swiper {
+                width: 42.6rem;
+                height: 36rem;
+                margin-bottom: 0;
+            }
+        }
+
+        &__left-text {
+            font-size: 4.8rem;
+            left: 3.2rem;
+            top: 8.4rem;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__title-swiper {
+            width: 100%;
+            height: 14.4rem;
+            left: 3.2rem;
+            transform: initial;
+            top: 15.2rem;
+        }
+
+        &__slide-title-text {
+            font-size: 8rem;
+            font-weight: 600;
+            line-height: 90%;
+            letter-spacing: -1.2px;
+            text-transform: uppercase;
+            width: 60rem;
+            text-align: left;
+            br {
+                display: none;
+            }
+        }
+
+        &__right-text-swiper {
+            overflow: hidden;
+            position: absolute;
+            height: 100%;
+            top: 0;
+        }
+
+        &__right-text-slide-inner {
+            height: 100%;
+            height: 57rem;
+        }
+
+        &__right-text-slide-inner-link {
+            position: absolute;
+            bottom: 2rem;
+            right: 3.6rem;
+        }
+
+        &__right-text-slide-inner-text {
+            width: 100%;
+            color: var(--dark, #330D03);
+            font-family: 'Euclid Circular A';
+            font-size: 3.2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 155.556%;
+        }
+
+        &__navigation {
+            flex-direction: row-reverse;
+            z-index: 3;
+            top: initial;
+            right: initial;
+            left: 3.2rem;
+            bottom: 1rem;
+        
+        }
+    }
+
+ }

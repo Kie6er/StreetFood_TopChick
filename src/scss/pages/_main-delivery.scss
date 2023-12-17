@@ -130,6 +130,10 @@
 
     }
 
+    &__left-text.mob {
+        display: none;
+    }
+
    
 }
 
@@ -194,5 +198,36 @@
         &__wrapper {
             flex-direction: column;
         }
+
+        &__text  {
+            color: var(--dark-secondary, rgba(51, 13, 3, 0.60));
+            font-family: 'Euclid Circular A';
+            font-size: 2.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 4rem;
+            letter-spacing: -0.28px;
+            width: 100%;
+        }
+
+
+        &__left-text.mob {
+            display: block;
+            color: var(--dark, #330D03);
+            font-family: 'Euclid Circular A';
+            font-size: 2.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 4rem;
+            letter-spacing: -0.28px;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+
+        .btn {
+            width: auto;
+        }
+    
      }
 }

@@ -53,6 +53,11 @@
         text-transform: uppercase;
         position: relative;
         z-index: 2;
+
+        span {
+            font-family: "Alumni", sans-serif;
+            font-size: 7.8rem;
+        }
     }
 
     &__price-block {
@@ -75,7 +80,6 @@
     }
 
     &__price {
-     
         color: var(--beige, #fff4da);
         font-family: "Alumni Sans";
         font-size: 4.5rem;
@@ -154,7 +158,6 @@
             &__title {
                 color: var(--orange, #ff6d2f);
             }
-
         }
     }
 
@@ -170,10 +173,9 @@
                 display: none;
             }
 
-        
             &__dop-text {
-                color: var(--beige, #FFF4DA);
-                font-family: 'Alumni Sans';
+                color: var(--beige, #fff4da);
+                font-family: "Alumni Sans";
                 font-size: 4.5rem;
                 font-style: normal;
                 font-weight: 600;
@@ -183,6 +185,58 @@
                 position: absolute;
                 top: 36rem;
                 left: 26.3rem;
+
+                span {
+                    font-family: "Alumni", sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .delivery-box {
+        width: 63.8rem;
+        height: 78rem;
+        padding: 9.2rem 4.8rem;
+        &__image {
+            display: none;
+        }
+
+        &__image-m {
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__par {
+            margin-bottom: 5rem;
+
+            &-icon {
+                width: 6rem;
+                height: 6rem;
+                margin-right: 1.6rem;
+            }
+
+            &-text {
+                font-size: 4rem;
+            }
+        }
+
+        &__title {
+            font-size: 8rem;
+        }
+
+        &__dop-text {
+            font-size: 4.8rem;
+            top: 37rem;
+            left: 25.3rem;
+            width: 31rem;
+            letter-spacing: -0.9.6rem;
+            span   {
+                padding: 0 0.5rem ;
             }
         }
     }
