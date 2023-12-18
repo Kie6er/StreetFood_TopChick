@@ -258,3 +258,52 @@
         }
     }
 }
+
+
+@media (max-width: 48em) { 
+
+    .menu-main {
+        &__left {
+            display: none;
+        }
+
+        &__swiper-title {
+            display: none;
+        }
+
+        &__right {
+            width: 100%;
+            padding: 6.6rem 3.2rem;
+
+            &-title {
+                margin-bottom: 5.2rem;
+                strong {
+                    font-size: 20rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 90%; 
+                    letter-spacing: -0.6rem;
+                    text-transform: uppercase;
+                }
+
+                span {
+                    font-size: 15rem;
+                    letter-spacing: -2.96px;
+                    line-height: 90%;
+                    font-weight: 400;
+                    right: 14rem;
+                    bottom: -1rem;
+                }
+            }
+
+            &-rang {
+                font-size: 4.8rem;
+            }
+
+            &-text {
+                font-size: 2.8rem;
+            }
+        }
+    }
+
+}
