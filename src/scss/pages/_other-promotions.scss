@@ -1,4 +1,8 @@
 .other-promotions {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
     &__block {
         display: flex;
         justify-content: space-between;
@@ -37,5 +41,68 @@
 
     &__mob {
         display: none;
+    }
+}
+
+
+@media (max-width: 48em) {
+
+    .other-promotions {
+
+    
+        overflow: hidden;
+        .container {
+        width: 100%;
+        padding: 0 3.6rem;
+        }
+        &__swiper {
+            display: none;
+        }
+
+        &__mob {
+            display: block;
+        }
+
+        &__mob-wrapper {
+            display: block;
+
+            .delivery-box {
+                width: 100%;
+                margin-bottom: 4rem;
+            }
+
+
+            
+        }
+
+        &__navigation {
+            display: none;
+        }
+
+        &__btn {
+            display: none;
+        }
+
+        &__title {
+            font-size: 5.6rem;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: -0.56px;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+
+            &-icon {
+                width: 11rem;
+                height: 8rem;
+            }
+        }
+
+        &__mob-btn {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+        }
     }
 }

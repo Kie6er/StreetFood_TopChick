@@ -15,29 +15,18 @@
         width: 50%;
     }
 
-    .link {
-        color: var(--beige, #fff4da);
-        text-align: center;
-        font-family: "Alumni Sans";
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 2.8rem;
-        letter-spacing: -0.6px;
-        text-transform: uppercase;
-        padding-bottom: 0.8rem;
-        display: block;
+  
+
+
+    .small-btn {
         width: fit-content;
         position: absolute;
         right: 7.1rem;
+        color: var(--beige, #fff4da);
         top: 6.8rem;
-        &::before {
-            position: absolute;
-            content: "";
-            width: 100%;
+
+        &:after {
             background: var(--beige, #fff4da);
-            height: 0.2rem;
-            bottom: 0;
         }
     }
 
@@ -111,9 +100,9 @@
         width: 59.7rem;
         height: 43.9rem;
         position: absolute;
-        top: 50%;
-        left: 46%;
-        transform: translate(-50%, -46%);
+        top: 13%;
+        left: 28%;
+        
         img {
             width: 100%;
             height: 100%;
@@ -140,7 +129,7 @@
     &__block {
         display: flex;
         position: absolute;
-        bottom: 8rem;
+        bottom: 7rem;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -225,7 +214,7 @@
 
     &__lists {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     &__item {
@@ -272,7 +261,7 @@
     &__aside {
         position: absolute;
         width: 38.4rem;
-        height: 33.4rem;
+        height: 32.4rem;
         background: var(--orange, #FF6D2F);
         padding: 6rem;
         right: 6rem;
@@ -285,7 +274,7 @@
             font-style: normal;
             font-weight: 500;
             line-height: 2.8rem;
-            margin-bottom: 2.4rem;
+            margin-bottom: 1.4rem;
         }
 
         &-name {
@@ -297,7 +286,7 @@
             line-height: 100%;
             letter-spacing: -1.8px;
             text-transform: uppercase;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0rem;
         }
 
         &-price {
@@ -322,7 +311,7 @@
 
         &-image {
             width: 16.5rem;
-            height: 21.4rem;
+            height: 17.4rem;
             position: absolute;
             bottom: 5.1rem;
             right: 6rem;
@@ -354,4 +343,202 @@
             }
         }
     }
+}
+
+
+@media (max-width: 48em) { 
+
+    .position-card {
+        .container {
+            padding: 0;
+            width: 100%;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__left {
+            width: 100%;
+            padding: 10.8rem 3.6rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .small-btn {
+            position: relative;
+            color: var(--dark, #330D03);
+            right: initial;
+            top: initial;
+            left: initial;
+            margin: initial;
+            margin-bottom: 4rem;
+
+            &::after {
+                background: var(--dark, #330D03);
+
+            }
+        }
+
+        &__title {
+            order: 1;
+            margin-bottom: 2rem;
+
+            strong {
+                font-size: 8rem;
+                margin-bottom: 2rem;
+                width: 100%;
+                letter-spacing: -1.2px;
+
+                br {
+                    display: none;
+                }
+            }
+
+            span {
+                font-size: 4.8rem;
+            }
+        }
+        &__inner{
+            order: 2;
+            margin-bottom: 4.8rem;
+        }
+
+        &__info {
+            margin-right: 4.8rem;
+            strong {
+                font-size: 4.8rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 100%;
+                letter-spacing: -0.96px;
+            }
+
+            span {
+                font-size: 2.8rem;
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+
+        &__image {
+            position: initial;
+            width: 100%;
+            height: 50rem;
+            order: 3;
+            margin-bottom: 3.2rem;
+        }
+
+        &__description {
+            order: 4;
+            width: 100%;
+            padding: 3.2rem;
+            font-size: 2.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 142.857%;
+            margin-bottom: 3.2rem;
+
+            p {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        &__block {
+            position: initial;
+            order: 5;
+            transform: initial;
+        }
+
+        &__price {
+            width: 50%;
+            height: 12rem;
+
+            span {
+                font-size: 4.8rem;
+                padding-right: 2rem;
+                &::before {
+                    font-size: 4rem;
+                }
+            }
+        }
+
+        &__gram {
+            width: 50%;
+            height: 12rem;
+            span {
+                font-size: 4.8rem;
+            }
+        }
+
+        &__right{
+            width: 100%;
+            &-block {
+                padding: 10rem 3.2rem;
+            }
+
+            &-title {
+                font-size: 4.8rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 100%;
+                letter-spacing: -0.96px;
+                text-transform: uppercase;
+                margin-bottom: 4.8rem;
+            }
+        }
+
+        &__aside {
+            position: relative;
+            margin-top: 10rem;
+            width: 68.6rem;
+            right: initial;
+            bottom: initial;
+            margin: 0 auto;
+            margin-top: 10rem;
+            height: auto;
+            &-basket {
+                font-size: 3.6rem;
+                margin-bottom: 4.8rem;
+            }
+
+            &-name {
+                margin-bottom: 1.6rem;
+                font-size: 4.8rem;
+            }
+
+            &-price {
+                font-size: 4.8rem;
+                padding-right: 3rem;
+                margin-bottom: 4.4rem;
+            }
+
+            &-image {
+                width: 22.5rem;
+                height: 30.4rem;
+            }
+        }
+
+        &__lists {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            margin-bottom: 3.2rem;
+
+            &-compound{
+                font-size: 3.2rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 155.556% ; 
+                margin-right: 1.6rem;
+            }
+
+            &-price {
+                font-size: 4.8rem;
+            }
+        }
+    }
+
 }
