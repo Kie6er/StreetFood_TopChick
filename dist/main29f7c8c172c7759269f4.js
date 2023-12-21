@@ -928,9 +928,9 @@
 							ease: "power1.inOut",
 							duration: 1.2,
 							scrollTrigger: {
-								trigger: ".main-advantages",
-								start: "35% center",
-								end: "65% center",
+								trigger: ".main-advantages__video",
+								start: "300% bottom",
+								end: "300% center",
 							},
 						}
 					);
@@ -27700,11 +27700,9 @@ _totalTimeToTime = (clampedTotalTime, duration, repeat, repeatDelay, yoyo) => {
 												i > 1 &&
 													toSelector(
 														// If the preceding token was a descendant combinator, insert an implicit any-element `*`
-														tokens
-															.slice(0, i - 1)
-															.concat({
-																value: tokens[i - 2].type === " " ? "*" : "",
-															})
+														tokens.slice(0, i - 1).concat({
+															value: tokens[i - 2].type === " " ? "*" : "",
+														})
 													).replace(rtrimCSS, "$1"),
 												matcher,
 												i < j && matcherFromTokens(tokens.slice(i, j)),
@@ -55590,4 +55588,4 @@ _totalTimeToTime = (clampedTotalTime, duration, repeat, repeatDelay, yoyo) => {
 
 	/******/
 })();
-//# sourceMappingURL=main2741a43d70528db41fbc.js.map
+//# sourceMappingURL=maince69e5bc41bc22d6b8c5.js.map
