@@ -7,7 +7,7 @@
         display: flex;
         justify-content: center;
         align-items:center;
-        margin-bottom: 8.6rem;
+        margin-bottom: 0.6rem;
         color: var(--dark, #330D03);
             text-align: center;
             font-family: 'Literata';
@@ -17,8 +17,8 @@
             line-height: 110%;
             letter-spacing: -1.6px;
         &-icon {
-            width: 21rem;
-            height: 16rem;
+            width: 12rem;
+            height: 9rem;
             margin-right: 2rem;
             margin-left: 2rem;
             img {
@@ -26,6 +26,17 @@
                 height: 100%;
             }
         }
+    }
+    .main-menu__header {
+        margin-bottom: 4.4rem;
+    }
+
+    .main-menu__categories {
+        max-width: 146rem;
+    }
+    .main-menu__categories-btn {
+        color: var(--dark, #330D03);
+
     }
     .link {
         color: var(--dark, #330D03);
@@ -154,6 +165,10 @@
 
 .menu {
 
+    .container {
+        padding: 0 3.2rem;
+    }
+
     &__title {
         position: relative;
         font-size: 5.6rem;
@@ -178,6 +193,11 @@
 
    .main-menu__cards-slide {
         width: 100%;
+    }
+
+
+    .main-menu__categories {
+        max-width: 100%;
     }
 }
 
