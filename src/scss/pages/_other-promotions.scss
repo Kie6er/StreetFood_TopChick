@@ -8,6 +8,7 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 8.3rem;
+        padding: 0 3.2rem;
     }
     &__title {
         color: $dark;
@@ -57,6 +58,11 @@
         }
         &__swiper {
             display: none;
+        }
+
+        &__block {
+            
+            padding: 0 3.2rem;
         }
 
         &__mob {

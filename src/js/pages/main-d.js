@@ -43,7 +43,7 @@ const largeSlider = () => {
         let result = (sliderLength > 1) ? true : false;
         const deliverySwiper = new Swiper(slider, {
             modules: [Navigation],
-            speed: 1200,
+           
             slidesPerView: 1.1,
             direction: 'horizontal',
             loop: true,
@@ -68,6 +68,32 @@ const largeSlider = () => {
     });
 };
 window.addEventListener('load', largeSlider);
+
+
+const deliverySwiper = new Swiper(slider, {
+	modules: [Navigation],
+   
+	slidesPerView: 1.1,
+	direction: 'horizontal',
+	loop: true,
+	spaceBetween: rem(1.6),
+	navigation: {
+		nextEl: nextArrow[index],
+		prevEl: prevArrow[index],
+	},
+
+
+	breakpoints: {
+		769: {
+			slidesPerView: 2,
+			spaceBetween: rem(2),
+		},
+		
+	},
+   
+
+
+});
 
 
 const detailedPromotionsSwiper = new Swiper(".detailed-promotions__swiper", {
@@ -96,7 +122,7 @@ const detailedPromotionsSwiper = new Swiper(".detailed-promotions__swiper", {
 });
 
 
-const otherPromotionsSwiper= new Swiper(".other-promotions__swiper", {
+const otherPromotionsSwiper = new Swiper(".other-promotions__swiper", {
     modules: [Navigation, Grid],
     speed: 1200,
     slidesPerView: 2,
@@ -117,6 +143,8 @@ const otherPromotionsSwiper= new Swiper(".other-promotions__swiper", {
 
 
 });
+
+
 
 
 
@@ -331,20 +359,54 @@ function addZero(num) {
 
 
 
+// var initServiceDelivery = false;
+
+// function ServiceDeliveryDown() {
+//   if (window.innerWidth <= 768) {
+//     if (!initServiceDelivery) {
+//         initServiceDelivery = true;
+//         $('.service-delivery__inner').each(function () {
+// 			let more = $(this).find('.service-delivery__image');
+// 			let hide = $(this).find('.service-delivery__info');
+// 			more.click(function () {
+// 			  hide.toggleClass('active');
+			  
+// 			});
+// 		  });
+//     }
+//   } else if (initServiceDelivery) {
+   
+//     initServiceDelivery = false;
+//   }
+// }
+// ServiceDeliveryDown();
+// window.addEventListener("resize", ServiceDeliveryDown);
+
+
+
 var initServiceDelivery = false;
 
 function ServiceDeliveryDown() {
   if (window.innerWidth <= 768) {
     if (!initServiceDelivery) {
         initServiceDelivery = true;
-        $('.service-delivery__inner').each(function () {
-			let more = $(this).find('.service-delivery__image');
-			let hide = $(this).find('.service-delivery__info');
-			more.click(function () {
-			  hide.toggleClass('active');
-			  
-			});
-		  });
+		function reveal() {
+			var reveals = document.querySelectorAll(".service-delivery__info");
+		  
+			for (var i = 0; i < reveals.length; i++) {
+			  var windowHeight = window.innerHeight;
+			  var elementTop = reveals[i].getBoundingClientRect().top;
+			  var elementVisible = 400;
+		  
+			  if (elementTop < windowHeight - elementVisible) {
+				reveals[i].classList.add("active");
+			  } else {
+				reveals[i].classList.remove("active");
+			  }
+			}
+		  }
+		  
+		  window.addEventListener("scroll", reveal);
     }
   } else if (initServiceDelivery) {
    
@@ -353,3 +415,4 @@ function ServiceDeliveryDown() {
 }
 ServiceDeliveryDown();
 window.addEventListener("resize", ServiceDeliveryDown);
+
