@@ -179,6 +179,8 @@
 		letter-spacing: -0.18rem;
 		text-transform: uppercase;
 	}
+
+	
 	// .menu-card__price
 	&__price {
 		padding-right: 1.5rem;
@@ -257,6 +259,13 @@
 			}
 		}
 	}
+
+	&__btn-right {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
 }
 
 @media (max-width: 48em) {

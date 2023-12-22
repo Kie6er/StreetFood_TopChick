@@ -269,12 +269,22 @@
     &__btn-buy {
         display: none;
     }
+
+
+    &__btn-right {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: fit-content;
+    }
 }
 
 
 @media (max-width: 48em) { 
 
     .menu-main {
+        padding-top: 9rem;
         &__left {
             display: none;
         }
@@ -291,6 +301,8 @@
 
             &-title {
                 margin-bottom: 8.5rem;
+                position: relative;
+                right: -3rem;
                 strong {
                     font-size: 20rem;
                     font-style: normal;
@@ -332,6 +344,9 @@
             
         }
     }
+
+
+    
 
     
 
