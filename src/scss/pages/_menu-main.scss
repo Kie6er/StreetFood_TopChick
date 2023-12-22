@@ -14,13 +14,15 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 90.7rem;
-        padding: 6rem;
+        padding: 3rem;
         position: relative;
     }
 
     &__swiper-title {
-        height: 16rem;
-        margin-bottom: 2rem;
+        height: 17rem;
+        margin-bottom: 1rem;
+        padding-left: 3rem;
+        padding-top: 1rem;
     }
 
     &__swiper-wrapper-title {
@@ -65,7 +67,7 @@
         width: 100%;
         flex-direction: initial;
         justify-content: space-between;
-        width: 90%;
+        width: 88%;
         left: 5rem;
         top: 50%;
         transform: translate(0, -50%);
@@ -82,7 +84,7 @@
         text-transform: uppercase;
 
         span {
-            padding-left: 13rem;
+            padding-left: 11rem;
             display: block;
         }
     }
@@ -115,7 +117,7 @@
 
     &__right {
         width: 50%;
-        padding-top: 9rem;
+        padding-top: 5rem;
         padding-left: 19rem;
         padding-right: 19rem;
 
@@ -138,6 +140,7 @@
 
             span {
                 color: $dark;
+                font-feature-settings: "dnom" on;
                 font-family: "Literata";
                 font-size: 19rem;
                 font-style: normal;
@@ -147,8 +150,8 @@
                 position: absolute;
                 z-index: 3;
                 text-align: right;
-                right: -4rem;
-                bottom: 0;
+                right: -3rem;
+                bottom: -3rem;
             }
         }
 
@@ -224,6 +227,11 @@
         margin: 0 auto;
         display: flex;
         width: fit-content;
+        color: var(--white, #FFF);
+
+        &::after {
+            background: var(--white, #FFF);
+        }
     }
 
     &__fraction {
@@ -257,6 +265,10 @@
             }
         }
     }
+
+    &__btn-buy {
+        display: none;
+    }
 }
 
 
@@ -267,6 +279,8 @@
             display: none;
         }
 
+       
+
         &__swiper-title {
             display: none;
         }
@@ -276,24 +290,28 @@
             padding: 6.6rem 3.2rem;
 
             &-title {
-                margin-bottom: 5.2rem;
+                margin-bottom: 8.5rem;
                 strong {
                     font-size: 20rem;
                     font-style: normal;
                     font-weight: 600;
                     line-height: 90%; 
-                    letter-spacing: -0.6rem;
+                    letter-spacing: -1.1rem;
                     text-transform: uppercase;
                 }
 
                 span {
-                    font-size: 15rem;
+                    font-size: 18rem;
                     letter-spacing: -2.96px;
                     line-height: 90%;
                     font-weight: 400;
-                    right: 14rem;
-                    bottom: -1rem;
+                    right: 7rem;
+                    bottom: -4rem;
                 }
+            }
+
+            .main-menu__categories {
+                max-width: 100%;
             }
 
             &-rang {
@@ -304,6 +322,17 @@
                 font-size: 2.8rem;
             }
         }
+
+        &__btn-buy {
+            display: flex;
+            position: fixed;
+            bottom: 3rem;
+            right: 3.2rem;
+            z-index: 10;
+            
+        }
     }
+
+    
 
 }

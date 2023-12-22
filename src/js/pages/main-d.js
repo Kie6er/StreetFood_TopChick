@@ -328,3 +328,28 @@ menuSwiperMain();
 function addZero(num) {
     return (num > 9) ? num : '0' + num;
 }
+
+
+
+var initServiceDelivery = false;
+
+function ServiceDeliveryDown() {
+  if (window.innerWidth <= 768) {
+    if (!initServiceDelivery) {
+        initServiceDelivery = true;
+        $('.service-delivery__inner').each(function () {
+			let more = $(this).find('.service-delivery__image');
+			let hide = $(this).find('.service-delivery__info');
+			more.click(function () {
+			  hide.toggleClass('active');
+			  
+			});
+		  });
+    }
+  } else if (initServiceDelivery) {
+   
+    initServiceDelivery = false;
+  }
+}
+ServiceDeliveryDown();
+window.addEventListener("resize", ServiceDeliveryDown);
