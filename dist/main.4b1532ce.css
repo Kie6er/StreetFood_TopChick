@@ -6232,8 +6232,9 @@ main {
 		position: relative;
 		width: 100%;
 		height: 68.4rem;
-		top: -14rem;
+		transition: 0.5s;
 		padding: 6.4rem;
+		top: -68.4rem;
 	}
 	.service-delivery__info-number {
 		font-size: 4.8rem;
@@ -6253,6 +6254,10 @@ main {
 		line-height: 4rem;
 		letter-spacing: -0.28px;
 		max-width: 100%;
+	}
+	.service-delivery__info.active {
+		top: -14rem;
+		transition: 0.5s;
 	}
 }
 .main-delivery {
@@ -6359,7 +6364,7 @@ main {
 }
 @media (max-width: 48em) {
 	.main-delivery {
-		padding-top: 10.4rem;
+		padding-top: 7.4rem;
 	}
 	.main-delivery .container {
 		width: 100%;
@@ -6376,17 +6381,17 @@ main {
 		top: initial;
 		width: 100%;
 		right: initial;
-		margin-bottom: 4.8rem;
+		margin-bottom: 7.8rem;
 	}
 	.main-delivery__title strong {
-		font-size: 20rem;
-		letter-spacing: -1.4rem;
+		font-size: 24rem;
+		letter-spacing: -1.3rem;
 	}
 	.main-delivery__title span {
 		left: 0;
 		right: initial;
-		font-size: 15rem;
-		top: 7rem;
+		font-size: 19rem;
+		top: 8rem;
 	}
 	.main-delivery__title--mob {
 		display: block;
@@ -6574,7 +6579,7 @@ main {
 	z-index: 2;
 }
 .delivery-box__title span {
-	font-family: "Alumni", sans-serif;
+	font-style: italic;
 	font-size: 7.8rem;
 }
 .delivery-box__price-block {
@@ -7314,9 +7319,9 @@ main {
 	object-fit: cover;
 }
 .about__one {
-	padding-top: 18rem;
+	padding-top: 11rem;
 	padding-bottom: 18rem;
-	padding-left: 2.8rem;
+	padding-left: 0.8rem;
 	position: relative;
 	height: 84rem;
 }
@@ -7340,16 +7345,16 @@ main {
 .about__one-title span {
 	color: #330d03;
 	font-family: "Literata";
-	font-size: 8rem;
+	font-size: 19rem;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 110%;
 	letter-spacing: -7.6px;
 	position: absolute;
 	z-index: 3;
 	text-align: right;
-	right: 5rem;
-	bottom: 0;
+	right: 6rem;
+	bottom: -3rem;
 }
 .about__one-text {
 	color: var(--dark-secondary, rgba(51, 13, 3, 0.6));
@@ -7362,11 +7367,11 @@ main {
 	margin-bottom: 8.6rem;
 }
 .about__one-icon {
-	width: 15.9rem;
-	height: 20.8rem;
+	width: 22.9rem;
+	height: 27.8rem;
 	position: absolute;
 	bottom: 20rem;
-	right: 5rem;
+	right: 6rem;
 }
 .about__two {
 	height: 100.1rem;
@@ -7453,31 +7458,25 @@ main {
 }
 .about__six-title::before {
 	position: absolute;
-	content: "“";
-	color: var(--orange, #ff6d2f);
-	font-family: "Alumni Sans";
-	font-size: 16rem;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 90%;
-	letter-spacing: -9.6px;
-	text-transform: uppercase;
-	right: -8rem;
-	top: 10%;
+	content: "";
+	width: 4.2rem;
+	height: 3rem;
+	background-image: url(./assets/images/icons/gright.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	right: -13.4rem;
+	top: 4.7rem;
 }
 .about__six-title::after {
 	position: absolute;
-	content: "“";
-	color: var(--orange, #ff6d2f);
-	font-family: "Alumni Sans";
-	font-size: 16rem;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 90%;
-	letter-spacing: -9.6px;
-	text-transform: uppercase;
-	left: -8rem;
-	top: 10%;
+	content: "";
+	width: 4.2rem;
+	height: 3.3rem;
+	background-image: url(./assets/images/icons/gleft.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	left: -15.1rem;
+	top: 4.4rem;
 }
 .about__six-title span {
 	color: var(--orange, #ff6d2f);
@@ -7524,23 +7523,18 @@ main {
 		margin-bottom: 2rem;
 	}
 	.about__one-title {
-		margin-bottom: 5.2rem;
+		margin-bottom: 7.2rem;
+		padding-top: 9rem;
 	}
 	.about__one-title strong {
-		font-size: 18rem;
-		font-style: normal;
-		font-weight: 600;
-		line-height: 90%;
-		letter-spacing: -0.6rem;
-		text-transform: uppercase;
+		font-size: 20rem;
+		letter-spacing: -1.1rem;
 	}
 	.about__one-title span {
-		font-size: 15rem;
-		letter-spacing: -2.96px;
-		line-height: 90%;
-		font-weight: 400;
+		left: 0;
 		right: initial;
-		bottom: -1rem;
+		font-size: 16rem;
+		top: 14rem;
 	}
 	.about__one-text {
 		width: 100%;
@@ -7559,6 +7553,9 @@ main {
 		height: auto;
 		width: 100%;
 		margin-bottom: 10rem;
+	}
+	.about__two-age {
+		font-size: 4.8rem;
 	}
 	.about__two-image {
 		width: 61.6rem;
@@ -7599,6 +7596,7 @@ main {
 	.about__six {
 		width: 100%;
 		padding: 10rem 3.2rem;
+		padding-top: 6rem;
 	}
 	.about__six-title {
 		font-size: 4.8rem;
@@ -7609,16 +7607,21 @@ main {
 		text-transform: uppercase;
 	}
 	.about__six-title::before {
-		right: -6rem;
+		right: -7rem;
+	}
+	.about__six-title::after {
+		left: -7.1rem;
+		top: 1.4rem;
 	}
 	.about__six-text {
 		color: var(--dark-secondary, rgba(51, 13, 3, 0.6));
 		text-align: center;
 		font-family: "Euclid Circular A";
-		font-size: 3.2rem;
+		font-size: 3.6rem;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 155.556%;
+		width: 100%;
 	}
 	.about__four {
 		width: 100%;
@@ -7640,12 +7643,14 @@ main {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	height: 90.7rem;
-	padding: 6rem;
+	padding: 3rem;
 	position: relative;
 }
 .menu-main__swiper-title {
-	height: 16rem;
-	margin-bottom: 2rem;
+	height: 17rem;
+	margin-bottom: 1rem;
+	padding-left: 3rem;
+	padding-top: 1rem;
 }
 .menu-main__swiper-wrapper-title {
 	height: auto;
@@ -7684,7 +7689,7 @@ main {
 	width: 100%;
 	flex-direction: initial;
 	justify-content: space-between;
-	width: 90%;
+	width: 88%;
 	left: 5rem;
 	top: 50%;
 	transform: translate(0, -50%);
@@ -7700,7 +7705,7 @@ main {
 	text-transform: uppercase;
 }
 .menu-main__swiper-title-slide-text span {
-	padding-left: 13rem;
+	padding-left: 11rem;
 	display: block;
 }
 .menu-main .link {
@@ -7730,7 +7735,7 @@ main {
 }
 .menu-main__right {
 	width: 50%;
-	padding-top: 9rem;
+	padding-top: 5rem;
 	padding-left: 19rem;
 	padding-right: 19rem;
 }
@@ -7753,6 +7758,7 @@ main {
 }
 .menu-main__right-title span {
 	color: #330d03;
+	font-feature-settings: "dnom" on;
 	font-family: "Literata";
 	font-size: 19rem;
 	font-style: normal;
@@ -7762,8 +7768,8 @@ main {
 	position: absolute;
 	z-index: 3;
 	text-align: right;
-	right: -4rem;
-	bottom: 0;
+	right: -3rem;
+	bottom: -3rem;
 }
 .menu-main__right-rang {
 	display: flex;
@@ -7832,6 +7838,10 @@ main {
 	margin: 0 auto;
 	display: flex;
 	width: fit-content;
+	color: var(--white, #fff);
+}
+.menu-main__btn::after {
+	background: var(--white, #fff);
 }
 .menu-main__fraction {
 	color: var(--white, #fff);
@@ -7856,6 +7866,9 @@ main {
 .menu-main .navigation-btn svg path {
 	fill: #4c0d00;
 }
+.menu-main__btn-buy {
+	display: none;
+}
 @media (max-width: 48em) {
 	.menu-main__left {
 		display: none;
@@ -7868,29 +7881,39 @@ main {
 		padding: 6.6rem 3.2rem;
 	}
 	.menu-main__right-title {
-		margin-bottom: 5.2rem;
+		margin-bottom: 8.5rem;
 	}
 	.menu-main__right-title strong {
 		font-size: 20rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 90%;
-		letter-spacing: -0.6rem;
+		letter-spacing: -1.1rem;
 		text-transform: uppercase;
 	}
 	.menu-main__right-title span {
-		font-size: 15rem;
+		font-size: 18rem;
 		letter-spacing: -2.96px;
 		line-height: 90%;
 		font-weight: 400;
-		right: 14rem;
-		bottom: -1rem;
+		right: 7rem;
+		bottom: -4rem;
+	}
+	.menu-main__right .main-menu__categories {
+		max-width: 100%;
 	}
 	.menu-main__right-rang {
 		font-size: 4.8rem;
 	}
 	.menu-main__right-text {
 		font-size: 2.8rem;
+	}
+	.menu-main__btn-buy {
+		display: flex;
+		position: fixed;
+		bottom: 3rem;
+		right: 3.2rem;
+		z-index: 10;
 	}
 }
 .position-card {
@@ -9182,6 +9205,7 @@ main {
 		font-size: 4.8rem;
 		left: 3.2rem;
 		top: 8.4rem;
+		letter-spacing: -0.18rem;
 	}
 	.stock-main__left-text br {
 		display: none;
@@ -9246,7 +9270,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 8.6rem;
+	margin-bottom: 0.6rem;
 	color: var(--dark, #330d03);
 	text-align: center;
 	font-family: "Literata";
@@ -9257,14 +9281,23 @@ main {
 	letter-spacing: -1.6px;
 }
 .menu__title-icon {
-	width: 21rem;
-	height: 16rem;
+	width: 12rem;
+	height: 9rem;
 	margin-right: 2rem;
 	margin-left: 2rem;
 }
 .menu__title-icon img {
 	width: 100%;
 	height: 100%;
+}
+.menu .main-menu__header {
+	margin-bottom: 4.4rem;
+}
+.menu .main-menu__categories {
+	max-width: 146rem;
+}
+.menu .main-menu__categories-btn {
+	color: var(--dark, #330d03);
 }
 .menu .link {
 	color: var(--dark, #330d03);
@@ -9355,6 +9388,9 @@ main {
 	margin-bottom: 20rem;
 }
 @media (max-width: 48em) {
+	.menu .container {
+		padding: 0 3.2rem;
+	}
 	.menu__title {
 		position: relative;
 		font-size: 5.6rem;
@@ -9378,6 +9414,9 @@ main {
 	}
 	.menu .main-menu__cards-slide {
 		width: 100%;
+	}
+	.menu .main-menu__categories {
+		max-width: 100%;
 	}
 }
 .error-four {
