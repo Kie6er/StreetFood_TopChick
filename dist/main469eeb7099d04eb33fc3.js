@@ -537,25 +537,6 @@
 					});
 				};
 				window.addEventListener("load", largeSlider);
-				const deliverySwiper = new swiper__WEBPACK_IMPORTED_MODULE_1__[
-					"default"
-				](slider, {
-					modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_5__.Navigation],
-					slidesPerView: 1.1,
-					direction: "horizontal",
-					loop: true,
-					spaceBetween: rem(1.6),
-					navigation: {
-						nextEl: nextArrow[index],
-						prevEl: prevArrow[index],
-					},
-					breakpoints: {
-						769: {
-							slidesPerView: 2,
-							spaceBetween: rem(2),
-						},
-					},
-				});
 				const detailedPromotionsSwiper =
 					new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](
 						".detailed-promotions__swiper",
