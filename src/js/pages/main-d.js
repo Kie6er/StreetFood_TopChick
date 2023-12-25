@@ -69,33 +69,6 @@ const largeSlider = () => {
 };
 window.addEventListener('load', largeSlider);
 
-
-const deliverySwiper = new Swiper(slider, {
-	modules: [Navigation],
-   
-	slidesPerView: 1.1,
-	direction: 'horizontal',
-	loop: true,
-	spaceBetween: rem(1.6),
-	navigation: {
-		nextEl: nextArrow[index],
-		prevEl: prevArrow[index],
-	},
-
-
-	breakpoints: {
-		769: {
-			slidesPerView: 2,
-			spaceBetween: rem(2),
-		},
-		
-	},
-   
-
-
-});
-
-
 const detailedPromotionsSwiper = new Swiper(".detailed-promotions__swiper", {
     modules: [Navigation],
     speed: 1200,
