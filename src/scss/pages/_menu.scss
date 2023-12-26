@@ -175,6 +175,24 @@
 		}
 		&__popular {
 			flex-direction: column;
+
+			.menu-card {
+				&:hover {
+					.menu-card {
+						&__name {
+							color: $white;
+						}
+
+						&__price {
+							color: $white;
+						}
+
+						&__description {
+							color: $white;
+						}
+					}
+				}
+			}
 		}
 
 		.main-menu__cards-slide {
