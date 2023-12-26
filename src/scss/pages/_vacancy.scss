@@ -30,6 +30,7 @@
 		overflow: hidden;
 		min-width: 26rem;
 		max-width: 35rem;
+		max-height: 28rem;
 	}
 	// .vacancy-banner__slider-slide
 	&__slider-slide.swiper-slide {
@@ -74,6 +75,7 @@
 		width: 50%;
 		height: 100%;
 		z-index: -1;
+		overflow: hidden;
 	}
 	// .vacancy-banner__buttons
 	&__buttons {
@@ -171,19 +173,13 @@
 	display: flex;
 	flex-direction: column;
 	border: 0.1rem solid $dark;
-	transition:
-		color 0.2s linear,
-		border 0.2s linear;
+	transition: color 0.2s linear, border 0.2s linear;
 	&:hover {
-		transition:
-			color 0.2s linear,
-			border 0.2s linear;
+		transition: color 0.2s linear, border 0.2s linear;
 		border: 0.1rem solid $orange;
 		color: $beige;
 		.vacancy-list-item__bg-circle {
-			transition:
-				opacity 0.6s linear,
-				transform 0.8s linear;
+			transition: opacity 0.6s linear, transform 0.8s linear;
 			opacity: 1;
 			transform: scale(20);
 		}
@@ -208,9 +204,7 @@
 				transition: color 0.2s linear;
 				color: $beige;
 				&::after {
-					transition:
-						width 0.3s linear,
-						background 0.3s linear;
+					transition: width 0.3s linear, background 0.3s linear;
 					background: $beige;
 				}
 			}
@@ -292,9 +286,7 @@
 			transition: color 0.2s linear;
 			&::after {
 				bottom: 0;
-				transition:
-					width 0.3s linear,
-					background 0.3s linear;
+				transition: width 0.3s linear, background 0.3s linear;
 			}
 		}
 	}
@@ -308,9 +300,7 @@
 		z-index: -1;
 		// .vacancy-list-item__bg-circle
 		&-circle {
-			transition:
-				opacity 0.6s linear,
-				transform 0.8s linear;
+			transition: opacity 0.6s linear, transform 0.8s linear;
 			position: absolute;
 			border-radius: 50%;
 			background-color: $orange;

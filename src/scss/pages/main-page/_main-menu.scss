@@ -41,7 +41,7 @@
 		margin-bottom: 2rem;
 		&-btn {
 			transition: color 0.2s linear;
-			color: rgba($dark, 0.6);
+			color: $dark;
 			font-size: 3rem;
 			font-style: normal;
 			font-weight: 600;
@@ -51,10 +51,6 @@
 			&::after {
 				content: "";
 				width: 0;
-			}
-			&:hover {
-				transition: color 0.2s linear;
-				color: $orange;
 			}
 			&.active {
 				position: relative;
@@ -106,9 +102,7 @@
 			transform: translateX(-50%) scale(1.05) translateY(-5rem);
 		}
 		.menu-card__bg-circle {
-			transition:
-				opacity 0.6s linear,
-				transform 0.8s linear;
+			transition: opacity 0.6s linear, transform 0.8s linear;
 			opacity: 1;
 			transform: scale(20);
 		}
@@ -180,7 +174,6 @@
 		text-transform: uppercase;
 	}
 
-	
 	// .menu-card__price
 	&__price {
 		padding-right: 1.5rem;
@@ -234,9 +227,7 @@
 		top: 0;
 		left: 0;
 		&-circle {
-			transition:
-				opacity 0.6s linear,
-				transform 0.8s linear;
+			transition: opacity 0.6s linear, transform 0.8s linear;
 			position: absolute;
 			border-radius: 50%;
 			background-color: $beige;
@@ -261,11 +252,11 @@
 	}
 
 	&__btn-right {
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-    }
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @media (max-width: 48em) {
@@ -372,9 +363,7 @@
 				transform: translateX(-50%) scale(1.05) translateY(-6rem);
 			}
 			.menu-card__bg-circle {
-				transition:
-					opacity 0.6s linear,
-					transform 0.8s linear;
+				transition: opacity 0.6s linear, transform 0.8s linear;
 				opacity: 1;
 				transform: scale(20);
 			}
