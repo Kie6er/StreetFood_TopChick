@@ -41,7 +41,7 @@
 		margin-bottom: 2rem;
 		&-btn {
 			transition: color 0.2s linear;
-			color: rgba($dark, 0.6);
+			color: $dark;
 			font-size: 3rem;
 			font-style: normal;
 			font-weight: 600;
@@ -51,10 +51,6 @@
 			&::after {
 				content: "";
 				width: 0;
-			}
-			&:hover {
-				transition: color 0.2s linear;
-				color: $orange;
 			}
 			&.active {
 				position: relative;
@@ -106,9 +102,7 @@
 			transform: translateX(-50%) scale(1.05) translateY(-5rem);
 		}
 		.menu-card__bg-circle {
-			transition:
-				opacity 0.6s linear,
-				transform 0.8s linear;
+			transition: opacity 0.6s linear, transform 0.8s linear;
 			opacity: 1;
 			transform: scale(20);
 		}
@@ -180,7 +174,6 @@
 		text-transform: uppercase;
 	}
 
-	
 	// .menu-card__price
 	&__price {
 		padding-right: 1.5rem;
@@ -234,9 +227,7 @@
 		top: 0;
 		left: 0;
 		&-circle {
-			transition:
-				opacity 0.6s linear,
-				transform 0.8s linear;
+			transition: opacity 0.6s linear, transform 0.8s linear;
 			position: absolute;
 			border-radius: 50%;
 			background-color: $beige;
@@ -261,11 +252,11 @@
 	}
 
 	&__btn-right {
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-    }
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @media (max-width: 48em) {
@@ -335,7 +326,7 @@
 			}
 			&-slide.swiper-slide {
 				width: auto;
-				height: 65.8rem;
+				height: 68.6rem;
 				display: flex;
 			}
 		}
@@ -368,15 +359,11 @@
 	.menu-card {
 		&:hover {
 			.menu-card__img {
-				transition: transform 0.3s ease-in-out;
-				transform: translateX(-50%) scale(1.05) translateY(-6rem);
+				transform: translateX(-50%);
 			}
 			.menu-card__bg-circle {
-				transition:
-					opacity 0.6s linear,
-					transform 0.8s linear;
-				opacity: 1;
-				transform: scale(20);
+				opacity: 0;
+				transform: scale(0);
 			}
 			.menu-card__description {
 				transition: height 0.5s linear;
@@ -389,6 +376,7 @@
 			top: 4rem;
 			width: 49.4rem;
 			height: 41rem;
+			left: 50%;
 		}
 		&__wrapper {
 			align-self: flex-end;
@@ -405,6 +393,10 @@
 			display: flex;
 			flex-direction: column;
 			gap: 1.2rem;
+
+			&-footer {
+				align-items: flex-end;
+			}
 		}
 		// .menu-card__name
 		&__name {
@@ -421,7 +413,8 @@
 		// .menu-card__description
 		&__description {
 			max-width: 30rem;
-			height: 7rem;
+			-webkit-line-clamp: 3;
+			height: 12rem;
 
 			font-size: 2.8rem;
 			line-height: 4rem; /* 155.556% */

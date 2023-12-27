@@ -1,5 +1,9 @@
 .stock {
     padding-top: 20rem;
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
     &__title {
         color: $dark;
         font-family: "Literata", sans-serif;
@@ -35,7 +39,7 @@
 
     .delivery-box {
         margin-right: 1rem;
-        width: 88.6rem;
+       
         margin-bottom: 5.6rem;
     }
 
@@ -84,6 +88,10 @@
 @media (max-width: 48em) {
 
     .stock {
+
+        .container {
+			padding: 0 3.2rem;
+		}
         &__title {
             color: var(--dark, #330D03);
             font-family: 'Literata';
