@@ -226,39 +226,7 @@ function menuSwiperInit() {
 	});
 }
 function saleSwiperInit() {
-	if (window.outerWidth > 768) {
-		const saleSlidersOptions = {
-			modules: [Autoplay, Navigation],
-			direction: "horizontal",
-			spaceBetween: `${remToPx(1)}rem`,
-			speed: 1000,
-			autoplay: {
-				delay: 4000,
-				disableOnInteraction: false,
-			},
-			allowTouchMove: false,
-			touchReleaseOnEdges: true,
-		};
-		leftSaleSlider = new Swiper(".sale-slider-first", saleSlidersOptions);
-		centerSaleSlider = new Swiper(".sale-slider-second", saleSlidersOptions);
-		rightSaleSlider = new Swiper(".sale-slider-third", {
-			...saleSlidersOptions,
-			navigation: {
-				prevEl: ".main-sale__navigation--prev",
-				nextEl: ".main-sale__navigation--next",
-			},
-		});
-		$(".main-sale__navigation--next").on("click", (e) => {
-			e.preventDefault();
-			leftSaleSlider.slideNext();
-			centerSaleSlider.slideNext();
-		});
-		$(".main-sale__navigation--prev").on("click", (e) => {
-			e.preventDefault();
-			leftSaleSlider.slidePrev();
-			centerSaleSlider.slidePrev();
-		});
-	} else {
+	if (window.outerWidth <= 768) {
 		mobileSaleSlider = new Swiper(".sale-slider-mobile", {
 			modules: [Navigation],
 			direction: "horizontal",
