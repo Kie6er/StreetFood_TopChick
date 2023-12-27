@@ -349,6 +349,7 @@
 @media (max-width: 48em) { 
 
     .position-card {
+        
         .container {
             padding: 0;
             width: 100%;
@@ -497,6 +498,7 @@
             bottom: initial;
             margin: 0 auto;
             margin-top: 10rem;
+            display: block;
             height: auto;
             &-basket {
                 font-size: 3.6rem;
