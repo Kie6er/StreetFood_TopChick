@@ -16,7 +16,6 @@ $(document).ready(function () {
 	reviewSwiperInit();
 	menuSwiperInit();
 	saleSwiperInit();
-	newsSwiperInit();
 	reviewDetailSwiperInit();
 	vacancyBannerSwiperInit();
 	vacancyDetailSwiperInit();
@@ -240,22 +239,7 @@ function saleSwiperInit() {
 		});
 	}
 }
-function newsSwiperInit() {
-	newsSlider = new Swiper(".main-news__slider", {
-		modules: [Autoplay, Navigation],
-		direction: "horizontal",
-		speed: 1200,
-		slidesPerView: "auto",
-		spaceBetween: `${remToPx(1.6)}rem`,
-		breakpoints: {
-			769: {
-				enabled: false,
-				slidesPerView: "auto",
-				spaceBetween: `0`,
-			},
-		},
-	});
-}
+
 function reviewDetailSwiperInit() {
 	$('[data-modal="review-detail"]').on("click", () => {
 		const reviewDetailSwiper = new Swiper(".review-modal-detail__slider", {

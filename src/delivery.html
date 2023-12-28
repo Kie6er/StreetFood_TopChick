@@ -1,724 +1,729 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<script src="https://api-maps.yandex.ru/v3/?apikey=24d298f1-151c-4481-9e4a-235c4db16ee9&lang=ru_RU"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+		<title>Доставка</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<script src="https://api-maps.yandex.ru/v3/?apikey=24d298f1-151c-4481-9e4a-235c4db16ee9&lang=ru_RU"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<title>Доставка</title>
-</head>
+	<body>
+		<include src="./components/header.html"></include>
+		<main>
+			<include src="./components/ticker.html"></include>
+			<section class="main-delivery">
+				<div class="container">
+					<div class="main-delivery__wrapper">
+						<div class="main-delivery__left">
+							<div class="main-delivery__left-text">Наша компания основана на страсти к качественной еде</div>
 
-<body>
-	<include src="./components/header.html"></include>
-	<main>
-		<include src="./components/ticker.html"></include>
-		<section class="main-delivery">
-            <div class="container">
-                <div class="main-delivery__wrapper">
-                    <div class="main-delivery__left">
-                        <div class="main-delivery__left-text">
-                            Наша компания основана на страсти к качественной еде
-                        </div>
-                       
-                        <div class=" main-delivery__scroll  vacancy-banner__scroll-btn desktop">
-                            <a href="#block-one" class="btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                                    <path
-                                        d="M12.25 2.5C12.25 2.08579 12.5858 1.75 13 1.75C13.4142 1.75 13.75 2.08579 13.75 2.5L12.25 2.5ZM13.5303 22.0303C13.2374 22.3232 12.7626 22.3232 12.4697 22.0303L7.6967 17.2574C7.40381 16.9645 7.40381 16.4896 7.6967 16.1967C7.98959 15.9038 8.46447 15.9038 8.75736 16.1967L13 20.4393L17.2426 16.1967C17.5355 15.9038 18.0104 15.9038 18.3033 16.1967C18.5962 16.4896 18.5962 16.9645 18.3033 17.2574L13.5303 22.0303ZM13.75 2.5L13.75 21.5L12.25 21.5L12.25 2.5L13.75 2.5Z"
-                                        fill="#330D03" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="main-delivery__right">
-                        <h2 class="main-delivery__title main-delivery__title--mob">
-                            <strong>доставка</strong>
-                            <span>топчик</span>
-                        </h2>
-                        <div class="main-delivery__image">
-                            <img src="./assets/images/main-delivery/img1.png" alt="">
-                        </div>
-                        <div class="main-delivery__inner">
-                            <h2 class="main-delivery__title">
-                                <strong>доставка</strong>
-                                <span>топчик</span>
-                            </h2>
-                            <div class="main-delivery__left-text mob">
-                                Наша компания основана на страсти к качественной еде
-                            </div>
-                            <div class="main-delivery__text">Мы работаем с сервисами доставки для того, чтобы вы могли насладиться вашими любимыми позициями из любой точки города быстро и вкусно.</div>
-                            <a class="btn" href="#">наше меню<span>наше меню</span></a>
-                            <div class="main-delivery__icon" >
-                                <img src="./assets/images/main-delivery/sandwich.svg" alt="">
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <section class="service-delivery">
-            <div class="container">
-                <div class="service-delivery__block">
-                    <div class="service-delivery__title">
-                        сервисы доставки
-                    </div>
-                    <div class="service-delivery__block-w">
-                        <a href="#" class="service-delivery__partner">
-                            <div class="service-delivery__partner-icon">
-                                <img src="./assets/images/service-delivery/socials.svg" alt="">
-                            </div>
-                            <div class="service-delivery__partner-text">delivery club</div>
-                        </a>
-                        <a href="#" class="service-delivery__partner">
-                            <div class="service-delivery__partner-icon">
-                                <img src="./assets/images/service-delivery/socials2.svg" alt="">
-                            </div>
-                            <div class="service-delivery__partner-text">яндекс еда</div>
-                        </a>
-                        <a href="#" class="service-delivery__partner">
-                            <div class="service-delivery__partner-icon">
-                                <img src="./assets/images/service-delivery/socials3.svg" alt="">
-                            </div>
-                            <div class="service-delivery__partner-text">сбермаркет</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="service-delivery__wrapper">
-                    <div class="service-delivery__inner">
-                        <div class="service-delivery__image">
-                            <img src="./assets/images/service-delivery/shaurma.png" alt="">
-                        </div>
-                        <div class="service-delivery__info">
-                            <div class="service-delivery__info-number">
-                                01
-                            </div>
-                            <div class="service-delivery__info-title">
-                                собственное производство
-                            </div>
-                            <div class="service-delivery__info-text">
-                                Мы владеем собственным производством, где сбалансированные рецепты превращаются в восхитительные блюда.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-delivery__inner">
-                        <div class="service-delivery__image">
-                            <img src="./assets/images/service-delivery/knife.png" alt="">
-                        </div>
-                        <div class="service-delivery__info">
-                            <div class="service-delivery__info-number">
-                                02
-                            </div>
-                            <div class="service-delivery__info-title">
-                                всегда свежие ингридиенты
-                            </div>
-                            <div class="service-delivery__info-text">
-                                Мы владеем собственным производством, где сбалансированные рецепты превращаются в восхитительные блюда.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="sliders-delivery">
-            <div class="container">
-                <div class="sliders-delivery__wrapper"  id="block-one">
-                    <div class="sliders-delivery__block">
-                        <div class="sliders-delivery__navigation navigation">
-                            <button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--prev">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									fill="none">
-									<path
-										d="M21.9999 11.25C22.4142 11.25 22.7499 11.5858 22.7499 12C22.7499 12.4142 22.4142 12.75 21.9999 12.75V11.25ZM2.46961 12.5303C2.17672 12.2374 2.17672 11.7626 2.46961 11.4697L7.24258 6.6967C7.53547 6.40381 8.01035 6.40381 8.30324 6.6967C8.59613 6.98959 8.59613 7.46447 8.30324 7.75736L4.0606 12L8.30324 16.2426C8.59613 16.5355 8.59613 17.0104 8.30324 17.3033C8.01035 17.5962 7.53547 17.5962 7.24258 17.3033L2.46961 12.5303ZM21.9999 12.75L2.99994 12.75V11.25L21.9999 11.25V12.75Z"
-										fill="#FFF4DA" />
-								</svg>
-							</button>
-                            <button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--next">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									fill="none">
-									<path
-										d="M2.99994 11.25C2.58573 11.25 2.24994 11.5858 2.24994 12C2.24994 12.4142 2.58573 12.75 2.99994 12.75V11.25ZM22.5303 12.5303C22.8232 12.2374 22.8232 11.7626 22.5303 11.4697L17.7573 6.6967C17.4644 6.40381 16.9895 6.40381 16.6966 6.6967C16.4037 6.98959 16.4037 7.46447 16.6966 7.75736L20.9393 12L16.6966 16.2426C16.4037 16.5355 16.4037 17.0104 16.6966 17.3033C16.9895 17.5962 17.4644 17.5962 17.7573 17.3033L22.5303 12.5303ZM2.99994 12.75L21.9999 12.75V11.25L2.99994 11.25V12.75Z"
-										fill="#FFF4DA" />
-								</svg>
-							</button>
-							
-                        </div>
-                        <div class="sliders-delivery__title">
-                            delivery  <div class="sliders-delivery__title-icon">
-                                <img src="./assets/images/service-delivery/socials.svg" alt="">
-                            </div> club
-                           
-                        </div>
-                        <a href="#" class="sliders-delivery__btn btn">заказать <span>заказать </span></a>
-                    </div>
-                    <div class="sliders-delivery__swiper swiper">
-                        <div class="sliders-delivery__swiper-wrapper swiper-wrapper">
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--first">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-                                    <div class="delivery-box__title">бизнес-ланчи<br> до -30<span>%</span></div>
-                                    <div class="delivery-box__price-block">
-                                        <div class="delivery-box__price"><b>от</b>350</div>
-                                        <div class="delivery-box__sale">400</div>
-                                    </div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card1-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card1-m.png" alt="">
-                                    </div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--second">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-									<div class="delivery-box__date">
-										01.11 — 13.11 
-									</div>
-                                    <div class="delivery-box__title">выгодный<br> ужин</div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card2-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card2-m.png" alt="">
-                                    </div>
-                                   
-									<div class="delivery-box__dop-text">
-										скидка 30<span>%</span>на кулинарию
-									</div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--first">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-                                    <div class="delivery-box__title">бизнес-ланчи<br> до -30<span>%</span></div>
-                                    <div class="delivery-box__price-block">
-                                        <div class="delivery-box__price"><b>от</b>350</div>
-                                        <div class="delivery-box__sale">400</div>
-                                    </div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card1-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card1-m.png" alt="">
-                                    </div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--second">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-									<div class="delivery-box__date">
-										01.11 — 13.11 
-									</div>
-                                    <div class="delivery-box__title">выгодный<br> ужин</div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card2-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card2-m.png" alt="">
-                                    </div>
-                                   
-									<div class="delivery-box__dop-text">
-										скидка 30<span>%</span>на кулинарию
-									</div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--first">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-                                    <div class="delivery-box__title">бизнес-ланчи<br> до -30<span>%</span></div>
-                                    <div class="delivery-box__price-block">
-                                        <div class="delivery-box__price"><b>от</b>350</div>
-                                        <div class="delivery-box__sale">400</div>
-                                    </div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card1-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card1-m.png" alt="">
-                                    </div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--second">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-									<div class="delivery-box__date">
-										01.11 — 13.11 
-									</div>
-                                    <div class="delivery-box__title">выгодный<br> ужин</div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card2-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card2-m.png" alt="">
-                                    </div>
-                                   
-									<div class="delivery-box__dop-text">
-										скидка 30<span>%</span>на кулинарию
-									</div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="sliders-delivery__btn sliders-delivery__btn--mob btn">заказать <span>заказать </span></a>
-					<div class="sliders-delivery__block">
-                        <div class="sliders-delivery__navigation navigation">
-                            <button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--prev">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									fill="none">
-									<path
-										d="M21.9999 11.25C22.4142 11.25 22.7499 11.5858 22.7499 12C22.7499 12.4142 22.4142 12.75 21.9999 12.75V11.25ZM2.46961 12.5303C2.17672 12.2374 2.17672 11.7626 2.46961 11.4697L7.24258 6.6967C7.53547 6.40381 8.01035 6.40381 8.30324 6.6967C8.59613 6.98959 8.59613 7.46447 8.30324 7.75736L4.0606 12L8.30324 16.2426C8.59613 16.5355 8.59613 17.0104 8.30324 17.3033C8.01035 17.5962 7.53547 17.5962 7.24258 17.3033L2.46961 12.5303ZM21.9999 12.75L2.99994 12.75V11.25L21.9999 11.25V12.75Z"
-										fill="#FFF4DA" />
-								</svg>
-							</button>
-                            <button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--next">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									fill="none">
-									<path
-										d="M2.99994 11.25C2.58573 11.25 2.24994 11.5858 2.24994 12C2.24994 12.4142 2.58573 12.75 2.99994 12.75V11.25ZM22.5303 12.5303C22.8232 12.2374 22.8232 11.7626 22.5303 11.4697L17.7573 6.6967C17.4644 6.40381 16.9895 6.40381 16.6966 6.6967C16.4037 6.98959 16.4037 7.46447 16.6966 7.75736L20.9393 12L16.6966 16.2426C16.4037 16.5355 16.4037 17.0104 16.6966 17.3033C16.9895 17.5962 17.4644 17.5962 17.7573 17.3033L22.5303 12.5303ZM2.99994 12.75L21.9999 12.75V11.25L2.99994 11.25V12.75Z"
-										fill="#FFF4DA" />
-								</svg>
-							</button>
-							
-                        </div>
-                        <div class="sliders-delivery__title">
-                            яндекс  <div class="sliders-delivery__title-icon">
-                                <img src="./assets/images/service-delivery/socials2.svg" alt="">
-                            </div> еда 
-                           
-                        </div>
-                        <a href="#" class="sliders-delivery__btn btn">заказать <span>заказать </span></a>
-                    </div>
-                    <div class="sliders-delivery__swiper swiper">
-                        <div class="sliders-delivery__swiper-wrapper swiper-wrapper">
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--first">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-                                    <div class="delivery-box__title">бизнес-ланчи<br> до -30<span>%</span></div>
-                                    <div class="delivery-box__price-block">
-                                        <div class="delivery-box__price"><b>от</b>350</div>
-                                        <div class="delivery-box__sale">400</div>
-                                    </div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card1-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card1-m.png" alt="">
-                                    </div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <article class="delivery-box delivery-box--second">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-									<div class="delivery-box__date">
-										01.11 — 13.11 
-									</div>
-                                    <div class="delivery-box__title">выгодный<br> ужин</div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card2-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card2-m.png" alt="">
-                                    </div>
-                                   
-									<div class="delivery-box__dop-text">
-										скидка 30% на кулинарию
-									</div>
-                                   
-                                    <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
-                                </article>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--first">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-                                    <div class="delivery-box__title">бизнес-ланчи<br> до -30<span>%</span></div>
-                                    <div class="delivery-box__price-block">
-                                        <div class="delivery-box__price"><b>от</b>350</div>
-                                        <div class="delivery-box__sale">400</div>
-                                    </div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card1-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card1-m.png" alt="">
-                                    </div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <article class="delivery-box delivery-box--second">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-									<div class="delivery-box__date">
-										01.11 — 13.11 
-									</div>
-                                    <div class="delivery-box__title">выгодный<br> ужин</div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card2-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card2-m.png" alt="">
-                                    </div>
-                                   
-									<div class="delivery-box__dop-text">
-										скидка 30% на кулинарию
-									</div>
-                                   
-                                    <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
-                                </article>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--first">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-                                    <div class="delivery-box__title">бизнес-ланчи<br> до -30<span>%</span></div>
-                                    <div class="delivery-box__price-block">
-                                        <div class="delivery-box__price"><b>от</b>350</div>
-                                        <div class="delivery-box__sale">400</div>
-                                    </div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card1-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card1-m.png" alt="">
-                                    </div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <article class="delivery-box delivery-box--second">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-									<div class="delivery-box__date">
-										01.11 — 13.11 
-									</div>
-                                    <div class="delivery-box__title">выгодный<br> ужин</div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card2-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card2-m.png" alt="">
-                                    </div>
-                                   
-									<div class="delivery-box__dop-text">
-										скидка 30% на кулинарию
-									</div>
-                                   
-                                    <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
-                                </article>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--first">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-                                    <div class="delivery-box__title">бизнес-ланчи<br> до -30<span>%</span></div>
-                                    <div class="delivery-box__price-block">
-                                        <div class="delivery-box__price"><b>от</b>350</div>
-                                        <div class="delivery-box__sale">400</div>
-                                    </div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card1-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card1-m.png" alt="">
-                                    </div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <article class="delivery-box delivery-box--second">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-									<div class="delivery-box__date">
-										01.11 — 13.11 
-									</div>
-                                    <div class="delivery-box__title">выгодный<br> ужин</div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card2-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card2-m.png" alt="">
-                                    </div>
-                                   
-									<div class="delivery-box__dop-text">
-										скидка 30% на кулинарию
-									</div>
-                                   
-                                    <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="sliders-delivery__btn sliders-delivery__btn--mob btn">заказать <span>заказать </span></a>
-					<div class="sliders-delivery__block">
-                        <div class="sliders-delivery__navigation navigation">
-                            <button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--prev">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									fill="none">
-									<path
-										d="M21.9999 11.25C22.4142 11.25 22.7499 11.5858 22.7499 12C22.7499 12.4142 22.4142 12.75 21.9999 12.75V11.25ZM2.46961 12.5303C2.17672 12.2374 2.17672 11.7626 2.46961 11.4697L7.24258 6.6967C7.53547 6.40381 8.01035 6.40381 8.30324 6.6967C8.59613 6.98959 8.59613 7.46447 8.30324 7.75736L4.0606 12L8.30324 16.2426C8.59613 16.5355 8.59613 17.0104 8.30324 17.3033C8.01035 17.5962 7.53547 17.5962 7.24258 17.3033L2.46961 12.5303ZM21.9999 12.75L2.99994 12.75V11.25L21.9999 11.25V12.75Z"
-										fill="#FFF4DA" />
-								</svg>
-							</button>
-                            <button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--next">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-									fill="none">
-									<path
-										d="M2.99994 11.25C2.58573 11.25 2.24994 11.5858 2.24994 12C2.24994 12.4142 2.58573 12.75 2.99994 12.75V11.25ZM22.5303 12.5303C22.8232 12.2374 22.8232 11.7626 22.5303 11.4697L17.7573 6.6967C17.4644 6.40381 16.9895 6.40381 16.6966 6.6967C16.4037 6.98959 16.4037 7.46447 16.6966 7.75736L20.9393 12L16.6966 16.2426C16.4037 16.5355 16.4037 17.0104 16.6966 17.3033C16.9895 17.5962 17.4644 17.5962 17.7573 17.3033L22.5303 12.5303ZM2.99994 12.75L21.9999 12.75V11.25L2.99994 11.25V12.75Z"
-										fill="#FFF4DA" />
-								</svg>
-							</button>
-							
-                        </div>
-                        <div class="sliders-delivery__title">
-                            сбер  <div class="sliders-delivery__title-icon">
-                                <img src="./assets/images/service-delivery/socials3.svg" alt="">
-                            </div> маркет
-                           
-                        </div>
-                        <a href="#" class="sliders-delivery__btn btn">заказать <span>заказать </span></a>
-                    </div>
-                    <div class="sliders-delivery__swiper swiper">
-                        <div class="sliders-delivery__swiper-wrapper swiper-wrapper">
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--first">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-                                    <div class="delivery-box__title">бизнес-ланчи<br> до -30<span>%</span></div>
-                                    <div class="delivery-box__price-block">
-                                        <div class="delivery-box__price"><b>от</b>350</div>
-                                        <div class="delivery-box__sale">400</div>
-                                    </div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card1-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card1-m.png" alt="">
-                                    </div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <article class="delivery-box delivery-box--second">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-									<div class="delivery-box__date">
-										01.11 — 13.11 
-									</div>
-                                    <div class="delivery-box__title">выгодный<br> ужин</div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card2-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card2-m.png" alt="">
-                                    </div>
-                                   
-									<div class="delivery-box__dop-text">
-										скидка 30% на кулинарию
-									</div>
-                                   
-                                    <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
-                                </article>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--first">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-                                    <div class="delivery-box__title">бизнес-ланчи<br> до -30<span>%</span></div>
-                                    <div class="delivery-box__price-block">
-                                        <div class="delivery-box__price"><b>от</b>350</div>
-                                        <div class="delivery-box__sale">400</div>
-                                    </div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card1-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card1-m.png" alt="">
-                                    </div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <article class="delivery-box delivery-box--second">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-									<div class="delivery-box__date">
-										01.11 — 13.11 
-									</div>
-                                    <div class="delivery-box__title">выгодный<br> ужин</div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card2-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card2-m.png" alt="">
-                                    </div>
-                                   
-									<div class="delivery-box__dop-text">
-										скидка 30% на кулинарию
-									</div>
-                                   
-                                    <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
-                                </article>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <a href="" class="delivery-box delivery-box--first">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-                                    <div class="delivery-box__title">бизнес-ланчи<br> до -30<span>%</span></div>
-                                    <div class="delivery-box__price-block">
-                                        <div class="delivery-box__price"><b>от</b>350</div>
-                                        <div class="delivery-box__sale">400</div>
-                                    </div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card1-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card1-m.png" alt="">
-                                    </div>
-                                   
-                                    <button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
-                                </a>
-                            </div>
-                            <div class="sliders-delivery__slide swiper-slide">
-                                <article class="delivery-box delivery-box--second">
-                                    <div class="delivery-box__par">
-                                        <div class="delivery-box__par-icon">
-                                            <img src="./assets/images/service-delivery/socials.svg" alt="">
-                                        </div>
-                                        <div class="delivery-box__par-text">delivery club</div>
-                                    </div>
-									<div class="delivery-box__date">
-										01.11 — 13.11 
-									</div>
-                                    <div class="delivery-box__title">выгодный<br> ужин</div>
-                                    <div class="delivery-box__image">
-                                        <img src="./assets/images/main-delivery/card2-d.png" alt="">
-                                    </div>
-                                    <div class="delivery-box__image-m">
-                                        <img src="./assets/images/main-delivery/card2-m.png" alt="">
-                                    </div>
-                                   
-									<div class="delivery-box__dop-text">
-										скидка 30% на кулинарию
-									</div>
-                                   
-                                    <a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="sliders-delivery__btn sliders-delivery__btn--mob btn">заказать <span>заказать </span></a>
-                </div>
-            </div>
-        </section>
-	</main>
-	
-	<include src="./components/footer.html"></include>
-</body>
+							<div class="main-delivery__scroll vacancy-banner__scroll-btn desktop">
+								<a href="#block-one" class="btn-circle">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+										<path
+											d="M12.25 2.5C12.25 2.08579 12.5858 1.75 13 1.75C13.4142 1.75 13.75 2.08579 13.75 2.5L12.25 2.5ZM13.5303 22.0303C13.2374 22.3232 12.7626 22.3232 12.4697 22.0303L7.6967 17.2574C7.40381 16.9645 7.40381 16.4896 7.6967 16.1967C7.98959 15.9038 8.46447 15.9038 8.75736 16.1967L13 20.4393L17.2426 16.1967C17.5355 15.9038 18.0104 15.9038 18.3033 16.1967C18.5962 16.4896 18.5962 16.9645 18.3033 17.2574L13.5303 22.0303ZM13.75 2.5L13.75 21.5L12.25 21.5L12.25 2.5L13.75 2.5Z"
+											fill="#330D03"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="main-delivery__right">
+							<h2 class="main-delivery__title main-delivery__title--mob">
+								<strong>доставка</strong>
+								<span>топчик</span>
+							</h2>
+							<div class="main-delivery__image">
+								<img src="./assets/images/main-delivery/img1.png" alt="" />
+							</div>
+							<div class="main-delivery__inner">
+								<h2 class="main-delivery__title">
+									<strong>доставка</strong>
+									<span>топчик</span>
+								</h2>
+								<div class="main-delivery__left-text mob">Наша компания основана на страсти к качественной еде</div>
+								<div class="main-delivery__text">
+									Мы работаем с сервисами доставки для того, чтобы вы могли насладиться вашими любимыми позициями из любой точки города быстро
+									и вкусно.
+								</div>
+								<a class="btn" href="#">наше меню<span>наше меню</span></a>
+								<div class="main-delivery__icon">
+									<img src="./assets/images/main-delivery/sandwich.svg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="service-delivery">
+				<div class="container">
+					<div class="service-delivery__block">
+						<div class="service-delivery__title">сервисы доставки</div>
+						<div class="service-delivery__block-w">
+							<a href="#" class="service-delivery__partner">
+								<div class="service-delivery__partner-icon">
+									<img src="./assets/images/service-delivery/socials.svg" alt="" />
+								</div>
+								<div class="service-delivery__partner-text">delivery club</div>
+							</a>
+							<a href="#" class="service-delivery__partner">
+								<div class="service-delivery__partner-icon">
+									<img src="./assets/images/service-delivery/socials2.svg" alt="" />
+								</div>
+								<div class="service-delivery__partner-text">яндекс еда</div>
+							</a>
+							<a href="#" class="service-delivery__partner">
+								<div class="service-delivery__partner-icon">
+									<img src="./assets/images/service-delivery/socials3.svg" alt="" />
+								</div>
+								<div class="service-delivery__partner-text">сбермаркет</div>
+							</a>
+						</div>
+					</div>
+					<div class="service-delivery__wrapper">
+						<div class="service-delivery__inner">
+							<div class="service-delivery__image">
+								<img src="./assets/images/service-delivery/shaurma.png" alt="" />
+							</div>
+							<div class="service-delivery__info">
+								<div class="service-delivery__info-number">01</div>
+								<div class="service-delivery__info-title">собственное производство</div>
+								<div class="service-delivery__info-text">
+									Мы владеем собственным производством, где сбалансированные рецепты превращаются в восхитительные блюда.
+								</div>
+							</div>
+						</div>
+						<div class="service-delivery__inner">
+							<div class="service-delivery__image">
+								<img src="./assets/images/service-delivery/knife.png" alt="" />
+							</div>
+							<div class="service-delivery__info">
+								<div class="service-delivery__info-number">02</div>
+								<div class="service-delivery__info-title">всегда свежие ингридиенты</div>
+								<div class="service-delivery__info-text">
+									Мы владеем собственным производством, где сбалансированные рецепты превращаются в восхитительные блюда.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sliders-delivery">
+				<div class="container">
+					<div class="sliders-delivery__wrapper" id="block-one">
+						<div class="sliders-delivery__block">
+							<div class="sliders-delivery__navigation navigation">
+								<button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--prev">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M21.9999 11.25C22.4142 11.25 22.7499 11.5858 22.7499 12C22.7499 12.4142 22.4142 12.75 21.9999 12.75V11.25ZM2.46961 12.5303C2.17672 12.2374 2.17672 11.7626 2.46961 11.4697L7.24258 6.6967C7.53547 6.40381 8.01035 6.40381 8.30324 6.6967C8.59613 6.98959 8.59613 7.46447 8.30324 7.75736L4.0606 12L8.30324 16.2426C8.59613 16.5355 8.59613 17.0104 8.30324 17.3033C8.01035 17.5962 7.53547 17.5962 7.24258 17.3033L2.46961 12.5303ZM21.9999 12.75L2.99994 12.75V11.25L21.9999 11.25V12.75Z"
+											fill="#FFF4DA"
+										/>
+									</svg>
+								</button>
+								<button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--next">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M2.99994 11.25C2.58573 11.25 2.24994 11.5858 2.24994 12C2.24994 12.4142 2.58573 12.75 2.99994 12.75V11.25ZM22.5303 12.5303C22.8232 12.2374 22.8232 11.7626 22.5303 11.4697L17.7573 6.6967C17.4644 6.40381 16.9895 6.40381 16.6966 6.6967C16.4037 6.98959 16.4037 7.46447 16.6966 7.75736L20.9393 12L16.6966 16.2426C16.4037 16.5355 16.4037 17.0104 16.6966 17.3033C16.9895 17.5962 17.4644 17.5962 17.7573 17.3033L22.5303 12.5303ZM2.99994 12.75L21.9999 12.75V11.25L2.99994 11.25V12.75Z"
+											fill="#FFF4DA"
+										/>
+									</svg>
+								</button>
+							</div>
+							<div class="sliders-delivery__title">
+								delivery
+								<div class="sliders-delivery__title-icon">
+									<img src="./assets/images/service-delivery/socials.svg" alt="" />
+								</div>
+								club
+							</div>
+							<a href="#" class="sliders-delivery__btn btn">заказать <span>заказать </span></a>
+						</div>
+						<div class="sliders-delivery__swiper swiper">
+							<div class="sliders-delivery__swiper-wrapper swiper-wrapper">
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--first">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__title">
+											бизнес-ланчи<br />
+											до -30<span>%</span>
+										</div>
+										<div class="delivery-box__price-block">
+											<div class="delivery-box__price"><b>от</b>350</div>
+											<div class="delivery-box__sale">400</div>
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card1-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card1-m.png" alt="" />
+										</div>
 
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--second">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__date">01.11 — 13.11</div>
+										<div class="delivery-box__title">
+											выгодный<br />
+											ужин
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card2-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card2-m.png" alt="" />
+										</div>
+
+										<div class="delivery-box__dop-text">скидка 30<span>%</span>на кулинарию</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--first">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__title">
+											бизнес-ланчи<br />
+											до -30<span>%</span>
+										</div>
+										<div class="delivery-box__price-block">
+											<div class="delivery-box__price"><b>от</b>350</div>
+											<div class="delivery-box__sale">400</div>
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card1-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card1-m.png" alt="" />
+										</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--second">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__date">01.11 — 13.11</div>
+										<div class="delivery-box__title">
+											выгодный<br />
+											ужин
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card2-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card2-m.png" alt="" />
+										</div>
+
+										<div class="delivery-box__dop-text">скидка 30<span>%</span>на кулинарию</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--first">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__title">
+											бизнес-ланчи<br />
+											до -30<span>%</span>
+										</div>
+										<div class="delivery-box__price-block">
+											<div class="delivery-box__price"><b>от</b>350</div>
+											<div class="delivery-box__sale">400</div>
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card1-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card1-m.png" alt="" />
+										</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--second">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__date">01.11 — 13.11</div>
+										<div class="delivery-box__title">
+											выгодный<br />
+											ужин
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card2-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card2-m.png" alt="" />
+										</div>
+
+										<div class="delivery-box__dop-text">скидка 30<span>%</span>на кулинарию</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="sliders-delivery__btn sliders-delivery__btn--mob btn">заказать <span>заказать </span></a>
+						<div class="sliders-delivery__block">
+							<div class="sliders-delivery__navigation navigation">
+								<button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--prev">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M21.9999 11.25C22.4142 11.25 22.7499 11.5858 22.7499 12C22.7499 12.4142 22.4142 12.75 21.9999 12.75V11.25ZM2.46961 12.5303C2.17672 12.2374 2.17672 11.7626 2.46961 11.4697L7.24258 6.6967C7.53547 6.40381 8.01035 6.40381 8.30324 6.6967C8.59613 6.98959 8.59613 7.46447 8.30324 7.75736L4.0606 12L8.30324 16.2426C8.59613 16.5355 8.59613 17.0104 8.30324 17.3033C8.01035 17.5962 7.53547 17.5962 7.24258 17.3033L2.46961 12.5303ZM21.9999 12.75L2.99994 12.75V11.25L21.9999 11.25V12.75Z"
+											fill="#FFF4DA"
+										/>
+									</svg>
+								</button>
+								<button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--next">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M2.99994 11.25C2.58573 11.25 2.24994 11.5858 2.24994 12C2.24994 12.4142 2.58573 12.75 2.99994 12.75V11.25ZM22.5303 12.5303C22.8232 12.2374 22.8232 11.7626 22.5303 11.4697L17.7573 6.6967C17.4644 6.40381 16.9895 6.40381 16.6966 6.6967C16.4037 6.98959 16.4037 7.46447 16.6966 7.75736L20.9393 12L16.6966 16.2426C16.4037 16.5355 16.4037 17.0104 16.6966 17.3033C16.9895 17.5962 17.4644 17.5962 17.7573 17.3033L22.5303 12.5303ZM2.99994 12.75L21.9999 12.75V11.25L2.99994 11.25V12.75Z"
+											fill="#FFF4DA"
+										/>
+									</svg>
+								</button>
+							</div>
+							<div class="sliders-delivery__title">
+								яндекс
+								<div class="sliders-delivery__title-icon">
+									<img src="./assets/images/service-delivery/socials2.svg" alt="" />
+								</div>
+								еда
+							</div>
+							<a href="#" class="sliders-delivery__btn btn">заказать <span>заказать </span></a>
+						</div>
+						<div class="sliders-delivery__swiper swiper">
+							<div class="sliders-delivery__swiper-wrapper swiper-wrapper">
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--first">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__title">
+											бизнес-ланчи<br />
+											до -30<span>%</span>
+										</div>
+										<div class="delivery-box__price-block">
+											<div class="delivery-box__price"><b>от</b>350</div>
+											<div class="delivery-box__sale">400</div>
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card1-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card1-m.png" alt="" />
+										</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<article class="delivery-box delivery-box--second">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__date">01.11 — 13.11</div>
+										<div class="delivery-box__title">
+											выгодный<br />
+											ужин
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card2-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card2-m.png" alt="" />
+										</div>
+
+										<div class="delivery-box__dop-text">скидка 30% на кулинарию</div>
+
+										<a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+									</article>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--first">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__title">
+											бизнес-ланчи<br />
+											до -30<span>%</span>
+										</div>
+										<div class="delivery-box__price-block">
+											<div class="delivery-box__price"><b>от</b>350</div>
+											<div class="delivery-box__sale">400</div>
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card1-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card1-m.png" alt="" />
+										</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<article class="delivery-box delivery-box--second">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__date">01.11 — 13.11</div>
+										<div class="delivery-box__title">
+											выгодный<br />
+											ужин
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card2-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card2-m.png" alt="" />
+										</div>
+
+										<div class="delivery-box__dop-text">скидка 30% на кулинарию</div>
+
+										<a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+									</article>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--first">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__title">
+											бизнес-ланчи<br />
+											до -30<span>%</span>
+										</div>
+										<div class="delivery-box__price-block">
+											<div class="delivery-box__price"><b>от</b>350</div>
+											<div class="delivery-box__sale">400</div>
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card1-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card1-m.png" alt="" />
+										</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<article class="delivery-box delivery-box--second">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__date">01.11 — 13.11</div>
+										<div class="delivery-box__title">
+											выгодный<br />
+											ужин
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card2-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card2-m.png" alt="" />
+										</div>
+
+										<div class="delivery-box__dop-text">скидка 30% на кулинарию</div>
+
+										<a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+									</article>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--first">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__title">
+											бизнес-ланчи<br />
+											до -30<span>%</span>
+										</div>
+										<div class="delivery-box__price-block">
+											<div class="delivery-box__price"><b>от</b>350</div>
+											<div class="delivery-box__sale">400</div>
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card1-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card1-m.png" alt="" />
+										</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<article class="delivery-box delivery-box--second">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__date">01.11 — 13.11</div>
+										<div class="delivery-box__title">
+											выгодный<br />
+											ужин
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card2-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card2-m.png" alt="" />
+										</div>
+
+										<div class="delivery-box__dop-text">скидка 30% на кулинарию</div>
+
+										<a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+									</article>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="sliders-delivery__btn sliders-delivery__btn--mob btn">заказать <span>заказать </span></a>
+						<div class="sliders-delivery__block">
+							<div class="sliders-delivery__navigation navigation">
+								<button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--prev">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M21.9999 11.25C22.4142 11.25 22.7499 11.5858 22.7499 12C22.7499 12.4142 22.4142 12.75 21.9999 12.75V11.25ZM2.46961 12.5303C2.17672 12.2374 2.17672 11.7626 2.46961 11.4697L7.24258 6.6967C7.53547 6.40381 8.01035 6.40381 8.30324 6.6967C8.59613 6.98959 8.59613 7.46447 8.30324 7.75736L4.0606 12L8.30324 16.2426C8.59613 16.5355 8.59613 17.0104 8.30324 17.3033C8.01035 17.5962 7.53547 17.5962 7.24258 17.3033L2.46961 12.5303ZM21.9999 12.75L2.99994 12.75V11.25L21.9999 11.25V12.75Z"
+											fill="#FFF4DA"
+										/>
+									</svg>
+								</button>
+								<button class="sliders-delivery__navigation-btn navigation-btn sliders-delivery__navigation--next">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M2.99994 11.25C2.58573 11.25 2.24994 11.5858 2.24994 12C2.24994 12.4142 2.58573 12.75 2.99994 12.75V11.25ZM22.5303 12.5303C22.8232 12.2374 22.8232 11.7626 22.5303 11.4697L17.7573 6.6967C17.4644 6.40381 16.9895 6.40381 16.6966 6.6967C16.4037 6.98959 16.4037 7.46447 16.6966 7.75736L20.9393 12L16.6966 16.2426C16.4037 16.5355 16.4037 17.0104 16.6966 17.3033C16.9895 17.5962 17.4644 17.5962 17.7573 17.3033L22.5303 12.5303ZM2.99994 12.75L21.9999 12.75V11.25L2.99994 11.25V12.75Z"
+											fill="#FFF4DA"
+										/>
+									</svg>
+								</button>
+							</div>
+							<div class="sliders-delivery__title">
+								сбер
+								<div class="sliders-delivery__title-icon">
+									<img src="./assets/images/service-delivery/socials3.svg" alt="" />
+								</div>
+								маркет
+							</div>
+							<a href="#" class="sliders-delivery__btn btn">заказать <span>заказать </span></a>
+						</div>
+						<div class="sliders-delivery__swiper swiper">
+							<div class="sliders-delivery__swiper-wrapper swiper-wrapper">
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--first">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__title">
+											бизнес-ланчи<br />
+											до -30<span>%</span>
+										</div>
+										<div class="delivery-box__price-block">
+											<div class="delivery-box__price"><b>от</b>350</div>
+											<div class="delivery-box__sale">400</div>
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card1-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card1-m.png" alt="" />
+										</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<article class="delivery-box delivery-box--second">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__date">01.11 — 13.11</div>
+										<div class="delivery-box__title">
+											выгодный<br />
+											ужин
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card2-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card2-m.png" alt="" />
+										</div>
+
+										<div class="delivery-box__dop-text">скидка 30% на кулинарию</div>
+
+										<a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+									</article>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--first">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__title">
+											бизнес-ланчи<br />
+											до -30<span>%</span>
+										</div>
+										<div class="delivery-box__price-block">
+											<div class="delivery-box__price"><b>от</b>350</div>
+											<div class="delivery-box__sale">400</div>
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card1-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card1-m.png" alt="" />
+										</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<article class="delivery-box delivery-box--second">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__date">01.11 — 13.11</div>
+										<div class="delivery-box__title">
+											выгодный<br />
+											ужин
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card2-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card2-m.png" alt="" />
+										</div>
+
+										<div class="delivery-box__dop-text">скидка 30% на кулинарию</div>
+
+										<a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+									</article>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<a href="" class="delivery-box delivery-box--first">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__title">
+											бизнес-ланчи<br />
+											до -30<span>%</span>
+										</div>
+										<div class="delivery-box__price-block">
+											<div class="delivery-box__price"><b>от</b>350</div>
+											<div class="delivery-box__sale">400</div>
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card1-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card1-m.png" alt="" />
+										</div>
+
+										<button class="delivery-box__btn btn">подробнее <span>подробнее</span></button>
+									</a>
+								</div>
+								<div class="sliders-delivery__slide swiper-slide">
+									<article class="delivery-box delivery-box--second">
+										<div class="delivery-box__par">
+											<div class="delivery-box__par-icon">
+												<img src="./assets/images/service-delivery/socials.svg" alt="" />
+											</div>
+											<div class="delivery-box__par-text">delivery club</div>
+										</div>
+										<div class="delivery-box__date">01.11 — 13.11</div>
+										<div class="delivery-box__title">
+											выгодный<br />
+											ужин
+										</div>
+										<div class="delivery-box__image">
+											<img src="./assets/images/main-delivery/card2-d.png" alt="" />
+										</div>
+										<div class="delivery-box__image-m">
+											<img src="./assets/images/main-delivery/card2-m.png" alt="" />
+										</div>
+
+										<div class="delivery-box__dop-text">скидка 30% на кулинарию</div>
+
+										<a href="#" class="delivery-box__btn btn">подробнее <span>подробнее</span></a>
+									</article>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="sliders-delivery__btn sliders-delivery__btn--mob btn">заказать <span>заказать </span></a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<include src="./components/footer.html"></include>
+	</body>
 </html>
