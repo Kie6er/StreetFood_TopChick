@@ -6528,6 +6528,7 @@ main {
 	position: absolute;
 	top: 0;
 	z-index: 1;
+	left: 0;
 }
 .delivery-box__price {
 	color: var(--beige, #fff4da);
@@ -6644,6 +6645,7 @@ main {
 		top: 0;
 		width: 100%;
 		height: 100%;
+		left: 0;
 	}
 	.delivery-box__par {
 		margin-bottom: 5rem;
@@ -6673,6 +6675,10 @@ main {
 }
 .stock {
 	padding-top: 20rem;
+}
+.stock .container {
+	width: 100%;
+	padding: 0 1rem;
 }
 .stock__title {
 	color: #330d03;
@@ -6705,7 +6711,6 @@ main {
 }
 .stock .delivery-box {
 	margin-right: 1rem;
-	width: 88.6rem;
 	margin-bottom: 5.6rem;
 }
 .stock .delivery-box:nth-child(2n) {
@@ -6745,6 +6750,9 @@ main {
 	margin-bottom: 20rem;
 }
 @media (max-width: 48em) {
+	.stock .container {
+		padding: 0 3.2rem;
+	}
 	.stock__title {
 		color: var(--dark, #330d03);
 		font-family: "Literata";
@@ -7006,7 +7014,7 @@ main {
 }
 @media (max-width: 48em) {
 	.detailed-promotions {
-		padding-top: 10.4rem;
+		padding-top: 4rem;
 	}
 	.detailed-promotions .container {
 		width: 100%;
@@ -7440,7 +7448,7 @@ main {
 }
 @media (max-width: 48em) {
 	.about {
-		padding-top: 6.6rem;
+		padding-top: 4rem;
 	}
 	.about .container {
 		padding: 0;
@@ -8299,6 +8307,7 @@ main {
 		bottom: initial;
 		margin: 0 auto;
 		margin-top: 10rem;
+		display: block;
 		height: auto;
 	}
 	.position-card__aside-basket {
