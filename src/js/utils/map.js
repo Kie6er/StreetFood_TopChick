@@ -7,7 +7,7 @@ const markers = [
 		address: "Можайский вал, 10",
 		coordinate: [37.528583852499565, 55.73236309372132],
 		active: false,
-		type: "fast-food",
+		type: "fastfood",
 		sliderIndex: 0,
 	},
 	{
@@ -60,9 +60,7 @@ $(document).ready(function () {
 });
 function remToPx(remValue) {
 	// Получаем текущий базовый размер шрифта (font-size) из элемента <html>
-	var htmlFontSize = parseFloat(
-		getComputedStyle(document.documentElement).fontSize
-	);
+	var htmlFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
 	// Переводим значение из rem в px
 	var pxValue = remValue * htmlFontSize;
@@ -72,8 +70,7 @@ function remToPx(remValue) {
 }
 async function initMap() {
 	await ymaps3.ready;
-	const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } =
-		ymaps3;
+	const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } = ymaps3;
 	const map = new YMap(document.getElementById("map-main"), {
 		location: {
 			center: [37.588144, 55.733842],
@@ -97,10 +94,7 @@ async function initMap() {
 		);
 		el.active ? $(content).addClass("active") : null;
 		clickMarker(content, el);
-		const marker = new YMapMarker(
-			{ coordinates: el.coordinate, draggable: false },
-			content
-		);
+		const marker = new YMapMarker({ coordinates: el.coordinate, draggable: false }, content);
 		map.addChild(marker);
 	});
 }
