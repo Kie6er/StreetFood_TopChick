@@ -4384,6 +4384,7 @@ main {
 	letter-spacing: -0.036rem;
 }
 .review-slide__wrapper {
+	width: 100%;
 	position: relative;
 	align-self: flex-end;
 	padding: 4.5rem 4rem 3rem;
@@ -4949,6 +4950,90 @@ main {
 .map-slide--culinary .map-slide__type span {
 	background: rgba(51, 13, 3, 0.3);
 }
+.map-slide--red .map-slide__type span {
+	background: red;
+}
+.map-slide--dark-red .map-slide__type span {
+	background: #cd5c5c;
+}
+.map-slide--brick .map-slide__type span {
+	background: darkred;
+}
+.map-slide--orange .map-slide__type span {
+	background: orange;
+}
+.map-slide--dark-orange .map-slide__type span {
+	background: #ff8c00;
+}
+.map-slide--golden .map-slide__type span {
+	background: #ff4500;
+}
+.map-slide--yellow .map-slide__type span {
+	background: #ff0;
+}
+.map-slide--sunny .map-slide__type span {
+	background: gold;
+}
+.map-slide--amber .map-slide__type span {
+	background: #ffb900;
+}
+.map-slide--green .map-slide__type span {
+	background: green;
+}
+.map-slide--dark-green .map-slide__type span {
+	background: #006400;
+}
+.map-slide--forest .map-slide__type span {
+	background: #004d00;
+}
+.map-slide--blue .map-slide__type span {
+	background: #00bfff;
+}
+.map-slide--bluish-gray .map-slide__type span {
+	background: skyblue;
+}
+.map-slide--royal .map-slide__type span {
+	background: #1e90ff;
+}
+.map-slide--azure .map-slide__type span {
+	background: #4169e1;
+}
+.map-slide--dark-blue .map-slide__type span {
+	background: #00008b;
+}
+.map-slide--purple .map-slide__type span {
+	background: #8a2be2;
+}
+.map-slide--lilac-purple .map-slide__type span {
+	background: #9400d3;
+}
+.map-slide--indigo .map-slide__type span {
+	background: indigo;
+}
+.map-slide--pink .map-slide__type span {
+	background: pink;
+}
+.map-slide--pink-purple .map-slide__type span {
+	background: hotpink;
+}
+.map-slide--dustypink .map-slide__type span {
+	background: #db7093;
+}
+.map-slide--black .map-slide__type span {
+	background: #000;
+}
+.map-slide--dark-gray .map-slide__type span {
+	background: #111;
+}
+.map-slide--charcoal-gray .map-slide__type span {
+	background: #222;
+}
+.map-slide--white .map-slide__type span {
+	background: #fff;
+}
+.map-slide--light-gray .map-slide__type span {
+	background: #f0f0f0;
+}
 .marker {
 	cursor: pointer;
 	width: 6.4rem;
@@ -4958,7 +5043,11 @@ main {
 	align-items: center;
 	justify-content: center;
 }
-.marker.fast-food svg path {
+.marker svg {
+	width: 2.6rem;
+	height: 3.755rem;
+}
+.marker.fastfood svg path {
 	fill: #b5bf3d;
 }
 .marker.culinary svg path {
@@ -4967,10 +5056,94 @@ main {
 .marker.shawerma svg path {
 	fill: #ff6d2f;
 }
-.marker.active.fast-food {
+.marker.red svg path {
+	fill: red;
+}
+.marker.dark-red svg path {
+	fill: #cd5c5c;
+}
+.marker.brick svg path {
+	fill: darkred;
+}
+.marker.orange svg path {
+	fill: orange;
+}
+.marker.dark-orange svg path {
+	fill: #ff8c00;
+}
+.marker.golden svg path {
+	fill: #ff4500;
+}
+.marker.yellow svg path {
+	fill: #ff0;
+}
+.marker.sunny svg path {
+	fill: gold;
+}
+.marker.amber svg path {
+	fill: #ffb900;
+}
+.marker.green svg path {
+	fill: green;
+}
+.marker.dark-green svg path {
+	fill: #006400;
+}
+.marker.forest svg path {
+	fill: #004d00;
+}
+.marker.blue svg path {
+	fill: #00bfff;
+}
+.marker.bluish-gray svg path {
+	fill: skyblue;
+}
+.marker.royal svg path {
+	fill: #1e90ff;
+}
+.marker.azure svg path {
+	fill: #4169e1;
+}
+.marker.dark-blue svg path {
+	fill: #00008b;
+}
+.marker.purple svg path {
+	fill: #8a2be2;
+}
+.marker.lilac-purple svg path {
+	fill: #9400d3;
+}
+.marker.indigo svg path {
+	fill: indigo;
+}
+.marker.pink svg path {
+	fill: pink;
+}
+.marker.pink-purple svg path {
+	fill: hotpink;
+}
+.marker.dustypink svg path {
+	fill: #db7093;
+}
+.marker.black svg path {
+	fill: #000;
+}
+.marker.dark-gray svg path {
+	fill: #111;
+}
+.marker.charcoal-gray svg path {
+	fill: #222;
+}
+.marker.white svg path {
+	fill: #fff;
+}
+.marker.light-gray svg path {
+	fill: #f0f0f0;
+}
+.marker.active.fastfood {
 	background-color: #b5bf3d;
 }
-.marker.active.fast-food svg path {
+.marker.active.fastfood svg path {
 	fill: #fff4da;
 }
 .marker.active.culinary {
@@ -4985,9 +5158,89 @@ main {
 .marker.active.shawerma svg path {
 	fill: #fff4da;
 }
-.marker svg {
-	width: 2.6rem;
-	height: 3.755rem;
+.marker.active.red {
+	background-color: red;
+}
+.marker.active.dark-red {
+	background-color: #cd5c5c;
+}
+.marker.active.brick {
+	background-color: darkred;
+}
+.marker.active.orange {
+	background-color: orange;
+}
+.marker.active.dark-orange {
+	background-color: #ff8c00;
+}
+.marker.active.golden {
+	background-color: #ff4500;
+}
+.marker.active.yellow {
+	background-color: #ff0;
+}
+.marker.active.sunny {
+	background-color: gold;
+}
+.marker.active.amber {
+	background-color: #ffb900;
+}
+.marker.active.green {
+	background-color: green;
+}
+.marker.active.dark-green {
+	background-color: #006400;
+}
+.marker.active.forest {
+	background-color: #004d00;
+}
+.marker.active.blue {
+	background-color: #00bfff;
+}
+.marker.active.bluish-gray {
+	background-color: skyblue;
+}
+.marker.active.royal {
+	background-color: #1e90ff;
+}
+.marker.active.azure {
+	background-color: #4169e1;
+}
+.marker.active.dark-blue {
+	background-color: #00008b;
+}
+.marker.active.purple {
+	background-color: #8a2be2;
+}
+.marker.active.lilac-purple {
+	background-color: #9400d3;
+}
+.marker.active.indigo {
+	background-color: indigo;
+}
+.marker.active.pink {
+	background-color: pink;
+}
+.marker.active.pink-purple {
+	background-color: hotpink;
+}
+.marker.active.dustypink {
+	background-color: #db7093;
+}
+.marker.active.black {
+	background-color: #000;
+}
+.marker.active.dark-gray {
+	background-color: #111;
+}
+.marker.active.charcoal-gray {
+	background-color: #222;
+}
+.marker.active.white {
+	background-color: #fff;
+}
+.marker.active.light-gray {
+	background-color: #f0f0f0;
 }
 [class*="--map-copyrights"] {
 	display: none !important;
@@ -5320,10 +5573,9 @@ main {
 	position: relative;
 }
 .vacancy-banner-slide__salary sup {
-	position: absolute;
+	position: static;
 	font-size: 2.8rem;
-	right: -1.5rem;
-	top: -0.4rem;
+	margin-left: 0.5rem;
 }
 .vacancy-banner-slide__btn::after {
 	bottom: 0;
@@ -5591,10 +5843,8 @@ main {
 		margin-bottom: 3.6rem;
 	}
 	.vacancy-banner-slide__salary sup {
-		position: absolute;
-		font-size: 4.8rem;
-		right: -2.5rem;
-		top: 0.5rem;
+		font-size: 3.2rem;
+		margin-left: 0.8rem;
 	}
 	.vacancy-banner-slide__btn::after {
 		bottom: -0.8rem;
@@ -8688,10 +8938,9 @@ main {
 	position: relative;
 }
 .vacancy-banner-slide__salary sup {
-	position: absolute;
+	position: static;
 	font-size: 2.8rem;
-	right: -1.5rem;
-	top: -0.4rem;
+	margin-left: 0.5rem;
 }
 .vacancy-banner-slide__btn::after {
 	bottom: 0;
@@ -8959,10 +9208,8 @@ main {
 		margin-bottom: 3.6rem;
 	}
 	.vacancy-banner-slide__salary sup {
-		position: absolute;
-		font-size: 4.8rem;
-		right: -2.5rem;
-		top: 0.5rem;
+		font-size: 3.2rem;
+		margin-left: 0.8rem;
 	}
 	.vacancy-banner-slide__btn::after {
 		bottom: -0.8rem;

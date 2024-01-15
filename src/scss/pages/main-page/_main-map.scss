@@ -190,6 +190,7 @@
 		}
 	}
 }
+
 .map-slide {
 	// .map-slide__img
 	&__img {
@@ -280,17 +281,101 @@
 			}
 		}
 	}
-
-	&--fastfood .map-slide__type span {
-		background: $green;
-	}
-	&--shawerma .map-slide__type span {
-		background: $orange;
-	}
-	&--culinary .map-slide__type span {
-		background: $dark-tertiary;
-	}
 }
+.map-slide--fastfood .map-slide__type span {
+	background: #b5bf3d;
+}
+.map-slide--shawerma .map-slide__type span {
+	background: #ff6d2f;
+}
+.map-slide--culinary .map-slide__type span {
+	background: rgba(51, 13, 3, 0.3);
+}
+.map-slide--red .map-slide__type span {
+	background: #ff0000;
+}
+.map-slide--dark-red .map-slide__type span {
+	background: #cd5c5c;
+}
+.map-slide--brick .map-slide__type span {
+	background: #8b0000;
+}
+.map-slide--orange .map-slide__type span {
+	background: #ffa500;
+}
+.map-slide--dark-orange .map-slide__type span {
+	background: #ff8c00;
+}
+.map-slide--golden .map-slide__type span {
+	background: #ff4500;
+}
+.map-slide--yellow .map-slide__type span {
+	background: #ffff00;
+}
+.map-slide--sunny .map-slide__type span {
+	background: #ffd700;
+}
+.map-slide--amber .map-slide__type span {
+	background: #ffb900;
+}
+.map-slide--green .map-slide__type span {
+	background: #008000;
+}
+.map-slide--dark-green .map-slide__type span {
+	background: #006400;
+}
+.map-slide--forest .map-slide__type span {
+	background: #004d00;
+}
+.map-slide--blue .map-slide__type span {
+	background: #00bfff;
+}
+.map-slide--bluish-gray .map-slide__type span {
+	background: #87ceeb;
+}
+.map-slide--royal .map-slide__type span {
+	background: #1e90ff;
+}
+.map-slide--azure .map-slide__type span {
+	background: #4169e1;
+}
+.map-slide--dark-blue .map-slide__type span {
+	background: #00008b;
+}
+.map-slide--purple .map-slide__type span {
+	background: #8a2be2;
+}
+.map-slide--lilac-purple .map-slide__type span {
+	background: #9400d3;
+}
+.map-slide--indigo .map-slide__type span {
+	background: #4b0082;
+}
+.map-slide--pink .map-slide__type span {
+	background: #ffc0cb;
+}
+.map-slide--pink-purple .map-slide__type span {
+	background: #ff69b4;
+}
+.map-slide--dustypink .map-slide__type span {
+	background: #db7093;
+}
+.map-slide--black .map-slide__type span {
+	background: #000000;
+}
+.map-slide--dark-gray .map-slide__type span {
+	background: #111111;
+}
+.map-slide--charcoal-gray .map-slide__type span {
+	background: #222222;
+}
+.map-slide--white .map-slide__type span {
+	background: #ffffff;
+}
+.map-slide--light-gray .map-slide__type span {
+	background: #f0f0f0;
+}
+
 .marker {
 	cursor: pointer;
 	width: 6.4rem;
@@ -300,40 +385,205 @@
 	align-items: center;
 	justify-content: center;
 
-	&.fast-food svg path {
-		fill: $green;
-	}
-	&.culinary svg path {
-		fill: $beige;
-	}
-	&.shawerma svg path {
-		fill: $orange;
-	}
-	&.active {
-		&.fast-food {
-			background-color: $green;
-			svg path {
-				fill: $beige;
-			}
-		}
-		&.culinary {
-			background-color: $beige;
-			svg path {
-				fill: $dark-tertiary;
-			}
-		}
-		&.shawerma {
-			background-color: $orange;
-			svg path {
-				fill: $beige;
-			}
-		}
-	}
-
 	svg {
 		width: 2.6rem;
 		height: 3.755rem;
 	}
+}
+.marker.fastfood svg path {
+	fill: #b5bf3d;
+}
+.marker.culinary svg path {
+	fill: #fff4da;
+}
+.marker.shawerma svg path {
+	fill: #ff6d2f;
+}
+.marker.red svg path {
+	fill: #ff0000;
+}
+.marker.dark-red svg path {
+	fill: #cd5c5c;
+}
+.marker.brick svg path {
+	fill: #8b0000;
+}
+.marker.orange svg path {
+	fill: #ffa500;
+}
+.marker.dark-orange svg path {
+	fill: #ff8c00;
+}
+.marker.golden svg path {
+	fill: #ff4500;
+}
+.marker.yellow svg path {
+	fill: #ffff00;
+}
+.marker.sunny svg path {
+	fill: #ffd700;
+}
+.marker.amber svg path {
+	fill: #ffb900;
+}
+.marker.green svg path {
+	fill: #008000;
+}
+.marker.dark-green svg path {
+	fill: #006400;
+}
+.marker.forest svg path {
+	fill: #004d00;
+}
+.marker.blue svg path {
+	fill: #00bfff;
+}
+.marker.bluish-gray svg path {
+	fill: #87ceeb;
+}
+.marker.royal svg path {
+	fill: #1e90ff;
+}
+.marker.azure svg path {
+	fill: #4169e1;
+}
+.marker.dark-blue svg path {
+	fill: #00008b;
+}
+.marker.purple svg path {
+	fill: #8a2be2;
+}
+.marker.lilac-purple svg path {
+	fill: #9400d3;
+}
+.marker.indigo svg path {
+	fill: #4b0082;
+}
+.marker.pink svg path {
+	fill: #ffc0cb;
+}
+.marker.pink-purple svg path {
+	fill: #ff69b4;
+}
+.marker.dustypink svg path {
+	fill: #db7093;
+}
+.marker.black svg path {
+	fill: #000000;
+}
+.marker.dark-gray svg path {
+	fill: #111111;
+}
+.marker.charcoal-gray svg path {
+	fill: #222222;
+}
+.marker.white svg path {
+	fill: #ffffff;
+}
+.marker.light-gray svg path {
+	fill: #f0f0f0;
+}
+.marker.active.fastfood {
+	background-color: #b5bf3d;
+}
+.marker.active.fastfood svg path {
+	fill: #fff4da;
+}
+.marker.active.culinary {
+	background-color: #fff4da;
+}
+.marker.active.culinary svg path {
+	fill: rgba(51, 13, 3, 0.3);
+}
+.marker.active.shawerma {
+	background-color: #ff6d2f;
+}
+.marker.active.shawerma svg path {
+	fill: #fff4da;
+}
+.marker.active.red {
+	background-color: #ff0000;
+}
+.marker.active.dark-red {
+	background-color: #cd5c5c;
+}
+.marker.active.brick {
+	background-color: #8b0000;
+}
+.marker.active.orange {
+	background-color: #ffa500;
+}
+.marker.active.dark-orange {
+	background-color: #ff8c00;
+}
+.marker.active.golden {
+	background-color: #ff4500;
+}
+.marker.active.yellow {
+	background-color: #ffff00;
+}
+.marker.active.sunny {
+	background-color: #ffd700;
+}
+.marker.active.amber {
+	background-color: #ffb900;
+}
+.marker.active.green {
+	background-color: #008000;
+}
+.marker.active.dark-green {
+	background-color: #006400;
+}
+.marker.active.forest {
+	background-color: #004d00;
+}
+.marker.active.blue {
+	background-color: #00bfff;
+}
+.marker.active.bluish-gray {
+	background-color: #87ceeb;
+}
+.marker.active.royal {
+	background-color: #1e90ff;
+}
+.marker.active.azure {
+	background-color: #4169e1;
+}
+.marker.active.dark-blue {
+	background-color: #00008b;
+}
+.marker.active.purple {
+	background-color: #8a2be2;
+}
+.marker.active.lilac-purple {
+	background-color: #9400d3;
+}
+.marker.active.indigo {
+	background-color: #4b0082;
+}
+.marker.active.pink {
+	background-color: #ffc0cb;
+}
+.marker.active.pink-purple {
+	background-color: #ff69b4;
+}
+.marker.active.dustypink {
+	background-color: #db7093;
+}
+.marker.active.black {
+	background-color: #000000;
+}
+.marker.active.dark-gray {
+	background-color: #111111;
+}
+.marker.active.charcoal-gray {
+	background-color: #222222;
+}
+.marker.active.white {
+	background-color: #ffffff;
+}
+.marker.active.light-gray {
+	background-color: #f0f0f0;
 }
 [class*="--map-copyrights"] {
 	display: none !important;
