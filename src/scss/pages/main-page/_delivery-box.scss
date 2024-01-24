@@ -1,246 +1,250 @@
 .delivery-box {
-    padding: 8rem 6rem;
-    width: 93rem;
-    height: 61rem;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    &__par {
-        display: flex;
-        align-items: center;
-        margin-bottom: 4.8rem;
-        position: relative;
-        z-index: 2;
-        &-icon {
-            width: 3.7rem;
-            height: 3.7rem;
-            margin-right: 0.8rem;
-        }
+	padding: 7rem 6rem;
+	width: 93rem;
+	height: 61rem;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	&__par {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2.4rem;
+		position: relative;
+		z-index: 2;
+		&-icon {
+			width: 3.7rem;
+			height: 3.7rem;
+			margin-right: 0.8rem;
+		}
 
-        &-text {
-            color: $beige;
-            font-family: "Alumni Sans", sans-serif;
-            font-size: 2.4rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 2.8rem;
+		&-text {
+			color: $beige;
+			font-family: "Alumni Sans", sans-serif;
+			font-size: 2.4rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 2.8rem;
 
-            text-transform: uppercase;
-        }
-    }
+			text-transform: uppercase;
+		}
+	}
 
-    &__date {
-        color: #fff4da;
-        margin-bottom: 4.8rem;
-        font-family: "Alumni Sans";
-        font-size: 4.5rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -1.8px;
-        text-transform: uppercase;
-        position: relative;
-        z-index: 2;
-    }
+	&__date {
+		color: #fff4da;
+		margin-bottom: 2.4rem;
+		font-family: "Alumni Sans";
+		font-size: 4.5rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 100%;
+		letter-spacing: -1.8px;
+		text-transform: uppercase;
+		position: relative;
+		z-index: 2;
+	}
 
-    &__title {
-        font-family: "Alumni Sans";
-        font-size: 9rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 90%;
-        margin-bottom: 5.2rem;
-        text-transform: uppercase;
-        position: relative;
-        z-index: 2;
+	&__title {
+		font-family: "Alumni Sans";
+		font-size: 9rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 90%;
+		margin-bottom: 2.4rem;
+		text-transform: uppercase;
+		position: relative;
+		z-index: 2;
 
-        span {
-            font-style: italic;
-            font-size: 7.8rem;
-        }
-    }
+		span {
+			font-style: italic;
+			font-size: 7.8rem;
+		}
+	}
 
-    &__price-block {
-        display: flex;
-        margin-bottom: 6.2rem;
-        position: relative;
-        z-index: 2;
-    }
+	&__price-block {
+		display: flex;
+		margin-bottom: 2.4rem;
+		position: relative;
+		z-index: 2;
+	}
 
-    &__image-m {
-        display: none;
-    }
+	&__image-m {
+		display: none;
+	}
 
-    &__image {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        left: 0;
-    }
+	&__image {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		z-index: 1;
+		left: 0;
+	}
 
-    &__price {
-        color: var(--beige, #fff4da);
-        font-family: "Alumni Sans";
-        font-size: 4.5rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -0.18rem;
-        text-transform: uppercase;
-        padding-right: 1.5rem;
-        margin-right: 1.2rem;
-        position: relative;
-        z-index: 2;
-        &::before {
-            position: absolute;
-            content: "₽";
-            color: var(--beige, #fff4da);
-            font-family: "Alumni Sans";
-            font-size: 3rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: -0.18rem;
-            text-transform: uppercase;
-            right: 0;
-        }
-        b {
-            color: var(--white, #fff);
-            font-family: "Euclid Circular A";
-            font-size: 1.8rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 2.8rem;
-            letter-spacing: -0.36px;
-            margin-right: 0.4rem;
-        }
-    }
+	&__price {
+		color: var(--beige, #fff4da);
+		font-family: "Alumni Sans";
+		font-size: 4.5rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 100%;
+		letter-spacing: -0.18rem;
+		text-transform: uppercase;
+		padding-right: 1.5rem;
+		margin-right: 1.2rem;
+		position: relative;
+		z-index: 2;
+		&::before {
+			position: absolute;
+			content: "₽";
+			color: var(--beige, #fff4da);
+			font-family: "Alumni Sans";
+			font-size: 3rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -0.18rem;
+			text-transform: uppercase;
+			right: 0;
+		}
+		b {
+			color: var(--white, #fff);
+			font-family: "Euclid Circular A";
+			font-size: 1.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 2.8rem;
+			letter-spacing: -0.36px;
+			margin-right: 0.4rem;
+		}
+	}
 
-    .btn {
-        z-index: 2;
-    }
+	.btn {
+		z-index: 2;
+	}
 
-    &__sale {
-        margin-top: 0.6rem;
-        position: relative;
-        color: rgba(255, 244, 218, 0.6);
-        z-index: 2;
-        font-family: "Alumni Sans";
-        font-size: 4.5rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -0.18rem;
-        text-transform: uppercase;
-        padding-right: 1.5rem;
-        margin-right: 1.2rem;
-        text-decoration: line-through;
+	&__sale {
+		margin-top: 0.6rem;
+		position: relative;
+		color: rgba(255, 244, 218, 0.6);
+		z-index: 2;
+		font-family: "Alumni Sans";
+		font-size: 4.5rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 100%;
+		letter-spacing: -0.18rem;
+		text-transform: uppercase;
+		padding-right: 1.5rem;
+		margin-right: 1.2rem;
+		text-decoration: line-through;
 
-        &::before {
-            position: absolute;
-            content: "₽";
-            color: rgba(255, 244, 218, 0.6);
+		&::before {
+			position: absolute;
+			content: "₽";
+			color: rgba(255, 244, 218, 0.6);
 
-            font-family: "Alumni Sans";
-            font-size: 3rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: -0.18rem;
-            text-transform: uppercase;
-            right: 0;
-        }
-    }
-    &--first {
-        background: #4c0d00;
-        .delivery-box {
-            &__title {
-                color: var(--orange, #ff6d2f);
-            }
-        }
-    }
+			font-family: "Alumni Sans";
+			font-size: 3rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -0.18rem;
+			text-transform: uppercase;
+			right: 0;
+		}
+	}
+	&--first {
+		background: #4c0d00;
+		.delivery-box {
+			&__title {
+				color: var(--orange, #ff6d2f);
+			}
+		}
+	}
 
-    &--second {
-        background: var(--green, #b5bf3d);
+	&--second {
+		background: var(--green, #b5bf3d);
 
-        .delivery-box {
-            &__title {
-                color: var(--beige, #fff4da);
-            }
+		.delivery-box {
+			&__title {
+				color: var(--beige, #fff4da);
+			}
 
-            &__price-block {
-                display: none;
-            }
+			&__price-block {
+				display: none;
+			}
 
-            &__dop-text {
-                color: var(--beige, #fff4da);
-                font-family: "Alumni Sans";
-                font-size: 4.5rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 100%;
-                letter-spacing: -1.8px;
-                text-transform: uppercase;
-                position: absolute;
-                top: 36rem;
-                left: 26.3rem;
+			&__dop-text {
+				color: var(--beige, #fff4da);
+				font-family: "Alumni Sans";
+				font-size: 4.5rem;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 100%;
+				letter-spacing: -1.8px;
+				text-transform: uppercase;
+				position: absolute;
+				top: 36rem;
+				left: 26.3rem;
 
-                span {
-                    font-family: "Alumni", sans-serif;
-                }
-            }
-        }
-    }
+				span {
+					font-family: "Alumni", sans-serif;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 48em) {
-    .delivery-box {
-        width: 63.8rem;
-        height: 78rem;
-        padding: 9.2rem 4.8rem;
-        &__image {
-            display: none;
-        }
+	.delivery-box {
+		width: 63.8rem;
+		height: 78rem;
+		padding: 9.2rem 4.8rem;
+		&__image {
+			display: none;
+		}
 
-        &__image-m {
-            display: block;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            left: 0;
-        }
+		&__price-block {
+			margin-bottom: 5rem;
+		}
 
-        &__par {
-            margin-bottom: 5rem;
+		&__image-m {
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			left: 0;
+		}
 
-            &-icon {
-                width: 6rem;
-                height: 6rem;
-                margin-right: 1.6rem;
-            }
+		&__par {
+			margin-bottom: 5rem;
 
-            &-text {
-                font-size: 4rem;
-            }
-        }
+			&-icon {
+				width: 6rem;
+				height: 6rem;
+				margin-right: 1.6rem;
+			}
 
-        &__title {
-            font-size: 8rem;
-        }
+			&-text {
+				font-size: 4rem;
+			}
+		}
 
-        &__dop-text {
-            display: none;
-            font-size: 4.8rem;
-            top: 37rem;
-            left: 25.3rem;
-            width: 31rem;
-            letter-spacing: -0.9.6rem;
-            span   {
-                padding: 0 0.5rem ;
-            }
-        }
-    }
+		&__title {
+			font-size: 8rem;
+		}
+
+		&__dop-text {
+			display: none;
+			font-size: 4.8rem;
+			top: 37rem;
+			left: 25.3rem;
+			width: 31rem;
+			letter-spacing: -0.9.6rem;
+			span {
+				padding: 0 0.5rem;
+			}
+		}
+	}
 }

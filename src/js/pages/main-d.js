@@ -5,17 +5,7 @@ import Swiper from "swiper";
 import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/grid";
-import {
-	Navigation,
-	Pagination,
-	Autoplay,
-	EffectFade,
-	EffectCoverflow,
-	Thumbs,
-	EffectCreative,
-	Mousewheel,
-	Grid,
-} from "swiper/modules";
+import { Navigation, Pagination, Autoplay, EffectFade, EffectCoverflow, Thumbs, EffectCreative, Mousewheel, Grid } from "swiper/modules";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -36,12 +26,8 @@ export const rem = function (rem) {
 
 const largeSlider = () => {
 	let largeSliders = document.querySelectorAll(".sliders-delivery__swiper");
-	let prevArrow = document.querySelectorAll(
-		".sliders-delivery__navigation--prev"
-	);
-	let nextArrow = document.querySelectorAll(
-		".sliders-delivery__navigation--next"
-	);
+	let prevArrow = document.querySelectorAll(".sliders-delivery__navigation--prev");
+	let nextArrow = document.querySelectorAll(".sliders-delivery__navigation--next");
 	largeSliders.forEach((slider, index) => {
 		// this bit checks if there's more than 1 slide, if there's only 1 it won't loop
 		let sliderLength = slider.children[0].children.length;
@@ -125,14 +111,8 @@ function stockbannerSwiperInit() {
 		touchReleaseOnEdges: true,
 	};
 	if (window.outerWidth > 768) {
-		const stockMainTitleSwiper = new Swiper(
-			".stock-main__title-swiper",
-			stockOption
-		);
-		const stockMainRightTextSwiper = new Swiper(
-			".stock-main__right-text-swiper",
-			stockOption
-		);
+		const stockMainTitleSwiper = new Swiper(".stock-main__title-swiper", stockOption);
+		const stockMainRightTextSwiper = new Swiper(".stock-main__right-text-swiper", stockOption);
 		const stockMainLeftSwiper = new Swiper(".stock-main__left-swiper", {
 			...stockOption,
 			effect: "fade",
@@ -170,14 +150,8 @@ function stockbannerSwiperInit() {
 			stockMainRightSwiper.slidePrev();
 		});
 	} else {
-		const stockMainTitleSwiper = new Swiper(
-			".stock-main__title-swiper",
-			stockOption
-		);
-		const stockMainRightTextSwiper = new Swiper(
-			".stock-main__right-text-swiper",
-			stockOption
-		);
+		const stockMainTitleSwiper = new Swiper(".stock-main__title-swiper", stockOption);
+		const stockMainRightTextSwiper = new Swiper(".stock-main__right-text-swiper", stockOption);
 		const stockMainLeftSwiper = new Swiper(".stock-main__left-swiper", {
 			...stockOption,
 			effect: "fade",
@@ -235,11 +209,24 @@ function menuSwiperMain() {
 		touchReleaseOnEdges: true,
 	};
 	if (window.outerWidth > 768) {
-		const menuMainSwiperTitle = new Swiper(
-			".menu-main__swiper-title",
-			stockOption
-		);
+		const menuMainSwiperTitle = new Swiper(".menu-main__swiper-title", stockOption);
 		const menuLeftSwiper = new Swiper(".menu-main__left-swiper", {
+			...stockOption,
+			effect: "fade",
+			fadeEffect: {
+				crossFade: true,
+			},
+			pagination: {
+				el: ".menu-main__fraction",
+				type: "fraction",
+			},
+			navigation: {
+				prevEl: ".menu-main__navigation--prev",
+				nextEl: ".menu-main__navigation--next",
+			},
+		});
+
+		const menuBtnSwiper = new Swiper(".menu-main__btn-slider", {
 			...stockOption,
 			effect: "fade",
 			fadeEffect: {
@@ -259,11 +246,13 @@ function menuSwiperMain() {
 			e.preventDefault();
 			menuMainSwiperTitle.slideNext();
 			menuLeftSwiper.slideNext();
+			menuBtnSwiper.slideNext();
 		});
 		$(".menu-main__navigation--prev").on("click", (e) => {
 			e.preventDefault();
 			menuMainSwiperTitle.slidePrev();
 			menuLeftSwiper.slidePrev();
+			menuBtnSwiper.slidePrev();
 		});
 	} else {
 		// const swiperTopTitle = new Swiper('.top-title-mobile', mainBannerOption);

@@ -239,7 +239,6 @@ function saleSwiperInit() {
 		});
 	}
 }
-
 function reviewDetailSwiperInit() {
 	$('[data-modal="review-detail"]').on("click", () => {
 		const reviewDetailSwiper = new Swiper(".review-modal-detail__slider", {
