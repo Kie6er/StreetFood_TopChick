@@ -1443,7 +1443,7 @@ main {
 		width: 2.5rem;
 	}
 	.burger-menu {
-		display: none;
+		display: flex;
 		width: 100vw;
 		height: 100vh;
 		margin-left: -3.2rem;
@@ -9648,6 +9648,7 @@ main {
 		right: 0;
 	}
 	.menu__popular {
+		display: flex;
 		flex-direction: column;
 	}
 	.menu__popular .menu-card:hover .menu-card__name {
