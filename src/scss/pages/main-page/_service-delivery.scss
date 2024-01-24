@@ -1,249 +1,239 @@
 .service-delivery {
-    
-    .container {
-        width: 189rem;
-        padding: 0 1rem;
-       
-    }
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
+	.container {
+		width: 189rem;
+		padding: 0 1rem;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
 
-    &__block {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 6.1rem;
-    }
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 6.1rem;
+	}
 
-    &__title {
-        color: $dark;
-        font-family: 'Alumni Sans',sans-serif;
-        font-size: 9rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 90%;
-        letter-spacing: -2.7px;
-        text-transform: uppercase;
-        padding: 0 4rem;
-    }
+	&__title {
+		color: $dark;
+		font-family: "Alumni Sans", sans-serif;
+		font-size: 9rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 90%;
+		letter-spacing: -2.7px;
+		text-transform: uppercase;
+		padding: 0 4rem;
+	}
 
-    &__block-w {
-        display: flex;
-        padding-right: 6rem;
-        padding-top: 1rem;
-    }
+	&__block-w {
+		display: flex;
+		padding-right: 6rem;
+		padding-top: 1rem;
+	}
 
-    &__partner {
-        display: flex;
-        align-items:center;
-        margin-right: 5rem;
-        &-icon {
-            width: 5.5rem;
-            height: 5.5rem;
-            margin-right: 1rem;
-        }
+	&__partner {
+		display: flex;
+		align-items: center;
+		margin-right: 5rem;
+		&-icon {
+			width: 5.5rem;
+			height: 5.5rem;
+			margin-right: 1rem;
+		}
 
-        &-text {
-            color: #1E1121;
-            font-family: 'Alumni Sans',sans-serif;
-            font-size: 4.5rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: -1.8px;
-            text-transform: uppercase;
-        }
+		&-text {
+			color: #1e1121;
+			font-family: "Alumni Sans", sans-serif;
+			font-size: 4.5rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -1.8px;
+			text-transform: uppercase;
+		}
+	}
 
+	&__partner:last-child {
+		margin-right: 0;
+	}
 
-    }
+	&__image {
+		width: 52rem;
+		height: 52rem;
+		border-radius: 50%;
+		position: relative;
+		z-index: 2;
+		img {
+			border-radius: 50%;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 
-    &__partner:last-child {
-        margin-right: 0;
-    }
+	&__inner {
+		display: flex;
+		width: 94.5rem;
+		position: relative;
+		margin-right: 1rem;
+	}
 
-    &__image {
-        width: 52rem;
-        height: 52rem;
-        border-radius: 50%;
-        position: relative;
-        z-index: 2;
-        img {
-            border-radius: 50%;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
+	&__inner:last-child {
+		margin-right: 0;
+	}
 
-    &__inner {
-        display: flex;
-        width: 94.5rem;
-        position: relative;
-        margin-right: 1rem;
-    }
+	&__info {
+		width: 52rem;
+		height: 52rem;
+		border-radius: 50%;
+		position: relative;
+		z-index: 1;
+		border: 0.1rem solid $dark;
+		display: flex;
+		justify-content: center;
+		padding-left: 18rem;
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+		&-number {
+			color: $orange;
+			font-family: "Alumni Sans", sans-serif;
+			font-size: 4.5rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -1.8px;
+			text-transform: uppercase;
+			margin-bottom: 2.8rem;
+		}
 
-    &__inner:last-child {
-        margin-right: 0;
-    }
+		&-text {
+			font-family: "Euclid Circular A", sans-serif;
+			font-size: 1.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 2.8rem;
+			letter-spacing: -0.36px;
+			max-width: 23.6rem;
+		}
 
-    &__info {
-        width: 52rem;
-        height: 52rem;
-        border-radius: 50%;
-        position: relative;
-        z-index: 1;
-        border: 0.1rem solid $dark;
-        display: flex;
-        justify-content: center;
-        padding-left: 18rem;
-        flex-direction: column;
-        position: absolute;
-        right: 0;
-        &-number {
-            color: $orange;
-            font-family: 'Alumni Sans',sans-serif;
-            font-size: 4.5rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: -1.8px;
-            text-transform: uppercase;
-            margin-bottom: 2.8rem;
-        }
+		&-title {
+			color: $dark;
+			font-family: "Alumni Sans", sans-serif;
+			font-size: 4.5rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -1.8px;
+			text-transform: uppercase;
+			margin-bottom: 2.8rem;
+		}
+	}
 
-        &-text {
-            font-family: 'Euclid Circular A',sans-serif;
-            font-size: 1.8rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 2.8rem;
-            letter-spacing: -0.36px;
-            max-width: 23.6rem;
-        }
-
-        &-title {
-            color: $dark;
-            font-family: 'Alumni Sans',sans-serif;
-            font-size: 4.5rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: -1.8px;
-            text-transform: uppercase;
-            margin-bottom: 2.8rem;
-        }
-    }
-
-    &__btn--mob {
-        display: none;
-    }
-
-  
+	&__btn--mob {
+		display: none;
+	}
 }
 
-@media (max-width: 48em) { 
+@media (max-width: 48em) {
+	.service-delivery {
+		margin-bottom: 10rem;
+		.container {
+			width: 100%;
+			padding: 0 3.2rem;
+		}
 
-    .service-delivery {
-        margin-bottom: 10rem;
-        .container {
-            width: 100%;
-            padding: 0 3.2rem;
-        }
+		&__title {
+			padding: 0;
+			font-size: 8rem;
+			line-height: 90%;
+			margin-bottom: 4rem;
+			letter-spacing: -1.2px;
+			text-transform: uppercase;
+		}
 
-        &__title {
-            padding: 0;
-            font-size: 8rem;
-            line-height: 90%;
-            margin-bottom: 4rem;
-            letter-spacing: -1.2px;
-            text-transform: uppercase;
-        }
+		&__block {
+			flex-direction: column;
+			margin-bottom: 8rem;
+		}
 
-        &__block {
-            flex-direction: column;
-            margin-bottom: 8rem;
-        }
+		&__block-w {
+			padding-right: 0;
+			padding-top: 0;
+			display: flex;
+			justify-content: space-between;
+		}
 
-        &__block-w {
-            padding-right: 0;
-            padding-top: 0;
-            display: flex;
-            justify-content: space-between;
-        }
+		&__partner {
+			margin-right: 0;
+			flex-direction: column;
+			&-icon {
+				margin-right: 0;
+				margin-bottom: 1.6rem;
+				width: 8.8rem;
+				height: 8.8rem;
+			}
 
-        &__partner {
-            margin-right: 0;
-            flex-direction: column;
-            &-icon {
-                margin-right: 0;
-                margin-bottom: 1.6rem;
-                width: 8.8rem;
-                height: 8.8rem;
-            }
+			&-text {
+				font-size: 4.8rem;
+				line-height: 100%;
+			}
+		}
 
-            &-text {
-                font-size: 4.8rem;
-                line-height: 100%;
-            }
-        }
+		&__wrapper {
+			flex-direction: column;
+		}
 
-        &__wrapper  {
-            flex-direction: column;
-        }
+		&__inner {
+			width: 100%;
+			margin-right: 0;
+			flex-direction: column;
+			margin-bottom: 0rem;
+		}
 
-        &__inner {
-            width: 100%;
-            margin-right: 0;
-            flex-direction: column;
-            margin-bottom: 0rem;
-        }
+		&__inner:last-child {
+			margin-bottom: 0;
+		}
 
-        &__inner:last-child {
-            margin-bottom: 0;
-        }
+		&__image {
+			width: 100%;
+			height: 68.4rem;
+		}
 
-        &__image {
-            width: 100%;
-            height: 68.4rem;
-        }
+		&__info {
+			position: relative;
+			width: 100%;
+			height: 68.4rem;
+			transition: 0.5s;
+			padding: 6.4rem;
+			top: -68.4rem;
+			&-number {
+				font-size: 4.8rem;
+				position: absolute;
+				top: 22rem;
+			}
 
-        &__info {
-            position: relative;
-            width: 100%;
-            height: 68.4rem;
-            transition: 0.5s;
-            padding: 6.4rem;
-            top: -68.4rem;
-            &-number {
-                font-size: 4.8rem;
-                position: absolute;
-                top: 22rem;
-            }
+			&-title {
+				font-size: 4.8rem;
+				margin-bottom: 3.2rem;
+				padding-left: 5rem;
+			}
 
-            &-title {
-                font-size: 4.8rem;
-                margin-bottom: 3.2rem;
-                padding-left: 5rem;
-            }
+			&-text {
+				font-family: "Euclid Circular A";
+				font-size: 2.8rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 4rem;
+				letter-spacing: -0.28px;
+				max-width: 100%;
+			}
+		}
 
-            &-text {
-                font-family: 'Euclid Circular A';
-                font-size: 2.8rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 4rem;
-                letter-spacing: -0.28px;
-                max-width: 100%;
-            }
-        }
-
-        &__info.active {
-            top: -14rem;
-            transition: 0.5s;
-        }
-
-       
-    }
-
+		&__info.active {
+			top: -14rem;
+			transition: 0.5s;
+		}
+	}
 }

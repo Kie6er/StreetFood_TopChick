@@ -1,427 +1,416 @@
 .detailed-promotions {
-    padding-top: 10rem;
-    margin-bottom: 20rem;
-    .container {
-        width: 100%;
-        padding-left: 6rem;
-    }
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
+	padding-top: 10rem;
+	margin-bottom: 20rem;
+	.container {
+		width: 100%;
+		padding-left: 6rem;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
 
-    &__left {
-        position: relative;
-        padding-top: 6rem;
-    }
+	&__left {
+		position: relative;
+		padding-top: 6rem;
+	}
 
-    &__title {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Alumni Sans';
-        font-size: 9rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 90%;
-        letter-spacing: -0.27rem;
-        text-transform: uppercase;
-        margin-bottom: 4.8rem;
-        strong {
-            display: block;
-            color: var(--orange, #FF6D2F);
-        }
+	&__title {
+		display: flex;
+		flex-direction: column;
+		font-family: "Alumni Sans";
+		font-size: 9rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 90%;
+		letter-spacing: -0.27rem;
+		text-transform: uppercase;
+		margin-bottom: 4.8rem;
+		strong {
+			display: block;
+			color: var(--orange, #ff6d2f);
+		}
 
-        span {
-            display: block;
-        }
-    }
+		span {
+			display: block;
+		}
+	}
 
-    &__text {
-        color: var(--choco, #4C0D00);
-        font-family: 'Euclid Circular A';
-        font-size: 1.8rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 2.8rem;
-        letter-spacing: -0.36px;
-        margin-bottom: 6.4rem;
-        width: 70rem;
-    }
+	&__text {
+		color: var(--choco, #4c0d00);
+		font-family: "Euclid Circular A";
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2.8rem;
+		letter-spacing: -0.36px;
+		margin-bottom: 6.4rem;
+		width: 70rem;
+	}
 
-    &__block {
-        display: flex;
-        margin-bottom: 7.6rem;
-    }
+	&__block {
+		display: flex;
+		margin-bottom: 7.6rem;
+	}
 
-    &__inner {
-        display: flex;
-        flex-direction: column;
-        margin-right: 4rem;
-    }
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		margin-right: 4rem;
+	}
 
-    &__inner:last-child {
-        margin-right: 0;
-    }
+	&__inner:last-child {
+		margin-right: 0;
+	}
 
-    &__foodcore, 
-    &__time-title{
-        color: var(--dark, #330D03);
-        font-family: 'Alumni Sans';
-        font-size: 2.4rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 2.8rem;
-        letter-spacing: 2.16px;
-        text-transform: uppercase;
-        position: relative;
-        padding-left: 4rem;
-        margin-bottom: 1.1rem;
-        &::before {
-            position: absolute;
-            content:'';
-            width: 2.4rem;
-            height: 2.4rem;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            left: 0;
-            top: 50%;
-            transform: translate(0, -50%);
-        }
-    }
+	&__foodcore,
+	&__time-title {
+		color: var(--dark, #330d03);
+		font-family: "Alumni Sans";
+		font-size: 2.4rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2.8rem;
+		letter-spacing: 2.16px;
+		text-transform: uppercase;
+		position: relative;
+		padding-left: 4rem;
+		margin-bottom: 1.1rem;
+		&::before {
+			position: absolute;
+			content: "";
+			width: 2.4rem;
+			height: 2.4rem;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			left: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+	}
 
-    &__time-title{
-        &::before {
-            background-image: url(./assets/images/stock/watch.svg);
-        }
-    }
+	&__time-title {
+		&::before {
+			background-image: url(./assets/images/stock/watch.svg);
+		}
+	}
 
-    &__foodcore{
-        &::before {
-            background-image: url(./assets/images/stock/location.svg);
-        }
-    }
+	&__foodcore {
+		&::before {
+			background-image: url(./assets/images/stock/location.svg);
+		}
+	}
 
-    &__address {
-        display: flex;
-        padding-left: 4rem;
-        span {
-            display: block;
-            color: var(--dark, #330D03);
-            font-family: 'Alumni Sans';
-            font-size: 2.4rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 2.8rem;
-            letter-spacing: 2.16px;
-            text-transform: uppercase;
-            margin-right: 1rem;
-        }
-    }
+	&__address {
+		display: flex;
+		padding-left: 4rem;
+		span {
+			display: block;
+			color: var(--dark, #330d03);
+			font-family: "Alumni Sans";
+			font-size: 2.4rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 2.8rem;
+			letter-spacing: 2.16px;
+			text-transform: uppercase;
+			margin-right: 1rem;
+		}
+	}
 
-    .link {
-        color: var(--dark, #330D03);
-        text-align: center;
-        font-family: 'Alumni Sans';
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 2.8rem;
-        letter-spacing: -0.6px;
-        text-transform: uppercase;
-        position: relative;
-        padding-bottom: 0.8rem;
-        display: block;
-       width: fit-content;
-        &::before {
-            position: absolute;
-            content:'';
-            width: 100%;
-            background: var(--dark, #330D03);
-            height: 0.2rem;
-            bottom: 0;
-        }
-    }
+	.link {
+		color: var(--dark, #330d03);
+		text-align: center;
+		font-family: "Alumni Sans";
+		font-size: 3rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2.8rem;
+		letter-spacing: -0.6px;
+		text-transform: uppercase;
+		position: relative;
+		padding-bottom: 0.8rem;
+		display: block;
+		width: fit-content;
+		&::before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			background: var(--dark, #330d03);
+			height: 0.2rem;
+			bottom: 0;
+		}
+	}
 
-    &__time {
-        color: var(--dark, #330D03);
-        font-family: 'Alumni Sans';
-        font-size: 2.4rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 2.8rem;
-        letter-spacing: 2.16px;
-        text-transform: uppercase;
-        padding-left: 4rem;
-    }
+	&__time {
+		color: var(--dark, #330d03);
+		font-family: "Alumni Sans";
+		font-size: 2.4rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2.8rem;
+		letter-spacing: 2.16px;
+		text-transform: uppercase;
+		padding-left: 4rem;
+	}
 
-    &__btns {
-        display: flex;
-        align-items: center;
-        .btn {
-            margin-right: 6.4rem;
-        }
-        .link {
-            height: fit-content;
-        }
-    }
+	&__btns {
+		display: flex;
+		align-items: center;
+		.btn {
+			margin-right: 6.4rem;
+		}
+		.link {
+			height: fit-content;
+		}
+	}
 
-    &__icon {
-        position: absolute;
-        width: 16.2rem;
-        height: 13.2rem;
-        right: -14.2rem;
-        bottom: 10.2rem;
-    }
+	&__icon {
+		position: absolute;
+		width: 16.2rem;
+		height: 13.2rem;
+		right: -14.2rem;
+		bottom: 10.2rem;
+	}
 
-    &__slide {
-        display: block;
-    }
+	&__slide {
+		display: block;
+	}
 
-    &__box {
-        width: 70.6rem;
-        height: 70rem;
-        border-radius: 50rem 50rem 0px 0px;
-        background: var(--green, #B5BF3D);
-        position: relative;
-        display: block;
-        padding-top: 12.7rem;
-        &-title {
-            display: block;
-            color: var(--dark, #330D03);
-            text-align: center;
-            font-family: 'Alumni Sans';
-            font-size: 4.5rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: -1.8px;
-            text-transform: uppercase;
-            margin-bottom: 2.4rem;
-        }
+	&__box {
+		width: 70.6rem;
+		height: 70rem;
+		border-radius: 50rem 50rem 0px 0px;
+		background: var(--green, #b5bf3d);
+		position: relative;
+		display: block;
+		padding-top: 12.7rem;
+		&-title {
+			display: block;
+			color: var(--dark, #330d03);
+			text-align: center;
+			font-family: "Alumni Sans";
+			font-size: 4.5rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -1.8px;
+			text-transform: uppercase;
+			margin-bottom: 2.4rem;
+		}
 
-        &-text {
-            color: var(--dark, #330D03);
-            text-align: center;
-            font-family: 'Euclid Circular A';
-            font-size: 1.8rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 2.8rem;
-            letter-spacing: -0.36px;
-        }
-        &-image  {
-            width: 36.3rem;
-            height: 24.3rem;
-            position: absolute;
-            z-index: 2;
-            left: 50%;
-            top: 37.7rem;
-            transform: translate(-50%, 0);
-        }
+		&-text {
+			color: var(--dark, #330d03);
+			text-align: center;
+			font-family: "Euclid Circular A";
+			font-size: 1.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 2.8rem;
+			letter-spacing: -0.36px;
+		}
+		&-image {
+			width: 36.3rem;
+			height: 24.3rem;
+			position: absolute;
+			z-index: 2;
+			left: 50%;
+			top: 37.7rem;
+			transform: translate(-50%, 0);
+		}
 
-        &-tri {
-            position: absolute;
-            z-index: 1;
-            bottom:0;
-            width: 100%;
-           
-        }
+		&-tri {
+			position: absolute;
+			z-index: 1;
+			bottom: 0;
+			width: 100%;
+		}
+	}
 
-    }
+	&__swiper {
+		position: relative;
+		width: 95.3rem;
+		overflow: hidden;
+	}
 
-    &__swiper {
-        position: relative;
-        width: 95.3rem;
-        overflow: hidden;
-    }
+	&__navigation {
+		display: flex;
+		flex-direction: initial;
+		position: absolute;
+		right: 31rem;
+		top: 46rem;
+		z-index: 3;
+		justify-content: space-between;
+		width: 59rem;
+	}
 
-    &__navigation {
-        display: flex;
-        flex-direction: initial;
-        position: absolute;
-        right: 31rem;
-        top: 46rem;
-        z-index: 3;
-        justify-content: space-between;
-        width: 59rem;
-    }
+	&__navigation-btn {
+		&::after {
+			background: var(--orange, #ff6d2f);
+		}
+	}
 
-    &__navigation-btn {
-        &::after {
-            background:  var(--orange, #FF6D2F);
-        }
-    }
-
-    &__btns--mob {
-        display: none;
-    }
-
+	&__btns--mob {
+		display: none;
+	}
 }
 
-
 @media (max-width: 48em) {
+	.detailed-promotions {
+		padding-top: 4rem;
+		.container {
+			width: 100%;
+			padding-left: 3.2rem;
+			padding-right: 0;
+		}
 
-    .detailed-promotions {
-        padding-top: 4rem;
-        .container {
-            width: 100%;
-            padding-left: 3.2rem;
-            padding-right: 0;
-        }
+		&__left {
+			position: initial;
+		}
 
-        &__left {
-            position: initial;
-        }
+		&__wrapper {
+			flex-direction: column;
+			position: relative;
+		}
 
-        &__wrapper {
-            flex-direction: column;
-            position: relative;
-        }
+		&__title {
+			font-size: 8rem;
+			line-height: 90%;
+			margin-bottom: 2rem;
+		}
 
-        &__title {
-            font-size: 8rem;
-            line-height: 90%;
-            margin-bottom: 2rem;
-        }
+		&__text {
+			color: var(--dark, #330d03);
+			font-family: "Euclid Circular A";
+			font-size: 2.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 142.857%;
+			letter-spacing: -0.028rem;
+			margin-bottom: 4.8rem;
+		}
+		&__block {
+			flex-direction: column;
+		}
 
-        &__text {
-            color: var(--dark, #330D03);
-            font-family: 'Euclid Circular A';
-            font-size: 2.8rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 142.857%;
-            letter-spacing: -0.028rem;
-            margin-bottom: 4.8rem;
-        }
-        &__block {
-            flex-direction: column;
-        }
+		&__inner {
+			margin-right: 0;
+			margin-bottom: 4.6rem;
+		}
 
-        &__inner {
-            margin-right: 0;
-            margin-bottom: 4.6rem;
-        }
+		&__inner:last-child {
+			margin-bottom: 0;
+		}
 
-        &__inner:last-child {
-            margin-bottom: 0;
-        }
+		&__foodcore {
+			margin-bottom: 1.6rem;
+			color: var(--dark, #330d03);
+			font-family: "Alumni Sans";
+			font-size: 3.6rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			letter-spacing: -0.36px;
+			text-transform: uppercase;
+			padding-left: 7rem;
+			&::before {
+				width: 3.6rem;
+				height: 4rem;
+			}
+		}
 
-        &__foodcore {
-            margin-bottom: 1.6rem;
-            color: var(--dark, #330D03);
-            font-family: 'Alumni Sans';
-            font-size: 3.6rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            letter-spacing: -0.36px;
-            text-transform: uppercase;
-            padding-left: 7rem;
-            &::before {
-                width: 3.6rem;
-                height: 4rem;
-            }
-        }
+		&__address {
+			padding-left: 7rem;
 
-        &__address {
-            padding-left: 7rem;
+			span {
+				font-size: 3.6rem;
+				font-style: normal;
+				margin-right: 2.4rem;
+				font-weight: 600;
+				line-height: normal;
+				letter-spacing: -0.036rem;
+				text-transform: uppercase;
+			}
+		}
 
-            span {
-                font-size: 3.6rem;
-                font-style: normal;
-                margin-right: 2.4rem;
-                font-weight: 600;
-                line-height: normal;
-                letter-spacing: -0.036rem;
-                text-transform: uppercase;
-            }
-        }
+		&__time-title {
+			margin-bottom: 1.6rem;
+			color: var(--dark, #330d03);
+			font-family: "Alumni Sans";
+			font-size: 3.6rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			letter-spacing: -0.36px;
+			text-transform: uppercase;
+			padding-left: 7rem;
+			&::before {
+				width: 4rem;
+				height: 4rem;
+			}
+		}
 
-        &__time-title {
-            margin-bottom: 1.6rem;
-            color: var(--dark, #330D03);
-            font-family: 'Alumni Sans';
-            font-size: 3.6rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            letter-spacing: -0.36px;
-            text-transform: uppercase;
-            padding-left: 7rem;
-            &::before {
-                width: 4rem;
-                height: 4rem;
-            }
-        }
+		&__time {
+			padding-left: 7rem;
 
-        &__time {
-            padding-left: 7rem;
+			font-size: 3.6rem;
+			font-style: normal;
+			margin-right: 2.4rem;
+			font-weight: 600;
+			line-height: normal;
+			letter-spacing: -0.036rem;
+			text-transform: uppercase;
+		}
 
-          
-                font-size: 3.6rem;
-                font-style: normal;
-                margin-right: 2.4rem;
-                font-weight: 600;
-                line-height: normal;
-                letter-spacing: -0.036rem;
-                text-transform: uppercase;
-        
-        }
+		&__swiper {
+			width: 100%;
+			margin-bottom: 6.4rem;
+		}
 
-        
+		.swiper-wrapper {
+			height: auto;
+		}
 
-        &__swiper {
-            width: 100%;
-            margin-bottom: 6.4rem;
-        }
+		&__btns--mob {
+			display: flex;
+			justify-content: space-between;
+			padding-right: 3.6rem;
+		}
 
-        .swiper-wrapper {
-            height: auto;
-        }
+		&__icon {
+			display: none;
+		}
 
-        &__btns--mob {
-            display: flex;
-            justify-content: space-between;
-            padding-right: 3.6rem;
-        }
+		&__btns--desk {
+			display: none;
+		}
 
+		&__box {
+			width: 63.4rem;
+			height: 77.6rem;
 
-        &__icon {
-            display: none;
-        }
+			&-title {
+				font-size: 4.8rem;
+				line-height: 100%;
+				letter-spacing: -0.96px;
+				margin-bottom: 2rem;
+			}
 
+			&-text {
+				font-size: 2.8rem;
+				font-weight: 400;
+				line-height: 142.857%;
+				letter-spacing: -0.28px;
+			}
 
-        &__btns--desk {
-            display: none;
-        }
+			&-image {
+				width: 42.6rem;
+				height: 28.6rem;
+			}
+		}
 
-        &__box {
-            width: 63.4rem;
-            height: 77.6rem;
-
-            &-title {
-                font-size: 4.8rem;
-                line-height: 100%;
-                letter-spacing: -0.96px;
-                margin-bottom: 2rem;
-            }
-
-            &-text {
-                font-size: 2.8rem;
-                font-weight: 400;
-                line-height: 142.857% ;
-                letter-spacing: -0.28px;
-            }
-
-            &-image {
-                width: 42.6rem;
-                height: 28.6rem;
-            }
-        }
-
-        &__navigation {
-            display: none;
-        }
-    }
- }
+		&__navigation {
+			display: none;
+		}
+	}
+}

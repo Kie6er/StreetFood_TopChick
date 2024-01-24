@@ -1,546 +1,530 @@
 .position-card {
-    margin-bottom: 20rem;
-    .container {
-        width: 100%;
-    }
+	margin-bottom: 20rem;
+	.container {
+		width: 100%;
+	}
 
-    &__wrapper {
-        display: flex;
-        position: relative;
-    }
+	&__wrapper {
+		display: flex;
+		position: relative;
+	}
 
-    &__left {
-        padding-top: 6rem;
-        padding-left: 6rem;
-        width: 50%;
-    }
+	&__left {
+		padding-top: 6rem;
+		padding-left: 6rem;
+		width: 50%;
+	}
 
-  
+	.small-btn {
+		width: fit-content;
+		position: absolute;
+		right: 7.1rem;
+		color: var(--beige, #fff4da);
+		top: 6.8rem;
 
+		&:after {
+			background: var(--beige, #fff4da);
+		}
+	}
 
-    .small-btn {
-        width: fit-content;
-        position: absolute;
-        right: 7.1rem;
-        color: var(--beige, #fff4da);
-        top: 6.8rem;
+	&__inner {
+		display: flex;
+		margin-bottom: 13.5rem;
+	}
 
-        &:after {
-            background: var(--beige, #fff4da);
-        }
-    }
+	&__info {
+		display: flex;
+		flex-direction: column;
+		margin-right: 2.6rem;
+		strong {
+			color: var(--dark, #330d03);
+			font-family: "Alumni Sans";
+			font-size: 4.5rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -1.8px;
+			text-transform: uppercase;
+			display: block;
+		}
 
-    &__inner {
-        display: flex;
-        margin-bottom: 13.5rem;
-    }
+		span {
+			color: var(--dark-secondary, rgba(51, 13, 3, 0.6));
+			font-family: "Euclid Circular A";
+			font-size: 1.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 2.8rem;
+			letter-spacing: -0.36px;
+			display: block;
+		}
+	}
 
-    &__info {
-        display: flex;
-        flex-direction: column;
-        margin-right: 2.6rem;
-        strong {
-            color: var(--dark, #330d03);
-            font-family: "Alumni Sans";
-            font-size: 4.5rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: -1.8px;
-            text-transform: uppercase;
-            display: block;
-        }
+	&__info:last-child {
+		margin-right: 0;
+	}
 
-        span {
-            color: var(--dark-secondary, rgba(51, 13, 3, 0.6));
-            font-family: "Euclid Circular A";
-            font-size: 1.8rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 2.8rem;
-            letter-spacing: -0.36px;
-            display: block;
-        }
-    }
+	&__title {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 19.1rem;
+		max-width: 55rem;
+		strong {
+			display: block;
+			color: var(--choco, #4c0d00);
+			font-family: "Alumni Sans";
+			font-size: 9rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 90%;
+			letter-spacing: -2.7px;
+			text-transform: uppercase;
+		}
 
-    &__info:last-child {
-        margin-right: 0;
-    }
+		span {
+			display: block;
+			color: var(--choco, #4c0d00);
+			font-family: "Alumni Sans";
+			font-size: 4.5rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -1.8px;
+			text-transform: uppercase;
+		}
+	}
 
-    &__title {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 19.1rem;
-        strong {
-            display: block;
-            color: var(--choco, #4c0d00);
-            font-family: "Alumni Sans";
-            font-size: 9rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 90%;
-            letter-spacing: -2.7px;
-            text-transform: uppercase;
-        }
+	&__image {
+		width: 59.7rem;
+		height: 43.9rem;
+		position: absolute;
+		top: 13%;
+		left: 32%;
 
-        span {
-            display: block;
-            color: var(--choco, #4c0d00);
-            font-family: "Alumni Sans";
-            font-size: 4.5rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: -1.8px;
-            text-transform: uppercase;
-        }
-    }
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
 
-    &__image {
-        width: 59.7rem;
-        height: 43.9rem;
-        position: absolute;
-        top: 13%;
-        left: 28%;
-        
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-    }
+	&__description {
+		background: var(--green, #b5bf3d);
+		padding: 6rem;
+		color: var(--dark, #330d03);
+		font-family: "Euclid Circular A";
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2.8rem;
+		letter-spacing: -0.36px;
+		width: fit-content;
+		p {
+			max-width: 30rem;
+		}
+	}
 
-    &__description {
-        background: var(--green, #b5bf3d);
-        padding: 6rem;
-        color: var(--dark, #330d03);
-        font-family: "Euclid Circular A";
-        font-size: 1.8rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 2.8rem;
-        letter-spacing: -0.36px;
-        width: fit-content;
-        p {
-            max-width: 30rem;
-        }
-    }
+	&__block {
+		display: flex;
+		position: absolute;
+		bottom: 7rem;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
 
-    &__block {
-        display: flex;
-        position: absolute;
-        bottom: 7rem;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
+	&__price {
+		border: 0.12rem solid var(--green, #b5bf3d);
+		width: 16.1rem;
+		height: 7rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-    &__price {
-        border: 0.12rem solid var(--green, #b5bf3d);
-        width: 16.1rem;
-        height: 7rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+		span {
+			position: relative;
+			color: var(--dark, #330d03);
+			display: block;
+			font-family: "Alumni Sans";
+			font-size: 4.5rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -1.8px;
+			text-transform: uppercase;
+			padding-right: 1rem;
+			&::before {
+				position: absolute;
+				content: "₽";
+				font-family: "Alumni Sans";
+				font-size: 2rem;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 100%;
+				letter-spacing: -1.8px;
+				text-transform: uppercase;
+				right: 0;
+			}
+		}
+	}
 
-        span {
-            position: relative;
-            color: var(--dark, #330d03);
-            display: block;
-            font-family: "Alumni Sans";
-            font-size: 4.5rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: -1.8px;
-            text-transform: uppercase;
-            padding-right: 1rem;
-            &::before {
-                position: absolute;
-                content: "₽";
-                font-family: "Alumni Sans";
-                font-size: 2rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 100%;
-                letter-spacing: -1.8px;
-                text-transform: uppercase;
-                right: 0;
-            }
-        }
-    }
+	&__gram {
+		width: 16.1rem;
+		height: 7rem;
+		background: var(--green, #b5bf3d);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: var(--beige, #fff4da);
+		text-align: center;
+		font-family: "Alumni Sans";
+		font-size: 3rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2.8rem;
+		letter-spacing: -0.6px;
+		text-transform: uppercase;
+	}
 
-    &__gram {
-        width: 16.1rem;
-        height: 7rem;
-        background: var(--green, #B5BF3D);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--beige, #fff4da);
-        text-align: center;
-        font-family: "Alumni Sans";
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 2.8rem;
-        letter-spacing: -0.6px;
-        text-transform: uppercase;
-    }
+	&__right {
+		width: 50%;
+		&-block {
+			background: var(--choco, #4c0d00);
+			width: 100%;
+			height: 100%;
+			padding-top: 22.2rem;
+			padding-left: 27.8rem;
+		}
 
-    &__right {
-        width: 50%;
-        &-block {
-            background: var(--choco, #4c0d00);
-            width: 100%;
-            height: 100%;
-            padding-top: 22.2rem;
-            padding-left: 24.8rem;
-        }
+		&-title {
+			color: var(--beige, #fff4da);
+			font-family: "Alumni Sans";
+			font-size: 3rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 2.8rem;
+			letter-spacing: -0.6px;
+			text-transform: uppercase;
+			margin-bottom: 2.4rem;
+		}
+	}
 
-        &-title {
-            color: var(--beige, #FFF4DA);
-            font-family: 'Alumni Sans';
-            font-size: 3rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 2.8rem;
-            letter-spacing: -0.6px;
-            text-transform: uppercase;
-            margin-bottom: 2.4rem;
-        }
+	&__lists {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
 
-        
-    }
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1.6rem;
+		&-compound {
+			color: var(--white, #fff);
+			font-family: "Euclid Circular A";
+			font-size: 2.2rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 2.8rem;
+			margin-right: 1rem;
+		}
 
-    &__lists {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-    }
+		&-price {
+			color: var(--white-secondary, rgba(255, 255, 255, 0.7));
+			font-family: "Alumni Sans";
+			font-size: 2.4rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 2.8rem;
+			letter-spacing: 2.16px;
+			text-transform: uppercase;
+			position: relative;
+			padding-right: 1rem;
+			&::before {
+				position: absolute;
+				content: "₽";
+				color: var(--white-secondary, rgba(255, 255, 255, 0.7));
+				font-family: "Alumni Sans";
+				font-size: 2rem;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 2.8rem;
 
-    &__item {
-        display: flex;
-        align-items:center;
-        margin-bottom: 1.6rem;
-        &-compound {
-            color: var(--white, #FFF);
-            font-family: 'Euclid Circular A';
-            font-size: 2.2rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 2.8rem;
-            margin-right: 1rem;
-        }
+				text-transform: uppercase;
+				right: 0;
+			}
+		}
+	}
 
-        &-price {
-            color: var(--white-secondary, rgba(255, 255, 255, 0.70));
-            font-family: 'Alumni Sans';
-            font-size: 2.4rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 2.8rem;
-            letter-spacing: 2.16px;
-            text-transform: uppercase;
-            position: relative;
-            padding-right: 1rem;
-            &::before {
-                position: absolute;
-                content:'₽';
-                color: var(--white-secondary, rgba(255, 255, 255, 0.70));
-                font-family: 'Alumni Sans';
-                font-size: 2rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 2.8rem;
+	&__aside {
+		position: absolute;
+		width: 38.4rem;
+		height: 32.4rem;
+		background: var(--orange, #ff6d2f);
+		padding: 6rem;
+		right: 6rem;
+		bottom: 0;
 
-                text-transform: uppercase;
-                right: 0;
-            }
-        }
-    }
+		&-basket {
+			color: var(--dark, #330d03);
+			font-family: "Euclid Circular A";
+			font-size: 2.2rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 2.8rem;
+			margin-bottom: 1.4rem;
+		}
 
-    &__aside {
-        position: absolute;
-        width: 38.4rem;
-        height: 32.4rem;
-        background: var(--orange, #FF6D2F);
-        padding: 6rem;
-        right: 6rem;
-        bottom: 0;
+		&-name {
+			color: var(--dark, #330d03);
+			font-family: "Alumni Sans";
+			font-size: 4.5rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -1.8px;
+			text-transform: uppercase;
+			margin-bottom: 0rem;
+		}
 
-        &-basket {
-            color: var(--dark, #330D03);
-            font-family: 'Euclid Circular A';
-            font-size: 2.2rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 2.8rem;
-            margin-bottom: 1.4rem;
-        }
+		&-price {
+			color: var(--white-secondary, rgba(255, 255, 255, 0.7));
+			font-family: "Alumni Sans";
+			font-size: 2.4rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 2.8rem;
+			letter-spacing: 2.16px;
+			text-transform: uppercase;
+			position: relative;
+			padding-right: 1rem;
+			margin-bottom: 2.9rem;
+			width: fit-content;
+			&::before {
+				position: absolute;
+				content: "₽";
+				right: 0;
+			}
+		}
 
-        &-name {
-            color: var(--dark, #330D03);
-            font-family: 'Alumni Sans';
-            font-size: 4.5rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: -1.8px;
-            text-transform: uppercase;
-            margin-bottom: 0rem;
-        }
+		&-image {
+			width: 16.5rem;
+			height: 17.4rem;
+			position: absolute;
+			bottom: 5.1rem;
+			right: 6rem;
+		}
 
-        &-price {
-            color: var(--white-secondary, rgba(255, 255, 255, 0.70));
-            font-family: 'Alumni Sans';
-            font-size: 2.4rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 2.8rem;
-            letter-spacing: 2.16px;
-            text-transform: uppercase;
-            position: relative;
-            padding-right: 1rem;
-            margin-bottom: 2.9rem;
-            width: fit-content;
-            &::before {
-                position: absolute;
-                content:'₽';
-                right: 0;
-            }
-        }
+		&-btn {
+			background: none;
+			border: 0.1rem solid var(--dark, #330d03);
+			&:hover {
+				border: 0.1rem solid var(--green, #b5bf3d);
+				svg {
+					path {
+						fill: var(--beige, #fff4da);
+					}
+				}
+			}
 
-        &-image {
-            width: 16.5rem;
-            height: 17.4rem;
-            position: absolute;
-            bottom: 5.1rem;
-            right: 6rem;
-        }
-
-      
-
-        &-btn {
-            background: none;
-            border: 0.1rem solid var(--dark, #330D03);
-            &:hover {
-                border: 0.1rem solid  var(--green, #B5BF3D);
-                svg {
-
-                    path {
-                        fill:  var(--beige, #FFF4DA);
-
-                    }
-                    
-                }
-            }
-          
-            svg {
-
-                path {
-                    fill: $dark;
-                }
-                
-            }
-        }
-    }
+			svg {
+				path {
+					fill: $dark;
+				}
+			}
+		}
+	}
 }
 
+@media (max-width: 48em) {
+	.position-card {
+		.container {
+			padding: 0;
+			width: 100%;
+		}
 
-@media (max-width: 48em) { 
+		&__wrapper {
+			flex-direction: column;
+		}
 
-    .position-card {
-        
-        .container {
-            padding: 0;
-            width: 100%;
-        }
+		&__left {
+			width: 100%;
+			padding: 10.8rem 3.6rem;
+			display: flex;
+			flex-direction: column;
+		}
 
-        &__wrapper {
-            flex-direction: column;
-        }
+		.small-btn {
+			position: relative;
+			color: var(--dark, #330d03);
+			right: initial;
+			top: initial;
+			left: initial;
+			margin: initial;
+			margin-bottom: 4rem;
 
-        &__left {
-            width: 100%;
-            padding: 10.8rem 3.6rem;
-            display: flex;
-            flex-direction: column;
-        }
+			&::after {
+				background: var(--dark, #330d03);
+			}
+		}
 
-        .small-btn {
-            position: relative;
-            color: var(--dark, #330D03);
-            right: initial;
-            top: initial;
-            left: initial;
-            margin: initial;
-            margin-bottom: 4rem;
+		&__title {
+			order: 1;
+			margin-bottom: 2rem;
 
-            &::after {
-                background: var(--dark, #330D03);
+			strong {
+				font-size: 8rem;
+				margin-bottom: 2rem;
+				width: 100%;
+				letter-spacing: -1.2px;
 
-            }
-        }
+				br {
+					display: none;
+				}
+			}
 
-        &__title {
-            order: 1;
-            margin-bottom: 2rem;
+			span {
+				font-size: 4.8rem;
+			}
+		}
+		&__inner {
+			order: 2;
+			margin-bottom: 4.8rem;
+		}
 
-            strong {
-                font-size: 8rem;
-                margin-bottom: 2rem;
-                width: 100%;
-                letter-spacing: -1.2px;
+		&__info {
+			margin-right: 4.8rem;
+			strong {
+				font-size: 4.8rem;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 100%;
+				letter-spacing: -0.96px;
+			}
 
-                br {
-                    display: none;
-                }
-            }
+			span {
+				font-size: 2.8rem;
+				font-style: normal;
+				font-weight: 400;
+			}
+		}
 
-            span {
-                font-size: 4.8rem;
-            }
-        }
-        &__inner{
-            order: 2;
-            margin-bottom: 4.8rem;
-        }
+		&__image {
+			position: initial;
+			width: 100%;
+			height: 50rem;
+			order: 3;
+			margin-bottom: 3.2rem;
+		}
 
-        &__info {
-            margin-right: 4.8rem;
-            strong {
-                font-size: 4.8rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 100%;
-                letter-spacing: -0.96px;
-            }
+		&__description {
+			order: 4;
+			width: 100%;
+			padding: 3.2rem;
+			font-size: 2.8rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 142.857%;
+			margin-bottom: 3.2rem;
 
-            span {
-                font-size: 2.8rem;
-                font-style: normal;
-                font-weight: 400;
-            }
-        }
+			p {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
 
-        &__image {
-            position: initial;
-            width: 100%;
-            height: 50rem;
-            order: 3;
-            margin-bottom: 3.2rem;
-        }
+		&__block {
+			position: initial;
+			order: 5;
+			transform: initial;
+		}
 
-        &__description {
-            order: 4;
-            width: 100%;
-            padding: 3.2rem;
-            font-size: 2.8rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 142.857%;
-            margin-bottom: 3.2rem;
+		&__price {
+			width: 50%;
+			height: 12rem;
 
-            p {
-                width: 100%;
-                max-width: 100%;
-            }
-        }
+			span {
+				font-size: 4.8rem;
+				padding-right: 2rem;
+				&::before {
+					font-size: 4rem;
+				}
+			}
+		}
 
-        &__block {
-            position: initial;
-            order: 5;
-            transform: initial;
-        }
+		&__gram {
+			width: 50%;
+			height: 12rem;
+			span {
+				font-size: 4.8rem;
+			}
+		}
 
-        &__price {
-            width: 50%;
-            height: 12rem;
+		&__right {
+			width: 100%;
+			&-block {
+				padding: 10rem 3.2rem;
+			}
 
-            span {
-                font-size: 4.8rem;
-                padding-right: 2rem;
-                &::before {
-                    font-size: 4rem;
-                }
-            }
-        }
+			&-title {
+				font-size: 4.8rem;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 100%;
+				letter-spacing: -0.96px;
+				text-transform: uppercase;
+				margin-bottom: 4.8rem;
+			}
+		}
 
-        &__gram {
-            width: 50%;
-            height: 12rem;
-            span {
-                font-size: 4.8rem;
-            }
-        }
+		&__aside {
+			position: relative;
+			margin-top: 10rem;
+			width: 68.6rem;
+			right: initial;
+			bottom: initial;
+			margin: 0 auto;
+			margin-top: 10rem;
+			display: block;
+			height: auto;
+			&-basket {
+				font-size: 3.6rem;
+				margin-bottom: 4.8rem;
+			}
 
-        &__right{
-            width: 100%;
-            &-block {
-                padding: 10rem 3.2rem;
-            }
+			&-name {
+				margin-bottom: 1.6rem;
+				font-size: 4.8rem;
+			}
 
-            &-title {
-                font-size: 4.8rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 100%;
-                letter-spacing: -0.96px;
-                text-transform: uppercase;
-                margin-bottom: 4.8rem;
-            }
-        }
+			&-price {
+				font-size: 4.8rem;
+				padding-right: 3rem;
+				margin-bottom: 4.4rem;
+			}
 
-        &__aside {
-            position: relative;
-            margin-top: 10rem;
-            width: 68.6rem;
-            right: initial;
-            bottom: initial;
-            margin: 0 auto;
-            margin-top: 10rem;
-            display: block;
-            height: auto;
-            &-basket {
-                font-size: 3.6rem;
-                margin-bottom: 4.8rem;
-            }
+			&-image {
+				width: 22.5rem;
+				height: 30.4rem;
+			}
+		}
 
-            &-name {
-                margin-bottom: 1.6rem;
-                font-size: 4.8rem;
-            }
+		&__lists {
+			grid-template-columns: 1fr;
+		}
 
-            &-price {
-                font-size: 4.8rem;
-                padding-right: 3rem;
-                margin-bottom: 4.4rem;
-            }
+		&__item {
+			margin-bottom: 3.2rem;
 
-            &-image {
-                width: 22.5rem;
-                height: 30.4rem;
-            }
-        }
+			&-compound {
+				font-size: 3.2rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 155.556%;
+				margin-right: 1.6rem;
+			}
 
-        &__lists {
-            grid-template-columns: 1fr;
-        }
-
-        &__item {
-            margin-bottom: 3.2rem;
-
-            &-compound{
-                font-size: 3.2rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 155.556% ; 
-                margin-right: 1.6rem;
-            }
-
-            &-price {
-                font-size: 4.8rem;
-            }
-        }
-    }
-
+			&-price {
+				font-size: 4.8rem;
+			}
+		}
+	}
 }

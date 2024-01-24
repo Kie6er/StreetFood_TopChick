@@ -3872,10 +3872,10 @@ main {
 }
 .sale-slide-third__title {
 	margin-bottom: 2.7rem;
-	max-width: 30.4rem;
+	max-width: 100%;
 	color: #fff4da;
 	text-align: center;
-	font-size: 9rem;
+	font-size: 7rem;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 90%;
@@ -6725,7 +6725,7 @@ main {
 	}
 }
 .delivery-box {
-	padding: 8rem 6rem;
+	padding: 7rem 6rem;
 	width: 93rem;
 	height: 61rem;
 	position: relative;
@@ -6735,7 +6735,7 @@ main {
 .delivery-box__par {
 	display: flex;
 	align-items: center;
-	margin-bottom: 4.8rem;
+	margin-bottom: 2.4rem;
 	position: relative;
 	z-index: 2;
 }
@@ -6755,7 +6755,7 @@ main {
 }
 .delivery-box__date {
 	color: #fff4da;
-	margin-bottom: 4.8rem;
+	margin-bottom: 2.4rem;
 	font-family: "Alumni Sans";
 	font-size: 4.5rem;
 	font-style: normal;
@@ -6772,7 +6772,7 @@ main {
 	font-style: normal;
 	font-weight: 600;
 	line-height: 90%;
-	margin-bottom: 5.2rem;
+	margin-bottom: 2.4rem;
 	text-transform: uppercase;
 	position: relative;
 	z-index: 2;
@@ -6783,7 +6783,7 @@ main {
 }
 .delivery-box__price-block {
 	display: flex;
-	margin-bottom: 6.2rem;
+	margin-bottom: 2.4rem;
 	position: relative;
 	z-index: 2;
 }
@@ -6906,6 +6906,9 @@ main {
 	}
 	.delivery-box__image {
 		display: none;
+	}
+	.delivery-box__price-block {
+		margin-bottom: 5rem;
 	}
 	.delivery-box__image-m {
 		display: block;
@@ -8053,6 +8056,9 @@ main {
 .menu-main__right-text p:last-child {
 	margin-bottom: 0;
 }
+.menu-main__btn-slider {
+	height: 4rem !important;
+}
 .menu-main__btn {
 	margin: 0 auto;
 	display: flex;
@@ -8209,6 +8215,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 19.1rem;
+	max-width: 55rem;
 }
 .position-card__title strong {
 	display: block;
@@ -8237,7 +8244,7 @@ main {
 	height: 43.9rem;
 	position: absolute;
 	top: 13%;
-	left: 28%;
+	left: 32%;
 }
 .position-card__image img {
 	width: 100%;
@@ -8324,7 +8331,7 @@ main {
 	width: 100%;
 	height: 100%;
 	padding-top: 22.2rem;
-	padding-left: 24.8rem;
+	padding-left: 27.8rem;
 }
 .position-card__right-title {
 	color: var(--beige, #fff4da);
@@ -9557,8 +9564,8 @@ main {
 	bottom: 0;
 }
 .menu__popular {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 	width: 100%;
 	margin-bottom: 7.4rem;
 }
